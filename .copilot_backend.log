@@ -1,0 +1,1171 @@
+INFO:     Started server process [67947]
+INFO:     Waiting for application startup.
+[prod] Frontend served from /Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon/frontend/dist
+==================================================
+  Vibe-Trading Server
+  http://127.0.0.1:8899
+==================================================
+
+Preflight Check
+ OK   │ LLM (openai)       │ gpt-4o-mini via https://api.openai.com |           
+      │                    │ base=https://api.openai.com timeout=120s retries=2 
+      │                    │ proxy=none                                         
+ OK   │ OKX API            │ reachable                                          
+ OK   │ yfinance           │ reachable                                          
+ N/A  │ Tushare            │ TUSHARE_TOKEN not set (optional) (A-share data     
+      │                    │ unavailable)                                       
+ OK   │ akshare            │ installed                                          
+ OK   │ ccxt               │ installed                                          
+ OK   │ Content Filter     │ 5% (set via CONTENT_FILTER_WARNING_THRESHOLD)      
+      │ Threshold          │                                                    
+
+6/7 services ready
+
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8899 (Press CTRL+C to quit)
+INFO:     127.0.0.1:54592 - "GET /runs/20260802_160616_52_5a4362 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54590 - "POST /sessions/ec3d956be10a/title/auto HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54596 - "GET /sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54603 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54615 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54626 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54638 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54650 - "GET /sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54651 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54659 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54660 - "GET /sessions/ec3d956be10a/goal HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54661 - "GET /settings/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54662 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54663 - "GET /sessions/ec3d956be10a/goal HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54666 - "GET /settings/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54668 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54688 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54693 - "POST /sessions HTTP/1.1" 201 Created
+INFO:     127.0.0.1:54695 - "POST /sessions/c27e52371e6c/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54698 - "GET /sessions/c27e52371e6c/goal HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54699 - "GET /sessions/c27e52371e6c/events?replay=active HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54701 - "GET /sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54704 - "GET /sessions/c27e52371e6c/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54706 - "GET /sessions/c27e52371e6c/messages HTTP/1.1" 200 OK
+Skipped src.tools.options_pricing_tool: No module named 'scipy._lib'
+INFO:     127.0.0.1:54709 - "GET /sessions/c27e52371e6c/messages HTTP/1.1" 200 OK
+Requested tool 'bash' is unavailable and was dropped from the filtered registry (include_shell_tools=False); a preset that depends on it cannot execute it.
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: CSI300"}}}
+$CSI300: possibly delisted; no timezone found
+
+1 Failed download:
+['CSI300']: possibly delisted; no timezone found
+INFO:     127.0.0.1:54726 - "GET /live/status HTTP/1.1" 200 OK
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: CSI300"}}}
+$CSI300: possibly delisted; no timezone found
+
+1 Failed download:
+['CSI300']: possibly delisted; no timezone found
+yfinance returned no usable data for CSI300
+$CSI300: possibly delisted; no timezone found
+
+1 Failed download:
+['CSI300']: possibly delisted; no timezone found
+$CSI300: possibly delisted; no timezone found
+
+1 Failed download:
+['CSI300']: possibly delisted; no timezone found
+yfinance returned no usable data for CSI300
+INFO:     127.0.0.1:54753 - "GET /live/status HTTP/1.1" 200 OK
+Requested tool 'bash' is unavailable and was dropped from the filtered registry (include_shell_tools=False); a preset that depends on it cannot execute it.
+INFO:     127.0.0.1:54773 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54798 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54816 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54836 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54859 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54884 - "GET /live/status HTTP/1.1" 200 OK
+Requested tool 'bash' is unavailable and was dropped from the filtered registry (include_shell_tools=False); a preset that depends on it cannot execute it.
+INFO:     127.0.0.1:54898 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54919 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54938 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54959 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54977 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54995 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55008 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55023 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55033 - "GET /live/status HTTP/1.1" 200 OK
+Requested tool 'bash' is unavailable and was dropped from the filtered registry (include_shell_tools=False); a preset that depends on it cannot execute it.
+INFO:     127.0.0.1:55040 - "GET /live/status HTTP/1.1" 200 OK
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+EventBus queue full, dropping text_delta event for session c27e52371e6c
+INFO:     127.0.0.1:55044 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55050 - "POST /sessions/c27e52371e6c/title/auto HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55051 - "GET /runs/20260802_160756_85_a7705c HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55053 - "GET /sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55055 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55059 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55065 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55067 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55072 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55074 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55080 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55082 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55087 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55089 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55094 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55096 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55107 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55114 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55119 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55122 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55130 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55136 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55144 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55176 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57747 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57750 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57756 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57760 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57766 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57771 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57776 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57780 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57785 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57788 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57793 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57797 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57804 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57806 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57811 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57815 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57820 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57822 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57827 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57846 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57848 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57854 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57857 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57864 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57866 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57871 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57873 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57878 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57880 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57885 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57889 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57894 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57896 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57901 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57903 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57908 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57911 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57916 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57919 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57924 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57926 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57932 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57935 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57940 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57942 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57956 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57968 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57976 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57978 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57983 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57987 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57994 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57997 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58002 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58004 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58010 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58014 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58019 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58078 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60626 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60629 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60636 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60638 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60643 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60647 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60652 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60654 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60663 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60665 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60670 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60674 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60679 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60681 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60686 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60689 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60694 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60697 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60702 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60707 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60724 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60727 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60733 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60736 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60743 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60746 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60751 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60753 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60758 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60760 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60765 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60769 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60776 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60778 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60783 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60785 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60790 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60792 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60797 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60799 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60804 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60806 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60812 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60814 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60819 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60821 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60826 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60829 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60834 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60836 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60841 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60844 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60850 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60926 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60931 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60934 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60939 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60944 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60950 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61011 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63549 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63552 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63558 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63560 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63566 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63568 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63573 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63575 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63581 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63583 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63588 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63592 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63599 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63601 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63606 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63608 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63614 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63616 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63621 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63627 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63642 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63644 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63650 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63654 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63662 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63664 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63669 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63671 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63676 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63679 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63684 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63686 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63694 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63697 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63705 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63707 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63712 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63715 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63723 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63725 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63731 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63734 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63740 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63742 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63747 - "POST /sessions/c27e52371e6c/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63749 - "GET /sessions/c27e52371e6c/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63752 - "GET /sessions/c27e52371e6c/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63754 - "GET /sessions/c27e52371e6c/messages HTTP/1.1" 200 OK
+tushare is unavailable, falling back to tencent for market a_share
+mootdx is unavailable, falling back to tencent for market a_share
+请设置tushare pro的token凭证码，如果没有请访问https://tushare.pro注册申请
+INFO:     127.0.0.1:63760 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63768 - "GET /runs/20260802_165844_44_3fc657 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63770 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63775 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63777 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63782 - "POST /sessions/c27e52371e6c/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63784 - "GET /sessions/c27e52371e6c/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63787 - "GET /sessions/c27e52371e6c/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63789 - "GET /sessions/c27e52371e6c/messages HTTP/1.1" 200 OK
+Requested tool 'bash' is unavailable and was dropped from the filtered registry (include_shell_tools=False); a preset that depends on it cannot execute it.
+INFO:     127.0.0.1:63793 - "GET /live/status HTTP/1.1" 200 OK
+$CSI300: possibly delisted; no timezone found
+
+1 Failed download:
+['CSI300']: possibly delisted; no timezone found
+$CSI300: possibly delisted; no timezone found
+
+1 Failed download:
+['CSI300']: possibly delisted; no timezone found
+yfinance returned no usable data for CSI300
+$CSI300: possibly delisted; no timezone found
+
+1 Failed download:
+['CSI300']: possibly delisted; no timezone found
+$CSI300: possibly delisted; no timezone found
+
+1 Failed download:
+['CSI300']: possibly delisted; no timezone found
+yfinance returned no usable data for CSI300
+INFO:     127.0.0.1:63804 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63809 - "GET /live/status HTTP/1.1" 200 OK
+Requested tool 'bash' is unavailable and was dropped from the filtered registry (include_shell_tools=False); a preset that depends on it cannot execute it.
+INFO:     127.0.0.1:63822 - "GET /live/status HTTP/1.1" 200 OK
+Requested tool 'bash' is unavailable and was dropped from the filtered registry (include_shell_tools=False); a preset that depends on it cannot execute it.
+INFO:     127.0.0.1:63838 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63852 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63864 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63870 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63879 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63883 - "GET /live/status HTTP/1.1" 200 OK
+Requested tool 'bash' is unavailable and was dropped from the filtered registry (include_shell_tools=False); a preset that depends on it cannot execute it.
+INFO:     127.0.0.1:63892 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63898 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63912 - "GET /runs/20260802_165945_38_e0f68d HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50113 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50115 - "POST /sessions/c27e52371e6c/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50117 - "GET /sessions/c27e52371e6c/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50120 - "GET /sessions/c27e52371e6c/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50122 - "GET /sessions/c27e52371e6c/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50128 - "GET /runs/20260802_170259_73_212641 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50130 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50143 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50152 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50165 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50174 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50187 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50196 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50209 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50219 - "POST /sessions/c27e52371e6c/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50221 - "GET /sessions/c27e52371e6c/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50224 - "GET /sessions/c27e52371e6c/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50227 - "GET /sessions/c27e52371e6c/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50230 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50242 - "GET /runs/20260802_170504_28_aaccfe HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50292 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50322 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50334 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51639 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51912 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51915 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52176 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52566 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52683 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53224 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53335 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53344 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53419 - "POST /sessions/c27e52371e6c/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53450 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53486 - "GET /sessions/c27e52371e6c/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53489 - "GET /sessions/c27e52371e6c/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53517 - "GET /sessions/c27e52371e6c/messages HTTP/1.1" 200 OK
+Requested tool 'bash' is unavailable and was dropped from the filtered registry (include_shell_tools=False); a preset that depends on it cannot execute it.
+INFO:     127.0.0.1:53691 - "GET /live/status HTTP/1.1" 200 OK
+$CSI300: possibly delisted; no timezone found
+$SSECOMP: possibly delisted; no timezone found
+
+2 Failed downloads:
+['CSI300', 'SSECOMP']: possibly delisted; no timezone found
+$CSI300: possibly delisted; no timezone found
+
+1 Failed download:
+['CSI300']: possibly delisted; no timezone found
+yfinance returned no usable data for CSI300
+$SSECOMP: possibly delisted; no timezone found
+
+1 Failed download:
+['SSECOMP']: possibly delisted; no timezone found
+yfinance returned no usable data for SSECOMP
+$SSECOMP: possibly delisted; no timezone found
+$CSI300: possibly delisted; no timezone found
+
+2 Failed downloads:
+['SSECOMP', 'CSI300']: possibly delisted; no timezone found
+$CSI300: possibly delisted; no timezone found
+
+1 Failed download:
+['CSI300']: possibly delisted; no timezone found
+yfinance returned no usable data for CSI300
+$SSECOMP: possibly delisted; no timezone found
+
+1 Failed download:
+['SSECOMP']: possibly delisted; no timezone found
+yfinance returned no usable data for SSECOMP
+INFO:     127.0.0.1:54306 - "GET /live/status HTTP/1.1" 200 OK
+$SSECOMP: possibly delisted; no timezone found
+$CSI300: possibly delisted; no timezone found
+
+2 Failed downloads:
+['SSECOMP', 'CSI300']: possibly delisted; no timezone found
+$CSI300: possibly delisted; no timezone found
+
+1 Failed download:
+['CSI300']: possibly delisted; no timezone found
+yfinance returned no usable data for CSI300
+$SSECOMP: possibly delisted; no timezone found
+
+1 Failed download:
+['SSECOMP']: possibly delisted; no timezone found
+yfinance returned no usable data for SSECOMP
+$CSI300: possibly delisted; no timezone found
+
+1 Failed download:
+['CSI300']: possibly delisted; no timezone found
+$CSI300: possibly delisted; no timezone found
+
+1 Failed download:
+['CSI300']: possibly delisted; no timezone found
+yfinance returned no usable data for CSI300
+$SSECOMP: possibly delisted; no timezone found
+
+1 Failed download:
+['SSECOMP']: possibly delisted; no timezone found
+$SSECOMP: possibly delisted; no timezone found
+
+1 Failed download:
+['SSECOMP']: possibly delisted; no timezone found
+yfinance returned no usable data for SSECOMP
+$CSI300: possibly delisted; no timezone found
+
+1 Failed download:
+['CSI300']: possibly delisted; no timezone found
+$CSI300: possibly delisted; no timezone found
+
+1 Failed download:
+['CSI300']: possibly delisted; no timezone found
+yfinance returned no usable data for CSI300
+$SSECOMP: possibly delisted; no timezone found
+
+1 Failed download:
+['SSECOMP']: possibly delisted; no timezone found
+$SSECOMP: possibly delisted; no timezone found
+
+1 Failed download:
+['SSECOMP']: possibly delisted; no timezone found
+yfinance returned no usable data for SSECOMP
+INFO:     127.0.0.1:54491 - "GET /live/status HTTP/1.1" 200 OK
+$CSI300: possibly delisted; no timezone found
+
+1 Failed download:
+['CSI300']: possibly delisted; no timezone found
+$CSI300: possibly delisted; no timezone found
+
+1 Failed download:
+['CSI300']: possibly delisted; no timezone found
+yfinance returned no usable data for CSI300
+$SSECOMP: possibly delisted; no timezone found
+
+1 Failed download:
+['SSECOMP']: possibly delisted; no timezone found
+$SSECOMP: possibly delisted; no timezone found
+
+1 Failed download:
+['SSECOMP']: possibly delisted; no timezone found
+yfinance returned no usable data for SSECOMP
+INFO:     127.0.0.1:54500 - "GET /live/status HTTP/1.1" 200 OK
+Requested tool 'bash' is unavailable and was dropped from the filtered registry (include_shell_tools=False); a preset that depends on it cannot execute it.
+INFO:     127.0.0.1:54513 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55297 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55317 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55340 - "GET /sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55341 - "GET /sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55344 - "GET /settings/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55345 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55346 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55347 - "GET /settings/llm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55351 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55369 - "GET /live/status HTTP/1.1" 200 OK
+Requested tool 'bash' is unavailable and was dropped from the filtered registry (include_shell_tools=False); a preset that depends on it cannot execute it.
+INFO:     127.0.0.1:55377 - "GET /live/status HTTP/1.1" 200 OK
+tushare is unavailable, falling back to tencent for market a_share
+mootdx is unavailable, falling back to tencent for market a_share
+tushare is unavailable, falling back to tencent for market a_share
+mootdx is unavailable, falling back to tencent for market a_share
+tushare is unavailable, falling back to tencent for market a_share
+mootdx is unavailable, falling back to tencent for market a_share
+请设置tushare pro的token凭证码，如果没有请访问https://tushare.pro注册申请
+请设置tushare pro的token凭证码，如果没有请访问https://tushare.pro注册申请
+请设置tushare pro的token凭证码，如果没有请访问https://tushare.pro注册申请
+INFO:     127.0.0.1:55394 - "GET /live/status HTTP/1.1" 200 OK
+tushare is unavailable, falling back to tencent for market a_share
+mootdx is unavailable, falling back to tencent for market a_share
+tushare is unavailable, falling back to tencent for market a_share
+mootdx is unavailable, falling back to tencent for market a_share
+tushare is unavailable, falling back to tencent for market a_share
+mootdx is unavailable, falling back to tencent for market a_share
+tushare is unavailable, falling back to tencent for market a_share
+mootdx is unavailable, falling back to tencent for market a_share
+tushare is unavailable, falling back to tencent for market a_share
+mootdx is unavailable, falling back to tencent for market a_share
+tushare is unavailable, falling back to tencent for market a_share
+mootdx is unavailable, falling back to tencent for market a_share
+请设置tushare pro的token凭证码，如果没有请访问https://tushare.pro注册申请
+请设置tushare pro的token凭证码，如果没有请访问https://tushare.pro注册申请
+请设置tushare pro的token凭证码，如果没有请访问https://tushare.pro注册申请
+请设置tushare pro的token凭证码，如果没有请访问https://tushare.pro注册申请
+请设置tushare pro的token凭证码，如果没有请访问https://tushare.pro注册申请
+请设置tushare pro的token凭证码，如果没有请访问https://tushare.pro注册申请
+INFO:     127.0.0.1:55402 - "GET /live/status HTTP/1.1" 200 OK
+tushare is unavailable, falling back to tencent for market a_share
+mootdx is unavailable, falling back to tencent for market a_share
+tushare is unavailable, falling back to tencent for market a_share
+mootdx is unavailable, falling back to tencent for market a_share
+tushare is unavailable, falling back to tencent for market a_share
+mootdx is unavailable, falling back to tencent for market a_share
+tushare is unavailable, falling back to tencent for market a_share
+mootdx is unavailable, falling back to tencent for market a_share
+tushare is unavailable, falling back to tencent for market a_share
+mootdx is unavailable, falling back to tencent for market a_share
+请设置tushare pro的token凭证码，如果没有请访问https://tushare.pro注册申请
+请设置tushare pro的token凭证码，如果没有请访问https://tushare.pro注册申请
+请设置tushare pro的token凭证码，如果没有请访问https://tushare.pro注册申请
+请设置tushare pro的token凭证码，如果没有请访问https://tushare.pro注册申请
+请设置tushare pro的token凭证码，如果没有请访问https://tushare.pro注册申请
+INFO:     127.0.0.1:55428 - "GET /live/status HTTP/1.1" 200 OK
+tushare is unavailable, falling back to tencent for market a_share
+mootdx is unavailable, falling back to tencent for market a_share
+tushare is unavailable, falling back to tencent for market a_share
+mootdx is unavailable, falling back to tencent for market a_share
+tushare is unavailable, falling back to tencent for market a_share
+mootdx is unavailable, falling back to tencent for market a_share
+tushare is unavailable, falling back to tencent for market a_share
+mootdx is unavailable, falling back to tencent for market a_share
+tushare is unavailable, falling back to tencent for market a_share
+mootdx is unavailable, falling back to tencent for market a_share
+请设置tushare pro的token凭证码，如果没有请访问https://tushare.pro注册申请
+请设置tushare pro的token凭证码，如果没有请访问https://tushare.pro注册申请
+请设置tushare pro的token凭证码，如果没有请访问https://tushare.pro注册申请
+请设置tushare pro的token凭证码，如果没有请访问https://tushare.pro注册申请
+请设置tushare pro的token凭证码，如果没有请访问https://tushare.pro注册申请
+INFO:     127.0.0.1:55438 - "GET /live/status HTTP/1.1" 200 OK
+tushare is unavailable, falling back to tencent for market a_share
+mootdx is unavailable, falling back to tencent for market a_share
+tushare is unavailable, falling back to tencent for market a_share
+mootdx is unavailable, falling back to tencent for market a_share
+tushare is unavailable, falling back to tencent for market a_share
+mootdx is unavailable, falling back to tencent for market a_share
+tushare is unavailable, falling back to tencent for market a_share
+mootdx is unavailable, falling back to tencent for market a_share
+tushare is unavailable, falling back to tencent for market a_share
+mootdx is unavailable, falling back to tencent for market a_share
+请设置tushare pro的token凭证码，如果没有请访问https://tushare.pro注册申请
+请设置tushare pro的token凭证码，如果没有请访问https://tushare.pro注册申请
+请设置tushare pro的token凭证码，如果没有请访问https://tushare.pro注册申请
+请设置tushare pro的token凭证码，如果没有请访问https://tushare.pro注册申请
+请设置tushare pro的token凭证码，如果没有请访问https://tushare.pro注册申请
+INFO:     127.0.0.1:55458 - "GET /live/status HTTP/1.1" 200 OK
+tushare is unavailable, falling back to tencent for market a_share
+mootdx is unavailable, falling back to tencent for market a_share
+tushare is unavailable, falling back to tencent for market a_share
+mootdx is unavailable, falling back to tencent for market a_share
+tushare is unavailable, falling back to tencent for market a_share
+mootdx is unavailable, falling back to tencent for market a_share
+tushare is unavailable, falling back to tencent for market a_share
+mootdx is unavailable, falling back to tencent for market a_share
+tushare is unavailable, falling back to tencent for market a_share
+mootdx is unavailable, falling back to tencent for market a_share
+请设置tushare pro的token凭证码，如果没有请访问https://tushare.pro注册申请
+请设置tushare pro的token凭证码，如果没有请访问https://tushare.pro注册申请
+请设置tushare pro的token凭证码，如果没有请访问https://tushare.pro注册申请
+请设置tushare pro的token凭证码，如果没有请访问https://tushare.pro注册申请
+请设置tushare pro的token凭证码，如果没有请访问https://tushare.pro注册申请
+INFO:     127.0.0.1:55468 - "GET /live/status HTTP/1.1" 200 OK
+tushare is unavailable, falling back to tencent for market a_share
+mootdx is unavailable, falling back to tencent for market a_share
+tushare is unavailable, falling back to tencent for market a_share
+mootdx is unavailable, falling back to tencent for market a_share
+tushare is unavailable, falling back to tencent for market a_share
+mootdx is unavailable, falling back to tencent for market a_share
+请设置tushare pro的token凭证码，如果没有请访问https://tushare.pro注册申请
+请设置tushare pro的token凭证码，如果没有请访问https://tushare.pro注册申请
+请设置tushare pro的token凭证码，如果没有请访问https://tushare.pro注册申请
+INFO:     127.0.0.1:55479 - "GET /live/status HTTP/1.1" 200 OK
+tushare is unavailable, falling back to tencent for market a_share
+mootdx is unavailable, falling back to tencent for market a_share
+tushare is unavailable, falling back to tencent for market a_share
+mootdx is unavailable, falling back to tencent for market a_share
+tushare is unavailable, falling back to tencent for market a_share
+mootdx is unavailable, falling back to tencent for market a_share
+请设置tushare pro的token凭证码，如果没有请访问https://tushare.pro注册申请
+请设置tushare pro的token凭证码，如果没有请访问https://tushare.pro注册申请
+请设置tushare pro的token凭证码，如果没有请访问https://tushare.pro注册申请
+INFO:     127.0.0.1:55490 - "GET /live/status HTTP/1.1" 200 OK
+tushare is unavailable, falling back to tencent for market a_share
+mootdx is unavailable, falling back to tencent for market a_share
+tushare is unavailable, falling back to tencent for market a_share
+mootdx is unavailable, falling back to tencent for market a_share
+tushare is unavailable, falling back to tencent for market a_share
+mootdx is unavailable, falling back to tencent for market a_share
+tushare is unavailable, falling back to tencent for market a_share
+mootdx is unavailable, falling back to tencent for market a_share
+请设置tushare pro的token凭证码，如果没有请访问https://tushare.pro注册申请
+请设置tushare pro的token凭证码，如果没有请访问https://tushare.pro注册申请
+请设置tushare pro的token凭证码，如果没有请访问https://tushare.pro注册申请
+请设置tushare pro的token凭证码，如果没有请访问https://tushare.pro注册申请
+INFO:     127.0.0.1:55524 - "GET /live/status HTTP/1.1" 200 OK
+tushare is unavailable, falling back to tencent for market a_share
+mootdx is unavailable, falling back to tencent for market a_share
+tushare is unavailable, falling back to tencent for market a_share
+mootdx is unavailable, falling back to tencent for market a_share
+Requested tool 'bash' is unavailable and was dropped from the filtered registry (include_shell_tools=False); a preset that depends on it cannot execute it.
+请设置tushare pro的token凭证码，如果没有请访问https://tushare.pro注册申请
+请设置tushare pro的token凭证码，如果没有请访问https://tushare.pro注册申请
+INFO:     127.0.0.1:55539 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55548 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55662 - "GET /runs/20260802_170818_36_f0b877 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55664 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55676 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55690 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55851 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57303 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58126 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58132 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58143 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58145 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58152 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58176 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58187 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58195 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58208 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58216 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58252 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58264 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58273 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58280 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58296 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58305 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58310 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58331 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58339 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58353 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58362 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58369 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58374 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58377 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58383 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58386 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58392 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58397 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58402 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58407 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58413 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58419 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58424 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58429 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58435 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58437 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58442 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58449 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58451 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58457 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58463 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58470 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58475 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58480 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58533 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58538 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58543 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58549 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58550 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58563 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58565 - "POST /sessions/c27e52371e6c/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58567 - "GET /sessions/c27e52371e6c/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58570 - "GET /sessions/c27e52371e6c/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58572 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58576 - "GET /sessions/c27e52371e6c/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58583 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58585 - "GET /runs/20260802_173114_68_f4f2aa HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58590 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58598 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58606 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58615 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59292 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61223 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61227 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61235 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61239 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61246 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61250 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61257 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61261 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61268 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61274 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61281 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61283 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61289 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61291 - "POST /sessions/c27e52371e6c/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61293 - "GET /sessions/c27e52371e6c/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61296 - "GET /sessions/c27e52371e6c/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61298 - "GET /sessions/c27e52371e6c/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61300 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61307 - "GET /runs/20260802_173613_81_a5f436 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61310 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61314 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61321 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61325 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61334 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61339 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61350 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61363 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61372 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61396 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61404 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61420 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61423 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61431 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61436 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61441 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61443 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61448 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61452 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61457 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61462 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61467 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61474 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61479 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61482 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61487 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61489 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61494 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61496 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61503 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61505 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61510 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61512 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61517 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61519 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61526 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61528 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61534 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61536 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61545 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61548 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61554 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61556 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61564 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61566 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62539 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64171 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64177 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64180 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64187 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64189 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64194 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64196 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64201 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64203 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64208 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64214 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64220 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64224 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64229 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64233 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64238 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64240 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64245 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64249 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64256 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64260 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64275 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64280 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64288 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64290 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64295 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64297 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64303 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64305 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64311 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64313 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64322 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64324 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64329 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64333 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64338 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64340 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64358 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64361 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64366 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64369 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64374 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64376 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64384 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64387 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64392 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64394 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64399 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64401 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64406 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64409 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64414 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64418 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64427 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64431 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64436 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64439 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64444 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64447 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65423 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50661 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50666 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50671 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50683 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50686 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50691 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50693 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50698 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50700 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50705 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50707 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50712 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50714 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50721 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50723 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50728 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50730 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50736 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50740 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50746 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50750 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50765 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50769 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50786 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50792 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50797 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50799 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50807 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50811 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50816 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50822 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50829 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50833 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50838 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50842 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50847 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50849 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50854 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50856 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50861 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50867 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50873 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50875 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50881 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50884 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50889 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50891 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50897 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50899 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50904 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50906 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50911 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50913 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50922 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50924 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50931 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50933 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50939 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50946 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51918 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53540 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53545 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53547 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53555 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53561 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53567 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53572 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53577 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53580 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53585 - "POST /sessions/c27e52371e6c/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53587 - "GET /sessions/c27e52371e6c/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53590 - "GET /sessions/c27e52371e6c/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53592 - "GET /sessions/c27e52371e6c/messages HTTP/1.1" 200 OK
+$TSLA: possibly delisted; no price data found  (1m 2026-08-01 -> 2026-08-03)
+
+1 Failed download:
+['TSLA']: possibly delisted; no price data found  (1m 2026-08-01 -> 2026-08-03)
+$TSLA: possibly delisted; no price data found  (1m 2026-08-01 -> 2026-08-03)
+
+1 Failed download:
+['TSLA']: possibly delisted; no price data found  (1m 2026-08-01 -> 2026-08-03)
+yfinance returned no usable data for TSLA
+stooq supports daily bars only; rejecting interval='1m'
+INFO:     127.0.0.1:53597 - "GET /live/status HTTP/1.1" 200 OK
+tushare is unavailable, falling back to tencent for market a_share
+tencent supports daily bars only; rejecting interval=1m
+tencent supports daily bars only; rejecting interval=1m
+mootdx is unavailable, falling back to tencent for market a_share
+tencent supports daily bars only; rejecting interval=1m
+$TSLA: possibly delisted; no price data found  (1m 2026-08-01 -> 2026-08-03)
+
+1 Failed download:
+['TSLA']: possibly delisted; no price data found  (1m 2026-08-01 -> 2026-08-03)
+$TSLA: possibly delisted; no price data found  (1m 2026-08-01 -> 2026-08-03)
+
+1 Failed download:
+['TSLA']: possibly delisted; no price data found  (1m 2026-08-01 -> 2026-08-03)
+yfinance returned no usable data for TSLA
+stooq supports daily bars only; rejecting interval='1m'
+stooq supports daily bars only; rejecting interval='1m'
+market-data loader 'sina' failed for ['TSLA.US']; trying next source in chain: Unsupported interval '1m'; sina is daily-only
+stooq supports daily bars only; rejecting interval='1m'
+market-data loader 'sina' failed for ['TSLA']; trying next source in chain: Unsupported interval '1m'; sina is daily-only
+stooq supports daily bars only; rejecting interval='1m'
+market-data loader 'sina' failed for ['TSLA.US']; trying next source in chain: Unsupported interval '1m'; sina is daily-only
+请设置tushare pro的token凭证码，如果没有请访问https://tushare.pro注册申请
+INFO:     127.0.0.1:53608 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53616 - "GET /live/status HTTP/1.1" 200 OK
+sina failed for TSLA.US: HTTPSConnectionPool(host='stock.finance.sina.com.cn', port=443): Read timed out. (read timeout=15.0)
+INFO:     127.0.0.1:53624 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53629 - "GET /runs/20260802_182009_94_c71a66 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53631 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53635 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53647 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53656 - "GET /live/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53669 - "GET /live/status HTTP/1.1" 200 OK

@@ -1,0 +1,1077 @@
+Using pip 26.2 from /Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon/.venv-py311/lib/python3.11/site-packages/pip (python 3.11)
+Obtaining file:///Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon
+  Installing build dependencies: started
+  Running command installing build dependencies
+  Using pip 26.2 from /Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon/.venv-py311/lib/python3.11/site-packages/pip (python 3.11)
+  Collecting setuptools>=40.8.0
+    Obtaining dependency information for setuptools>=40.8.0 from https://files.pythonhosted.org/packages/5d/40/e1e72872c6354b306daef1703549e8e83b4d43cfea356311bf722a043752/setuptools-83.0.0-py3-none-any.whl.metadata
+    Using cached setuptools-83.0.0-py3-none-any.whl.metadata (6.6 kB)
+  Using cached setuptools-83.0.0-py3-none-any.whl (1.0 MB)
+  Installing collected packages: setuptools
+  Successfully installed setuptools-83.0.0
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Running command Checking if build backend supports build_editable
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Running command Getting requirements to build editable
+  running egg_info
+  writing agent/vibe_trading_ai.egg-info/PKG-INFO
+  writing dependency_links to agent/vibe_trading_ai.egg-info/dependency_links.txt
+  writing entry points to agent/vibe_trading_ai.egg-info/entry_points.txt
+  writing requirements to agent/vibe_trading_ai.egg-info/requires.txt
+  writing top-level names to agent/vibe_trading_ai.egg-info/top_level.txt
+  reading manifest file 'agent/vibe_trading_ai.egg-info/SOURCES.txt'
+  reading manifest template 'MANIFEST.in'
+  warning: no files found matching '*.yaml' under directory 'agent/src/factors'
+  warning: no previously-included files matching '__pycache__' found anywhere in distribution
+  warning: no previously-included files matching '*.py[cod]' found anywhere in distribution
+  warning: no previously-included files matching '*.so' found anywhere in distribution
+  warning: no previously-included files matching '.DS_Store' found anywhere in distribution
+  warning: no previously-included files matching '.pytest_cache' found anywhere in distribution
+  warning: no previously-included files matching '*.egg-info' found anywhere in distribution
+  adding license file 'LICENSE'
+  adding license file 'NOTICE'
+  writing manifest file 'agent/vibe_trading_ai.egg-info/SOURCES.txt'
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Running command Preparing editable metadata (pyproject.toml)
+  running dist_info
+  creating /Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon/.tmp/pip-modern-metadata-mcu6vkac/vibe_trading_ai.egg-info
+  writing /Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon/.tmp/pip-modern-metadata-mcu6vkac/vibe_trading_ai.egg-info/PKG-INFO
+  writing dependency_links to /Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon/.tmp/pip-modern-metadata-mcu6vkac/vibe_trading_ai.egg-info/dependency_links.txt
+  writing entry points to /Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon/.tmp/pip-modern-metadata-mcu6vkac/vibe_trading_ai.egg-info/entry_points.txt
+  writing requirements to /Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon/.tmp/pip-modern-metadata-mcu6vkac/vibe_trading_ai.egg-info/requires.txt
+  writing top-level names to /Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon/.tmp/pip-modern-metadata-mcu6vkac/vibe_trading_ai.egg-info/top_level.txt
+  writing manifest file '/Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon/.tmp/pip-modern-metadata-mcu6vkac/vibe_trading_ai.egg-info/SOURCES.txt'
+  reading manifest file '/Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon/.tmp/pip-modern-metadata-mcu6vkac/vibe_trading_ai.egg-info/SOURCES.txt'
+  reading manifest template 'MANIFEST.in'
+  warning: no files found matching '*.yaml' under directory 'agent/src/factors'
+  warning: no previously-included files matching '__pycache__' found anywhere in distribution
+  warning: no previously-included files matching '*.py[cod]' found anywhere in distribution
+  warning: no previously-included files matching '*.so' found anywhere in distribution
+  warning: no previously-included files matching '.DS_Store' found anywhere in distribution
+  warning: no previously-included files matching '.pytest_cache' found anywhere in distribution
+  warning: no previously-included files matching '*.egg-info' found anywhere in distribution
+  adding license file 'LICENSE'
+  adding license file 'NOTICE'
+  writing manifest file '/Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon/.tmp/pip-modern-metadata-mcu6vkac/vibe_trading_ai.egg-info/SOURCES.txt'
+  creating '/Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon/.tmp/pip-modern-metadata-mcu6vkac/vibe_trading_ai-0.1.12.dist-info'
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Collecting rich>=13.0.0 (from vibe-trading-ai==0.1.12)
+  Obtaining dependency information for rich>=13.0.0 from https://files.pythonhosted.org/packages/82/3b/64d4899d73f91ba49a8c18a8ff3f0ea8f1c1d75481760df8c68ef5235bf5/rich-15.0.0-py3-none-any.whl.metadata
+  Downloading rich-15.0.0-py3-none-any.whl.metadata (18 kB)
+Collecting pyyaml>=6.0.0 (from vibe-trading-ai==0.1.12)
+  Obtaining dependency information for pyyaml>=6.0.0 from https://files.pythonhosted.org/packages/16/19/13de8e4377ed53079ee996e1ab0a9c33ec2faf808a4647b7b4c0d46dd239/pyyaml-6.0.3-cp311-cp311-macosx_11_0_arm64.whl.metadata
+  Downloading pyyaml-6.0.3-cp311-cp311-macosx_11_0_arm64.whl.metadata (2.4 kB)
+Collecting langchain<2,>=1.3.9 (from vibe-trading-ai==0.1.12)
+  Obtaining dependency information for langchain<2,>=1.3.9 from https://files.pythonhosted.org/packages/a9/ec/0f942e78a621f8e3162ff1ed24284f469aaf51fb4607ee5831c626f2b2bc/langchain-1.3.14-py3-none-any.whl.metadata
+  Downloading langchain-1.3.14-py3-none-any.whl.metadata (6.1 kB)
+Collecting langchain-core<2,>=1.0.0 (from vibe-trading-ai==0.1.12)
+  Obtaining dependency information for langchain-core<2,>=1.0.0 from https://files.pythonhosted.org/packages/36/e6/c7c39efe0bc7e1b7c3d8f54f85846e04c901913c3d3e99068b218558c6f1/langchain_core-1.5.3-py3-none-any.whl.metadata
+  Downloading langchain_core-1.5.3-py3-none-any.whl.metadata (4.7 kB)
+Collecting langchain-openai<2,>=1.0.0 (from vibe-trading-ai==0.1.12)
+  Obtaining dependency information for langchain-openai<2,>=1.0.0 from https://files.pythonhosted.org/packages/fe/1c/8b604dc8be2735c8ae5c655e520066231057d1301958c20c776e62bd00fb/langchain_openai-1.4.1-py3-none-any.whl.metadata
+  Downloading langchain_openai-1.4.1-py3-none-any.whl.metadata (3.4 kB)
+Collecting langgraph<1.3,>=1.2.5 (from vibe-trading-ai==0.1.12)
+  Obtaining dependency information for langgraph<1.3,>=1.2.5 from https://files.pythonhosted.org/packages/e2/4d/3fc3e2535ee2c731130d71371848ebc6d4a9d2e8ae6060b11987ba134951/langgraph-1.2.10-py3-none-any.whl.metadata
+  Downloading langgraph-1.2.10-py3-none-any.whl.metadata (4.9 kB)
+Collecting langgraph-checkpoint<5,>=2.1.0 (from vibe-trading-ai==0.1.12)
+  Obtaining dependency information for langgraph-checkpoint<5,>=2.1.0 from https://files.pythonhosted.org/packages/bd/b4/71425e3e38be92611300b9cc5e46a5bf98ab23f5ea8a75b73d02a2f1413c/langgraph_checkpoint-4.1.1-py3-none-any.whl.metadata
+  Downloading langgraph_checkpoint-4.1.1-py3-none-any.whl.metadata (5.2 kB)
+Collecting python-dotenv>=1.0.0 (from vibe-trading-ai==0.1.12)
+  Obtaining dependency information for python-dotenv>=1.0.0 from https://files.pythonhosted.org/packages/0b/d7/1959b9648791274998a9c3526f6d0ec8fd2233e4d4acce81bbae76b44b2a/python_dotenv-1.2.2-py3-none-any.whl.metadata
+  Downloading python_dotenv-1.2.2-py3-none-any.whl.metadata (27 kB)
+Collecting httpx>=0.28.0 (from vibe-trading-ai==0.1.12)
+  Obtaining dependency information for httpx>=0.28.0 from https://files.pythonhosted.org/packages/2a/39/e50c7c3a983047577ee07d2a9e53faf5a69493943ec3f6a384bdc792deb2/httpx-0.28.1-py3-none-any.whl.metadata
+  Downloading httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+Collecting defusedxml>=0.7.1 (from vibe-trading-ai==0.1.12)
+  Obtaining dependency information for defusedxml>=0.7.1 from https://files.pythonhosted.org/packages/07/6c/aa3f2f849e01cb6a001cd8554a88d4c77c5c1a31c95bdf1cf9301e6d9ef4/defusedxml-0.7.1-py2.py3-none-any.whl.metadata
+  Downloading defusedxml-0.7.1-py2.py3-none-any.whl.metadata (32 kB)
+Collecting oauth-cli-kit>=0.1.3 (from vibe-trading-ai==0.1.12)
+  Obtaining dependency information for oauth-cli-kit>=0.1.3 from https://files.pythonhosted.org/packages/ff/9f/53555ec2543e6ba5f6eeff4331cca43842a2c48983c793c97560500b6764/oauth_cli_kit-0.1.6-py3-none-any.whl.metadata
+  Downloading oauth_cli_kit-0.1.6-py3-none-any.whl.metadata (609 bytes)
+Collecting pandas<3.0.0,>=2.0.0 (from vibe-trading-ai==0.1.12)
+  Obtaining dependency information for pandas<3.0.0,>=2.0.0 from https://files.pythonhosted.org/packages/9b/35/74442388c6cf008882d4d4bdfc4109be87e9b8b7ccd097ad1e7f006e2e95/pandas-2.3.3-cp311-cp311-macosx_11_0_arm64.whl.metadata
+  Downloading pandas-2.3.3-cp311-cp311-macosx_11_0_arm64.whl.metadata (91 kB)
+Collecting openpyxl>=3.1.0 (from vibe-trading-ai==0.1.12)
+  Obtaining dependency information for openpyxl>=3.1.0 from https://files.pythonhosted.org/packages/c0/da/977ded879c29cbd04de313843e76868e6e13408a94ed6b987245dc7c8506/openpyxl-3.1.5-py2.py3-none-any.whl.metadata
+  Downloading openpyxl-3.1.5-py2.py3-none-any.whl.metadata (2.5 kB)
+Collecting python-docx>=1.1.0 (from vibe-trading-ai==0.1.12)
+  Obtaining dependency information for python-docx>=1.1.0 from https://files.pythonhosted.org/packages/d0/00/1e03a4989fa5795da308cd774f05b704ace555a70f9bf9d3be057b680bcf/python_docx-1.2.0-py3-none-any.whl.metadata
+  Downloading python_docx-1.2.0-py3-none-any.whl.metadata (2.0 kB)
+Collecting python-pptx>=0.6.23 (from vibe-trading-ai==0.1.12)
+  Obtaining dependency information for python-pptx>=0.6.23 from https://files.pythonhosted.org/packages/d9/4f/00be2196329ebbff56ce564aa94efb0fbc828d00de250b1980de1a34ab49/python_pptx-1.0.2-py3-none-any.whl.metadata
+  Downloading python_pptx-1.0.2-py3-none-any.whl.metadata (2.5 kB)
+Collecting pypdfium2>=4.0.0 (from vibe-trading-ai==0.1.12)
+  Obtaining dependency information for pypdfium2>=4.0.0 from https://files.pythonhosted.org/packages/e2/a8/d7a61700db3022792b28bce5264be90a7d2e7104998362af6b93766f50b2/pypdfium2-5.12.1-py3-none-macosx_13_0_arm64.whl.metadata
+  Downloading pypdfium2-5.12.1-py3-none-macosx_13_0_arm64.whl.metadata (69 kB)
+Collecting Pillow>=12.2.0 (from vibe-trading-ai==0.1.12)
+  Obtaining dependency information for Pillow>=12.2.0 from https://files.pythonhosted.org/packages/b2/5b/a02d30018abd97ced9f5a6c63d28597694a00d066516b9c1c6de45859fc9/pillow-12.3.0-cp311-cp311-macosx_11_0_arm64.whl.metadata
+  Downloading pillow-12.3.0-cp311-cp311-macosx_11_0_arm64.whl.metadata (9.1 kB)
+  Link requires a different Python (3.11.15 not in: '>=3.7,<3.11'): https://files.pythonhosted.org/packages/3a/be/650f9c091ef71cb01d735775d554e068752d3ff63d7943b26316dc401749/numpy-1.21.2.zip (from https://pypi.org/simple/numpy/) (requires-python:>=3.7,<3.11)
+  Link requires a different Python (3.11.15 not in: '>=3.7,<3.11'): https://files.pythonhosted.org/packages/5f/d6/ad58ded26556eaeaa8c971e08b6466f17c4ac4d786cd3d800e26ce59cc01/numpy-1.21.3.zip (from https://pypi.org/simple/numpy/) (requires-python:>=3.7,<3.11)
+  Link requires a different Python (3.11.15 not in: '>=3.7,<3.11'): https://files.pythonhosted.org/packages/fb/48/b0708ebd7718a8933f0d3937513ef8ef2f4f04529f1f66ca86d873043921/numpy-1.21.4.zip (from https://pypi.org/simple/numpy/) (requires-python:>=3.7,<3.11)
+  Link requires a different Python (3.11.15 not in: '>=3.7,<3.11'): https://files.pythonhosted.org/packages/c2/a8/a924a09492bdfee8c2ec3094d0a13f2799800b4fdc9c890738aeeb12c72e/numpy-1.21.5.zip (from https://pypi.org/simple/numpy/) (requires-python:>=3.7,<3.11)
+  Link requires a different Python (3.11.15 not in: '>=3.7,<3.11'): https://files.pythonhosted.org/packages/45/b7/de7b8e67f2232c26af57c205aaad29fe17754f793404f59c8a730c7a191a/numpy-1.21.6.zip (from https://pypi.org/simple/numpy/) (requires-python:>=3.7,<3.11)
+  Link requires a different Python (3.11.15 not in: '>=3.12'): https://files.pythonhosted.org/packages/d3/e1/f2fe8f6113a657a1da83b358b16755e528a602c6976a43724a88f42b482a/numpy-2.5.0rc1.tar.gz (from https://pypi.org/simple/numpy/) (requires-python:>=3.12)
+  Link requires a different Python (3.11.15 not in: '>=3.12'): https://files.pythonhosted.org/packages/e7/05/3d27272d30698dc0ecb7fdfaa41ad70303b444f81722bb99bce1d818638a/numpy-2.5.0.tar.gz (from https://pypi.org/simple/numpy/) (requires-python:>=3.12)
+  Link requires a different Python (3.11.15 not in: '>=3.12'): https://files.pythonhosted.org/packages/22/fd/89965aa4ac08c74998539fcbf24fa3540f3e15237fbeb6bcf9c908f4aade/numpy-2.5.1.tar.gz (from https://pypi.org/simple/numpy/) (requires-python:>=3.12)
+Collecting numpy>=1.24.0 (from vibe-trading-ai==0.1.12)
+  Obtaining dependency information for numpy>=1.24.0 from https://files.pythonhosted.org/packages/ad/40/40a40ee0ddf7ceb782c49af278894b686e586d65d8c1889c8b5da01a3d7d/numpy-2.4.6-cp311-cp311-macosx_14_0_arm64.whl.metadata
+  Downloading numpy-2.4.6-cp311-cp311-macosx_14_0_arm64.whl.metadata (6.6 kB)
+  Link requires a different Python (3.11.15 not in: '>=3.7,<3.10'): https://files.pythonhosted.org/packages/99/f1/c00d6be56e1a718a3068079e3ec8ce044d7179345280f6a3f5066068af0d/scipy-1.6.2.tar.gz (from https://pypi.org/simple/scipy/) (requires-python:>=3.7,<3.10)
+  Link requires a different Python (3.11.15 not in: '>=3.7,<3.10'): https://files.pythonhosted.org/packages/fe/fd/8704c7b7b34cdac850485e638346025ca57c5a859934b9aa1be5399b33b7/scipy-1.6.3.tar.gz (from https://pypi.org/simple/scipy/) (requires-python:>=3.7,<3.10)
+  Link requires a different Python (3.11.15 not in: '>=3.7,<3.10'): https://files.pythonhosted.org/packages/bb/bb/944f559d554df6c9adf037aa9fc982a9706ee0e96c0d5beac701cb158900/scipy-1.7.0.tar.gz (from https://pypi.org/simple/scipy/) (requires-python:>=3.7,<3.10)
+  Link requires a different Python (3.11.15 not in: '>=3.7,<3.10'): https://files.pythonhosted.org/packages/47/33/a24aec22b7be7fdb10ec117a95e1e4099890d8bbc6646902f443fc7719d1/scipy-1.7.1.tar.gz (from https://pypi.org/simple/scipy/) (requires-python:>=3.7,<3.10)
+  Link requires a different Python (3.11.15 not in: '>=3.7,<3.11'): https://files.pythonhosted.org/packages/0e/23/58c4f995475a2a97cb5f4a032aedaf881ad87cd976a7180c55118d105a1d/scipy-1.7.2.tar.gz (from https://pypi.org/simple/scipy/) (requires-python:>=3.7,<3.11)
+  Link requires a different Python (3.11.15 not in: '>=3.7,<3.11'): https://files.pythonhosted.org/packages/61/67/1a654b96309c991762ee9bc39c363fc618076b155fe52d295211cf2536c7/scipy-1.7.3.tar.gz (from https://pypi.org/simple/scipy/) (requires-python:>=3.7,<3.11)
+  Link requires a different Python (3.11.15 not in: '>=3.8,<3.11'): https://files.pythonhosted.org/packages/c0/ad/e3c052ed4e0027a8abef0a5e8441a044427d252d17d9aee06d56e62fc698/scipy-1.8.0rc1.tar.gz (from https://pypi.org/simple/scipy/) (requires-python:>=3.8,<3.11)
+  Link requires a different Python (3.11.15 not in: '>=3.8,<3.11'): https://files.pythonhosted.org/packages/29/d2/151a54944b333e465f98804dced31dab1284f3c37b752b9cefa710b64681/scipy-1.8.0rc2.tar.gz (from https://pypi.org/simple/scipy/) (requires-python:>=3.8,<3.11)
+  Link requires a different Python (3.11.15 not in: '>=3.8,<3.11'): https://files.pythonhosted.org/packages/e4/26/83dd1c6378513a6241d984bda9f08c512b6e35fff13fba3acc1b3c195f02/scipy-1.8.0rc3.tar.gz (from https://pypi.org/simple/scipy/) (requires-python:>=3.8,<3.11)
+  Link requires a different Python (3.11.15 not in: '>=3.8,<3.11'): https://files.pythonhosted.org/packages/22/78/056cc43e7737811b6f50886788a940f852773dd9804f5365952805db9648/scipy-1.8.0rc4.tar.gz (from https://pypi.org/simple/scipy/) (requires-python:>=3.8,<3.11)
+  Link requires a different Python (3.11.15 not in: '>=3.8,<3.11'): https://files.pythonhosted.org/packages/b4/a2/4faa34bf0cdbefd5c706625f1234987795f368eb4e97bde9d6f46860843e/scipy-1.8.0.tar.gz (from https://pypi.org/simple/scipy/) (requires-python:>=3.8,<3.11)
+  Link requires a different Python (3.11.15 not in: '>=3.8,<3.11'): https://files.pythonhosted.org/packages/26/b5/9330f004b9a3b2b6a31f59f46f1617ce9ca15c0e7fe64288c20385a05c9d/scipy-1.8.1.tar.gz (from https://pypi.org/simple/scipy/) (requires-python:>=3.8,<3.11)
+  Link requires a different Python (3.11.15 not in: '>=3.12'): https://files.pythonhosted.org/packages/1c/b9/101efd4a4302db579178ebb664ca6922d547646352f831bd39cbb7d0294b/scipy-1.18.0rc1.tar.gz (from https://pypi.org/simple/scipy/) (requires-python:>=3.12)
+  Link requires a different Python (3.11.15 not in: '>=3.12'): https://files.pythonhosted.org/packages/5f/b2/c9caa00aef1369da8e7aeae2d372fd72b5702cf0a0ce04dd67beb318b967/scipy-1.18.0rc2.tar.gz (from https://pypi.org/simple/scipy/) (requires-python:>=3.12)
+  Link requires a different Python (3.11.15 not in: '>=3.12'): https://files.pythonhosted.org/packages/a7/25/c2700dfaf6442b4effaa91af24ebce5dc9d31bb4a69706313aae70d72cd0/scipy-1.18.0.tar.gz (from https://pypi.org/simple/scipy/) (requires-python:>=3.12)
+Collecting scipy>=1.10.0 (from vibe-trading-ai==0.1.12)
+  Obtaining dependency information for scipy>=1.10.0 from https://files.pythonhosted.org/packages/6d/ee/18146b7757ed4976276b9c9819108adbc73c5aad636e5353e20746b73069/scipy-1.17.1-cp311-cp311-macosx_14_0_arm64.whl.metadata
+  Downloading scipy-1.17.1-cp311-cp311-macosx_14_0_arm64.whl.metadata (62 kB)
+Collecting bottleneck>=1.3.7 (from vibe-trading-ai==0.1.12)
+  Obtaining dependency information for bottleneck>=1.3.7 from https://files.pythonhosted.org/packages/83/96/9d51012d729f97de1e75aad986f3ba50956742a40fc99cbab4c2aa896c1c/bottleneck-1.6.0-cp311-cp311-macosx_11_0_arm64.whl.metadata
+  Downloading bottleneck-1.6.0-cp311-cp311-macosx_11_0_arm64.whl.metadata (8.2 kB)
+Collecting duckdb>=1.2.0 (from vibe-trading-ai==0.1.12)
+  Obtaining dependency information for duckdb>=1.2.0 from https://files.pythonhosted.org/packages/46/59/a8e3384ee916e00d5dcf985194c1511d61978540778a1e96fa47f9fb3e0d/duckdb-1.5.5-cp311-cp311-macosx_11_0_arm64.whl.metadata
+  Downloading duckdb-1.5.5-cp311-cp311-macosx_11_0_arm64.whl.metadata (4.2 kB)
+Collecting scikit-learn>=1.3.0 (from vibe-trading-ai==0.1.12)
+  Obtaining dependency information for scikit-learn>=1.3.0 from https://files.pythonhosted.org/packages/42/e2/ff880f62677a17d035817d543cb0fc8727d01eccbee81c5f7fc733a9d856/scikit_learn-1.9.0-cp311-cp311-macosx_12_0_arm64.whl.metadata
+  Downloading scikit_learn-1.9.0-cp311-cp311-macosx_12_0_arm64.whl.metadata (11 kB)
+Collecting joblib>=1.3.0 (from vibe-trading-ai==0.1.12)
+  Obtaining dependency information for joblib>=1.3.0 from https://files.pythonhosted.org/packages/7b/91/984aca2ec129e2757d1e4e3c81c3fcda9d0f85b74670a094cc443d9ee949/joblib-1.5.3-py3-none-any.whl.metadata
+  Downloading joblib-1.5.3-py3-none-any.whl.metadata (5.5 kB)
+Collecting smartmoneyconcepts>=0.0.27 (from vibe-trading-ai==0.1.12)
+  Obtaining dependency information for smartmoneyconcepts>=0.0.27 from https://files.pythonhosted.org/packages/0f/58/557cfca89e901d13f1d3c7a27e1a6ef6fedac5ac188301049f06f28c8897/smartmoneyconcepts-0.0.27-py3-none-any.whl.metadata
+  Downloading smartmoneyconcepts-0.0.27-py3-none-any.whl.metadata (8.9 kB)
+Collecting tushare>=1.2.89 (from vibe-trading-ai==0.1.12)
+  Obtaining dependency information for tushare>=1.2.89 from https://files.pythonhosted.org/packages/33/3e/d426a56e5feac9b0aaada1c6b0745ed03422d4a713295e0bbb44c8ea86fe/tushare-1.4.29-py3-none-any.whl.metadata
+  Downloading tushare-1.4.29-py3-none-any.whl.metadata (3.5 kB)
+Collecting requests>=2.31.0 (from vibe-trading-ai==0.1.12)
+  Obtaining dependency information for requests>=2.31.0 from https://files.pythonhosted.org/packages/a0/f4/c67b0b3f1b9245e8d266f0f112c500d50e5b4e83cb6f3b71b6528104182a/requests-2.34.2-py3-none-any.whl.metadata
+  Downloading requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+Collecting yfinance>=0.2.30 (from vibe-trading-ai==0.1.12)
+  Obtaining dependency information for yfinance>=0.2.30 from https://files.pythonhosted.org/packages/d6/77/9549bf914e0de5b5ca15086cd3f31bf35d5a1e6bfb793196eb9c4c41baff/yfinance-1.5.2-py2.py3-none-any.whl.metadata
+  Downloading yfinance-1.5.2-py2.py3-none-any.whl.metadata (6.2 kB)
+Collecting akshare>=1.12.0 (from vibe-trading-ai==0.1.12)
+  Obtaining dependency information for akshare>=1.12.0 from https://files.pythonhosted.org/packages/8f/b3/bbb2b8e4d03f73cc75b4428602cf83ecd9f531b50774fe0ee60cae498e8f/akshare-1.18.81-py3-none-any.whl.metadata
+  Downloading akshare-1.18.81-py3-none-any.whl.metadata (13 kB)
+Collecting ccxt>=4.0.0 (from vibe-trading-ai==0.1.12)
+  Obtaining dependency information for ccxt>=4.0.0 from https://files.pythonhosted.org/packages/4f/f6/355bf606c05e537d43fec8ea9c9a53d39a8afdaba644d04f05e3f0aa9bb9/ccxt-4.5.70-py3-none-any.whl.metadata
+  Downloading ccxt-4.5.70-py3-none-any.whl.metadata (156 kB)
+Collecting fastapi>=0.104.0 (from vibe-trading-ai==0.1.12)
+  Obtaining dependency information for fastapi>=0.104.0 from https://files.pythonhosted.org/packages/cb/03/10388a42375ee7e4ac9b94eb2c5c569c8b5795e377e701c9ac3ad63de890/fastapi-0.141.1-py3-none-any.whl.metadata
+  Downloading fastapi-0.141.1-py3-none-any.whl.metadata (27 kB)
+Collecting uvicorn>=0.24.0 (from uvicorn[standard]>=0.24.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for uvicorn>=0.24.0 from https://files.pythonhosted.org/packages/39/e6/b5c0630ace9757232aec07112be8146b812787db52141ff9d50674aa7634/uvicorn-0.52.0-py3-none-any.whl.metadata
+  Downloading uvicorn-0.52.0-py3-none-any.whl.metadata (6.6 kB)
+Collecting websockets>=12.0 (from vibe-trading-ai==0.1.12)
+  Obtaining dependency information for websockets>=12.0 from https://files.pythonhosted.org/packages/7f/75/b98ec2482ac7f82c6a098d0350ed6d206032944230d8a18284c700fb2455/websockets-17.0-cp311-cp311-macosx_11_0_arm64.whl.metadata
+  Downloading websockets-17.0-cp311-cp311-macosx_11_0_arm64.whl.metadata (6.3 kB)
+Collecting pydantic>=2.0.0 (from vibe-trading-ai==0.1.12)
+  Obtaining dependency information for pydantic>=2.0.0 from https://files.pythonhosted.org/packages/fd/7b/122376b1fd3c62c1ed9dc80c931ace4844b3c55407b6fb2d199377c9736f/pydantic-2.13.4-py3-none-any.whl.metadata
+  Downloading pydantic-2.13.4-py3-none-any.whl.metadata (109 kB)
+Collecting python-multipart>=0.0.18 (from vibe-trading-ai==0.1.12)
+  Obtaining dependency information for python-multipart>=0.0.18 from https://files.pythonhosted.org/packages/e1/04/e8135ebd1ad02c56ec633277529b2602ff99ff634be76cdba5744cf554fd/python_multipart-0.0.32-py3-none-any.whl.metadata
+  Downloading python_multipart-0.0.32-py3-none-any.whl.metadata (2.1 kB)
+Collecting sse-starlette>=1.6.0 (from vibe-trading-ai==0.1.12)
+  Obtaining dependency information for sse-starlette>=1.6.0 from https://files.pythonhosted.org/packages/49/36/e10c1d1b7ca881d2625db2ec28508578499187bb1c389952c398474e1834/sse_starlette-3.4.6-py3-none-any.whl.metadata
+  Downloading sse_starlette-3.4.6-py3-none-any.whl.metadata (15 kB)
+Collecting fastmcp>=2.14.0 (from vibe-trading-ai==0.1.12)
+  Obtaining dependency information for fastmcp>=2.14.0 from https://files.pythonhosted.org/packages/c6/4f/73450a436c963c0382d15a882fc5d08f15aadc329194df1b54495a7c8383/fastmcp-3.4.5-py3-none-any.whl.metadata
+  Downloading fastmcp-3.4.5-py3-none-any.whl.metadata (8.5 kB)
+Collecting ddgs>=6.0.0 (from vibe-trading-ai==0.1.12)
+  Obtaining dependency information for ddgs>=6.0.0 from https://files.pythonhosted.org/packages/e8/5f/32de4d99220eb559b7b1cd1c529a1856efa8097f7a3e10b6c207aa95e36c/ddgs-9.14.4-py3-none-any.whl.metadata
+  Downloading ddgs-9.14.4-py3-none-any.whl.metadata (20 kB)
+Collecting jinja2>=3.1.0 (from vibe-trading-ai==0.1.12)
+  Obtaining dependency information for jinja2>=3.1.0 from https://files.pythonhosted.org/packages/62/a1/3d680cbfd5f4b8f15abc1d571870c5fc3e594bb582bc3b64ea099db13e56/jinja2-3.1.6-py3-none-any.whl.metadata
+  Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Collecting matplotlib>=3.7.0 (from vibe-trading-ai==0.1.12)
+  Obtaining dependency information for matplotlib>=3.7.0 from https://files.pythonhosted.org/packages/35/74/82bbdf683a301f4478384c8aaba6903631a2ca18294b2d7655c9a542bffb/matplotlib-3.11.1-cp311-cp311-macosx_11_0_arm64.whl.metadata
+  Downloading matplotlib-3.11.1-cp311-cp311-macosx_11_0_arm64.whl.metadata (80 kB)
+Collecting weasyprint>=60.0 (from vibe-trading-ai==0.1.12)
+  Obtaining dependency information for weasyprint>=60.0 from https://files.pythonhosted.org/packages/93/cb/208525c6bd5033d7b2589b55e07bec23d9c61bb00703cbaf20ef52c3811f/weasyprint-69.0-py3-none-any.whl.metadata
+  Downloading weasyprint-69.0-py3-none-any.whl.metadata (3.8 kB)
+Collecting prompt_toolkit>=3.0.0 (from vibe-trading-ai==0.1.12)
+  Obtaining dependency information for prompt_toolkit>=3.0.0 from https://files.pythonhosted.org/packages/54/6f/84908cad2d6aa5144abcf7b42709fe4fdb459bc640ec7ac5786e7693dabc/prompt_toolkit-3.0.53-py3-none-any.whl.metadata
+  Downloading prompt_toolkit-3.0.53-py3-none-any.whl.metadata (6.4 kB)
+Collecting black<27,>=24.0 (from vibe-trading-ai==0.1.12)
+  Obtaining dependency information for black<27,>=24.0 from https://files.pythonhosted.org/packages/83/ea/5ad117b9ee3ecd933c712bcbae610006e5b7cc9f41c526cd7ed3b6c4124c/black-26.5.1-cp311-cp311-macosx_11_0_arm64.whl.metadata
+  Downloading black-26.5.1-cp311-cp311-macosx_11_0_arm64.whl.metadata (95 kB)
+Collecting pytest>=7.0 (from vibe-trading-ai==0.1.12)
+  Obtaining dependency information for pytest>=7.0 from https://files.pythonhosted.org/packages/24/25/1de2678b631f5a49215c6c96fff41ba892b0a34df68d6d80292b1b48aa7f/pytest-9.1.1-py3-none-any.whl.metadata
+  Downloading pytest-9.1.1-py3-none-any.whl.metadata (7.6 kB)
+Collecting pytest-cov>=4.0 (from vibe-trading-ai==0.1.12)
+  Obtaining dependency information for pytest-cov>=4.0 from https://files.pythonhosted.org/packages/9d/7a/d968e294073affff457b041c2be9868a40c1c71f4a35fcc1e45e5493067b/pytest_cov-7.1.0-py3-none-any.whl.metadata
+  Downloading pytest_cov-7.1.0-py3-none-any.whl.metadata (32 kB)
+Collecting pytest-socket>=0.7.0 (from vibe-trading-ai==0.1.12)
+  Obtaining dependency information for pytest-socket>=0.7.0 from https://files.pythonhosted.org/packages/3f/e8/4a8568580bae3dcd678599ed8e86a82d505a44df71c1ced4246c1aa14b4b/pytest_socket-0.8.0-py3-none-any.whl.metadata
+  Downloading pytest_socket-0.8.0-py3-none-any.whl.metadata (6.9 kB)
+Collecting ruff<1,>=0.9 (from vibe-trading-ai==0.1.12)
+  Obtaining dependency information for ruff<1,>=0.9 from https://files.pythonhosted.org/packages/83/63/f40acfb6b35b88623e71684942b552c3edd96035f5d98f313815f7b277de/ruff-0.16.1-py3-none-macosx_11_0_arm64.whl.metadata
+  Downloading ruff-0.16.1-py3-none-macosx_11_0_arm64.whl.metadata (26 kB)
+Collecting click>=8.0.0 (from black<27,>=24.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for click>=8.0.0 from https://files.pythonhosted.org/packages/fb/e2/79c688af8b210d232694e31e59da9f6ec747bae31c3f5946e4e9b98860d5/click-8.4.2-py3-none-any.whl.metadata
+  Downloading click-8.4.2-py3-none-any.whl.metadata (2.6 kB)
+Collecting mypy-extensions>=0.4.3 (from black<27,>=24.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for mypy-extensions>=0.4.3 from https://files.pythonhosted.org/packages/79/7b/2c79738432f5c924bef5071f933bcc9efd0473bac3b4aa584a6f7c1c8df8/mypy_extensions-1.1.0-py3-none-any.whl.metadata
+  Downloading mypy_extensions-1.1.0-py3-none-any.whl.metadata (1.1 kB)
+Requirement already satisfied: packaging>=22.0 in ./.venv-py311/lib/python3.11/site-packages (from black<27,>=24.0->vibe-trading-ai==0.1.12) (26.2)
+Collecting pathspec>=1.0.0 (from black<27,>=24.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for pathspec>=1.0.0 from https://files.pythonhosted.org/packages/f1/d9/7fb5aa316bc299258e68c73ba3bddbc499654a07f151cba08f6153988714/pathspec-1.1.1-py3-none-any.whl.metadata
+  Downloading pathspec-1.1.1-py3-none-any.whl.metadata (14 kB)
+Collecting platformdirs>=2 (from black<27,>=24.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for platformdirs>=2 from https://files.pythonhosted.org/packages/7d/68/d8d58938dfb1370b266a1a729e6d77a985be23689a0496498ee17b2cbf90/platformdirs-4.11.0-py3-none-any.whl.metadata
+  Downloading platformdirs-4.11.0-py3-none-any.whl.metadata (5.5 kB)
+Collecting pytokens~=0.4.0 (from black<27,>=24.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for pytokens~=0.4.0 from https://files.pythonhosted.org/packages/3d/92/790ebe03f07b57e53b10884c329b9a1a308648fc083a6d4a39a10a28c8fc/pytokens-0.4.1-cp311-cp311-macosx_11_0_arm64.whl.metadata
+  Downloading pytokens-0.4.1-cp311-cp311-macosx_11_0_arm64.whl.metadata (3.8 kB)
+Collecting jsonpatch<2.0.0,>=1.33.0 (from langchain-core<2,>=1.0.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for jsonpatch<2.0.0,>=1.33.0 from https://files.pythonhosted.org/packages/73/07/02e16ed01e04a374e644b575638ec7987ae846d25ad97bcc9945a3ee4b0e/jsonpatch-1.33-py2.py3-none-any.whl.metadata
+  Downloading jsonpatch-1.33-py2.py3-none-any.whl.metadata (3.0 kB)
+Collecting langchain-protocol>=0.0.17 (from langchain-core<2,>=1.0.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for langchain-protocol>=0.0.17 from https://files.pythonhosted.org/packages/99/2e/d82db9eec13ad0f72e7aaad5c4bc730ab111934fdc83c85523206eb9b0a0/langchain_protocol-0.0.18-py3-none-any.whl.metadata
+  Downloading langchain_protocol-0.0.18-py3-none-any.whl.metadata (2.4 kB)
+Collecting langsmith<1.0.0,>=0.3.45 (from langchain-core<2,>=1.0.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for langsmith<1.0.0,>=0.3.45 from https://files.pythonhosted.org/packages/3e/a2/c424ce27a774fc9f529c30abd768b1e7b91b7c05ebb8fa546a357ab994c9/langsmith-0.10.13-py3-none-any.whl.metadata
+  Downloading langsmith-0.10.13-py3-none-any.whl.metadata (22 kB)
+Collecting tenacity!=8.4.0,<10.0.0,>=8.1.0 (from langchain-core<2,>=1.0.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for tenacity!=8.4.0,<10.0.0,>=8.1.0 from https://files.pythonhosted.org/packages/d7/c1/eb8f9debc45d3b7918a32ab756658a0904732f75e555402972246b0b8e71/tenacity-9.1.4-py3-none-any.whl.metadata
+  Downloading tenacity-9.1.4-py3-none-any.whl.metadata (1.2 kB)
+Collecting typing-extensions<5.0.0,>=4.7.0 (from langchain-core<2,>=1.0.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for typing-extensions<5.0.0,>=4.7.0 from https://files.pythonhosted.org/packages/49/d3/b8441a820a491ddfc024b0b0cf0393375b75ea13866d9c66727e54c2fc80/typing_extensions-4.16.0-py3-none-any.whl.metadata
+  Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting uuid-utils<1.0,>=0.12.0 (from langchain-core<2,>=1.0.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for uuid-utils<1.0,>=0.12.0 from https://files.pythonhosted.org/packages/d7/b2/8f03b61f0aa4afc687855c4f00db35f4d3e58c480cd885abc46f6e41308f/uuid_utils-0.17.0-cp311-cp311-macosx_10_12_x86_64.macosx_11_0_arm64.macosx_10_12_universal2.whl.metadata
+  Downloading uuid_utils-0.17.0-cp311-cp311-macosx_10_12_x86_64.macosx_11_0_arm64.macosx_10_12_universal2.whl.metadata (6.4 kB)
+Collecting jsonpointer>=1.9 (from jsonpatch<2.0.0,>=1.33.0->langchain-core<2,>=1.0.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for jsonpointer>=1.9 from https://files.pythonhosted.org/packages/9e/6a/a83720e953b1682d2d109d3c2dbb0bc9bf28cc1cbc205be4ef4be5da709d/jsonpointer-3.1.1-py3-none-any.whl.metadata
+  Downloading jsonpointer-3.1.1-py3-none-any.whl.metadata (2.4 kB)
+Collecting openai<3.0.0,>=2.45.0 (from langchain-openai<2,>=1.0.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for openai<3.0.0,>=2.45.0 from https://files.pythonhosted.org/packages/57/6f/c49e21245ad4865e886f6885e95e998bc024335b392c202bd571639e9d50/openai-2.51.0-py3-none-any.whl.metadata
+  Downloading openai-2.51.0-py3-none-any.whl.metadata (36 kB)
+Collecting tiktoken<1.0.0,>=0.7.0 (from langchain-openai<2,>=1.0.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for tiktoken<1.0.0,>=0.7.0 from https://files.pythonhosted.org/packages/75/91/10b9c7076bc02c246c853201fdbbe300a4b8c5ed7b84c25f7403f4e32655/tiktoken-0.13.0-cp311-cp311-macosx_11_0_arm64.whl.metadata
+  Downloading tiktoken-0.13.0-cp311-cp311-macosx_11_0_arm64.whl.metadata (6.7 kB)
+Collecting langgraph-prebuilt<1.2.0,>=1.1.0 (from langgraph<1.3,>=1.2.5->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for langgraph-prebuilt<1.2.0,>=1.1.0 from https://files.pythonhosted.org/packages/e9/43/3fe1a700b8490ed02679cdbbc8c915eb23a092faf496c9c1118abcd10be3/langgraph_prebuilt-1.1.0-py3-none-any.whl.metadata
+  Downloading langgraph_prebuilt-1.1.0-py3-none-any.whl.metadata (5.2 kB)
+Collecting langgraph-sdk<0.5.0,>=0.4.2 (from langgraph<1.3,>=1.2.5->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for langgraph-sdk<0.5.0,>=0.4.2 from https://files.pythonhosted.org/packages/a0/05/aac507337cceae773c2cc9ab91eb6301963af7aeeb55b4217a00e15aff17/langgraph_sdk-0.4.2-py3-none-any.whl.metadata
+  Downloading langgraph_sdk-0.4.2-py3-none-any.whl.metadata (3.6 kB)
+Collecting xxhash>=3.5.0 (from langgraph<1.3,>=1.2.5->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for xxhash>=3.5.0 from https://files.pythonhosted.org/packages/80/59/0df1133958b2228929355e022aab1e958c7b2c43e27bf7f59bc9edfa8a54/xxhash-3.8.1-cp311-cp311-macosx_11_0_arm64.whl.metadata
+  Downloading xxhash-3.8.1-cp311-cp311-macosx_11_0_arm64.whl.metadata (15 kB)
+Collecting ormsgpack>=1.12.0 (from langgraph-checkpoint<5,>=2.1.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for ormsgpack>=1.12.0 from https://files.pythonhosted.org/packages/4b/08/8b68f24b18e69d92238aa8f258218e6dfeacf4381d9d07ab8df303f524a9/ormsgpack-1.12.2-cp311-cp311-macosx_10_12_x86_64.macosx_11_0_arm64.macosx_10_12_universal2.whl.metadata
+  Downloading ormsgpack-1.12.2-cp311-cp311-macosx_10_12_x86_64.macosx_11_0_arm64.macosx_10_12_universal2.whl.metadata (3.2 kB)
+Collecting orjson>=3.11.5 (from langgraph-sdk<0.5.0,>=0.4.2->langgraph<1.3,>=1.2.5->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for orjson>=3.11.5 from https://files.pythonhosted.org/packages/16/fa/9d54b07cb3f3b0bfd57841478e42d7a0ece4a9f49f9907eecf5a45461687/orjson-3.11.9-cp311-cp311-macosx_15_0_arm64.whl.metadata
+  Downloading orjson-3.11.9-cp311-cp311-macosx_15_0_arm64.whl.metadata (41 kB)
+Collecting websockets>=12.0 (from vibe-trading-ai==0.1.12)
+  Obtaining dependency information for websockets>=12.0 from https://files.pythonhosted.org/packages/86/f2/10b55821dd40eb696ce4704a87d57774696f9451108cff0d2824c97e0f97/websockets-15.0.1-cp311-cp311-macosx_11_0_arm64.whl.metadata
+  Downloading websockets-15.0.1-cp311-cp311-macosx_11_0_arm64.whl.metadata (6.8 kB)
+Collecting anyio>=3.5.0 (from langsmith<1.0.0,>=0.3.45->langchain-core<2,>=1.0.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for anyio>=3.5.0 from https://files.pythonhosted.org/packages/da/35/f2287558c17e29fafc8ef3daf819bb9834061cfa43bff8014f7df7f63bdc/anyio-4.14.2-py3-none-any.whl.metadata
+  Downloading anyio-4.14.2-py3-none-any.whl.metadata (4.6 kB)
+Collecting distro>=1.7.0 (from langsmith<1.0.0,>=0.3.45->langchain-core<2,>=1.0.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for distro>=1.7.0 from https://files.pythonhosted.org/packages/12/b3/231ffd4ab1fc9d679809f356cebee130ac7daa00d6d6f3206dd4fd137e9e/distro-1.9.0-py3-none-any.whl.metadata
+  Downloading distro-1.9.0-py3-none-any.whl.metadata (6.8 kB)
+Collecting requests-toolbelt>=1.0.0 (from langsmith<1.0.0,>=0.3.45->langchain-core<2,>=1.0.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for requests-toolbelt>=1.0.0 from https://files.pythonhosted.org/packages/3f/51/d4db610ef29373b879047326cbf6fa98b6c1969d6f6dc423279de2b1be2c/requests_toolbelt-1.0.0-py2.py3-none-any.whl.metadata
+  Downloading requests_toolbelt-1.0.0-py2.py3-none-any.whl.metadata (14 kB)
+Collecting sniffio>=1.1 (from langsmith<1.0.0,>=0.3.45->langchain-core<2,>=1.0.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for sniffio>=1.1 from https://files.pythonhosted.org/packages/e9/44/75a9c9421471a6c4805dbf2356f7c181a29c1879239abab1ea2cc8f38b40/sniffio-1.3.1-py3-none-any.whl.metadata
+  Downloading sniffio-1.3.1-py3-none-any.whl.metadata (3.9 kB)
+Collecting zstandard>=0.23.0 (from langsmith<1.0.0,>=0.3.45->langchain-core<2,>=1.0.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for zstandard>=0.23.0 from https://files.pythonhosted.org/packages/ac/4d/e66465c5411a7cf4866aeadc7d108081d8ceba9bc7abe6b14aa21c671ec3/zstandard-0.25.0-cp311-cp311-macosx_11_0_arm64.whl.metadata
+  Downloading zstandard-0.25.0-cp311-cp311-macosx_11_0_arm64.whl.metadata (3.3 kB)
+Collecting certifi (from httpx>=0.28.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for certifi from https://files.pythonhosted.org/packages/0b/a7/71ac2cff56fec219ed242bb11b8efb69fcc4bec75db06fb7bfe35de520e6/certifi-2026.7.22-py3-none-any.whl.metadata
+  Downloading certifi-2026.7.22-py3-none-any.whl.metadata (2.5 kB)
+Collecting httpcore==1.* (from httpx>=0.28.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for httpcore==1.* from https://files.pythonhosted.org/packages/7e/f5/f66802a942d491edb555dd61e3a9961140fd64c90bce1eafd741609d334d/httpcore-1.0.9-py3-none-any.whl.metadata
+  Downloading httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+Collecting idna (from httpx>=0.28.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for idna from https://files.pythonhosted.org/packages/1e/5e/d4e9f1a599fb8e573b7b87160658329fbf28d19eac2718f51fc3def3aa5a/idna-3.18-py3-none-any.whl.metadata
+  Downloading idna-3.18-py3-none-any.whl.metadata (6.1 kB)
+Collecting h11>=0.16 (from httpcore==1.*->httpx>=0.28.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for h11>=0.16 from https://files.pythonhosted.org/packages/04/4b/29cac41a4d98d144bf5f6d33995617b185d14b22401f75ca86f384e87ff1/h11-0.16.0-py3-none-any.whl.metadata
+  Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+Collecting jiter<1,>=0.10.0 (from openai<3.0.0,>=2.45.0->langchain-openai<2,>=1.0.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for jiter<1,>=0.10.0 from https://files.pythonhosted.org/packages/c8/e3/97c6c3562c077f6247d6e6ce5c82562500b6316c0d928e97e106b7a1321a/jiter-0.16.0-cp311-cp311-macosx_11_0_arm64.whl.metadata
+  Downloading jiter-0.16.0-cp311-cp311-macosx_11_0_arm64.whl.metadata (5.2 kB)
+Collecting tqdm>4 (from openai<3.0.0,>=2.45.0->langchain-openai<2,>=1.0.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for tqdm>4 from https://files.pythonhosted.org/packages/f9/1c/01bfd571a64e7f270e6bab5e33777debe0edc56759233ce84f27dec92d14/tqdm-4.70.0-py3-none-any.whl.metadata
+  Downloading tqdm-4.70.0-py3-none-any.whl.metadata (57 kB)
+Collecting python-dateutil>=2.8.2 (from pandas<3.0.0,>=2.0.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for python-dateutil>=2.8.2 from https://files.pythonhosted.org/packages/ec/57/56b9bcc3c9c6a792fcbaf139543cee77261f3651ca9da0c93f5c1221264b/python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata
+  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting pytz>=2020.1 (from pandas<3.0.0,>=2.0.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for pytz>=2020.1 from https://files.pythonhosted.org/packages/0f/7b/39c34ca613b0b198cb866466651b26b045e2009864c5183c979a3b83f383/pytz-2026.3.post1-py2.py3-none-any.whl.metadata
+  Downloading pytz-2026.3.post1-py2.py3-none-any.whl.metadata (22 kB)
+Collecting tzdata>=2022.7 (from pandas<3.0.0,>=2.0.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for tzdata>=2022.7 from https://files.pythonhosted.org/packages/e5/6d/b53b99a9f2766d095985947a5782f1702cabb129a34f7a802d7197af832f/tzdata-2026.3-py2.py3-none-any.whl.metadata
+  Downloading tzdata-2026.3-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting annotated-types>=0.6.0 (from pydantic>=2.0.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for annotated-types>=0.6.0 from https://files.pythonhosted.org/packages/99/91/8acff4f5e50511b911bbccb72b8628a49c68ce14148cd9f6431094859a90/annotated_types-0.8.0-py3-none-any.whl.metadata
+  Downloading annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)
+Collecting pydantic-core==2.46.4 (from pydantic>=2.0.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for pydantic-core==2.46.4 from https://files.pythonhosted.org/packages/ae/6f/aa064a3e74b5745afbdf250594f38e7ead05e2d651bcb35994b9417a0d4d/pydantic_core-2.46.4-cp311-cp311-macosx_11_0_arm64.whl.metadata
+  Downloading pydantic_core-2.46.4-cp311-cp311-macosx_11_0_arm64.whl.metadata (6.6 kB)
+Collecting typing-inspection>=0.4.2 (from pydantic>=2.0.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for typing-inspection>=0.4.2 from https://files.pythonhosted.org/packages/dc/9b/47798a6c91d8bdb567fe2698fe81e0c6b7cb7ef4d13da4114b41d239f65d/typing_inspection-0.4.2-py3-none-any.whl.metadata
+  Downloading typing_inspection-0.4.2-py3-none-any.whl.metadata (2.6 kB)
+Collecting regex (from tiktoken<1.0.0,>=0.7.0->langchain-openai<2,>=1.0.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for regex from https://files.pythonhosted.org/packages/41/2e/2360c41d8080a3d9ec7e5c90fad6eab3b50192869d10e9a5609e48c8177b/regex-2026.7.19-cp311-cp311-macosx_11_0_arm64.whl.metadata
+  Downloading regex-2026.7.19-cp311-cp311-macosx_11_0_arm64.whl.metadata (40 kB)
+Collecting beautifulsoup4>=4.9.1 (from akshare>=1.12.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for beautifulsoup4>=4.9.1 from https://files.pythonhosted.org/packages/88/c6/92fcd42f1ba33e1184263f25bfabf3d27c383410470f169e4b8163bf9c17/beautifulsoup4-4.15.0-py3-none-any.whl.metadata
+  Downloading beautifulsoup4-4.15.0-py3-none-any.whl.metadata (3.8 kB)
+Collecting lxml>=4.2.1 (from akshare>=1.12.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for lxml>=4.2.1 from https://files.pythonhosted.org/packages/62/b0/83f481780d1548750b8ce2ec824073deef2f452d9cd1a6faff8507e3d16d/lxml-6.1.1-cp311-cp311-macosx_10_9_universal2.whl.metadata
+  Downloading lxml-6.1.1-cp311-cp311-macosx_10_9_universal2.whl.metadata (3.5 kB)
+Collecting curl_cffi>=0.13.0 (from akshare>=1.12.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for curl_cffi>=0.13.0 from https://files.pythonhosted.org/packages/83/2d/3915e238579b3c5a92cead5c79130c3b8d20caaba7616cc4d894650e1d6b/curl_cffi-0.15.0-cp310-abi3-macosx_11_0_arm64.whl.metadata
+  Downloading curl_cffi-0.15.0-cp310-abi3-macosx_11_0_arm64.whl.metadata (18 kB)
+Collecting html5lib>=1.0.1 (from akshare>=1.12.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for html5lib>=1.0.1 from https://files.pythonhosted.org/packages/6c/dd/a834df6482147d48e225a49515aabc28974ad5a4ca3215c18a882565b028/html5lib-1.1-py2.py3-none-any.whl.metadata
+  Downloading html5lib-1.1-py2.py3-none-any.whl.metadata (16 kB)
+Collecting xlrd>=1.2.0 (from akshare>=1.12.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for xlrd>=1.2.0 from https://files.pythonhosted.org/packages/1a/62/c8d562e7766786ba6587d09c5a8ba9f718ed3fa8af7f4553e8f91c36f302/xlrd-2.0.2-py2.py3-none-any.whl.metadata
+  Downloading xlrd-2.0.2-py2.py3-none-any.whl.metadata (3.5 kB)
+Collecting urllib3>=1.25.8 (from akshare>=1.12.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for urllib3>=1.25.8 from https://files.pythonhosted.org/packages/7f/3e/5db95bcf282c52709639744ca2a8b149baccf648e39c8cc87553df9eae0c/urllib3-2.7.0-py3-none-any.whl.metadata
+  Downloading urllib3-2.7.0-py3-none-any.whl.metadata (6.9 kB)
+Collecting jsonpath>=0.82 (from akshare>=1.12.0->vibe-trading-ai==0.1.12)
+  Downloading jsonpath-0.82.2.tar.gz (10 kB)
+  Installing build dependencies: started
+  Running command installing build dependencies for jsonpath
+  Using pip 26.2 from /Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon/.venv-py311/lib/python3.11/site-packages/pip (python 3.11)
+  Collecting setuptools>=40.8.0
+    Obtaining dependency information for setuptools>=40.8.0 from https://files.pythonhosted.org/packages/5d/40/e1e72872c6354b306daef1703549e8e83b4d43cfea356311bf722a043752/setuptools-83.0.0-py3-none-any.whl.metadata
+    Using cached setuptools-83.0.0-py3-none-any.whl.metadata (6.6 kB)
+  Using cached setuptools-83.0.0-py3-none-any.whl (1.0 MB)
+  Installing collected packages: setuptools
+  Successfully installed setuptools-83.0.0
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Running command Getting requirements to build wheel
+  /Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon/.tmp/pip-build-env-o6odaw6t/overlay/lib/python3.11/site-packages/setuptools/dist.py:765: SetuptoolsDeprecationWarning: License classifiers are deprecated.
+  !!
+
+          ********************************************************************************
+          Please consider removing the following classifiers in favor of a SPDX license expression:
+
+          License :: OSI Approved :: MIT License
+
+          See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+          ********************************************************************************
+
+  !!
+    self._finalize_license_expression()
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Running command Preparing metadata (pyproject.toml)
+  /Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon/.tmp/pip-build-env-o6odaw6t/overlay/lib/python3.11/site-packages/setuptools/dist.py:765: SetuptoolsDeprecationWarning: License classifiers are deprecated.
+  !!
+
+          ********************************************************************************
+          Please consider removing the following classifiers in favor of a SPDX license expression:
+
+          License :: OSI Approved :: MIT License
+
+          See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+          ********************************************************************************
+
+  !!
+    self._finalize_license_expression()
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting tabulate>=0.8.6 (from akshare>=1.12.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for tabulate>=0.8.6 from https://files.pythonhosted.org/packages/99/55/db07de81b5c630da5cbf5c7df646580ca26dfaefa593667fc6f2fe016d2e/tabulate-0.10.0-py3-none-any.whl.metadata
+  Downloading tabulate-0.10.0-py3-none-any.whl.metadata (40 kB)
+Collecting decorator>=4.4.2 (from akshare>=1.12.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for decorator>=4.4.2 from https://files.pythonhosted.org/packages/05/7f/798705f5296a58ca505d600456748d1be48078eac8a7050d8a98bc9edb89/decorator-5.3.1-py3-none-any.whl.metadata
+  Downloading decorator-5.3.1-py3-none-any.whl.metadata (3.9 kB)
+Collecting mini-racer>=0.12.4 (from akshare>=1.12.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for mini-racer>=0.12.4 from https://files.pythonhosted.org/packages/09/bf/ecaad0c208b9d8bd8f2141f7fa5e520b66915945a2ed56c520524df75fcb/mini_racer-0.14.1-py3-none-macosx_11_0_arm64.whl.metadata
+  Downloading mini_racer-0.14.1-py3-none-macosx_11_0_arm64.whl.metadata (22 kB)
+Collecting soupsieve>=1.6.1 (from beautifulsoup4>=4.9.1->akshare>=1.12.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for soupsieve>=1.6.1 from https://files.pythonhosted.org/packages/0f/2c/437fe806897c2d6cfdc3ee43a18da8bf8e568530a4ae9bac781541ca9896/soupsieve-2.9.1-py3-none-any.whl.metadata
+  Downloading soupsieve-2.9.1-py3-none-any.whl.metadata (4.6 kB)
+Requirement already satisfied: setuptools==83.0.0 in ./.venv-py311/lib/python3.11/site-packages (from ccxt>=4.0.0->vibe-trading-ai==0.1.12) (83.0.0)
+Collecting certifi (from httpx>=0.28.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for certifi from https://files.pythonhosted.org/packages/ef/2f/c5464532e965badff2f4c4c1a3a83f5697f0d7c407ed0cda44aaa99bb451/certifi-2026.6.17-py3-none-any.whl.metadata
+  Downloading certifi-2026.6.17-py3-none-any.whl.metadata (2.5 kB)
+Collecting cryptography==49.0.0 (from ccxt>=4.0.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for cryptography==49.0.0 from https://files.pythonhosted.org/packages/9b/22/adf66990e63584a68dfb50c24f48a125c07b1699899381c8151e63ed458c/cryptography-49.0.0-cp311-abi3-macosx_11_0_arm64.whl.metadata
+  Downloading cryptography-49.0.0-cp311-abi3-macosx_11_0_arm64.whl.metadata (4.3 kB)
+Collecting aiohttp==3.14.1 (from ccxt>=4.0.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for aiohttp==3.14.1 from https://files.pythonhosted.org/packages/5b/e7/c60c7b209e509cc787de3cea0550a518538cfc08003e1c1e14c1c63fff71/aiohttp-3.14.1-cp311-cp311-macosx_11_0_arm64.whl.metadata
+  Downloading aiohttp-3.14.1-cp311-cp311-macosx_11_0_arm64.whl.metadata (8.3 kB)
+Collecting yarl==1.24.2 (from ccxt>=4.0.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for yarl==1.24.2 from https://files.pythonhosted.org/packages/31/d0/1fb0c1cd27288f39f6974da4318c32768d72c9890984541fdf1e2e32a51d/yarl-1.24.2-cp311-cp311-macosx_11_0_arm64.whl.metadata
+  Downloading yarl-1.24.2-cp311-cp311-macosx_11_0_arm64.whl.metadata (94 kB)
+Collecting aiohttp-fast-zlib==0.3.0 (from ccxt>=4.0.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for aiohttp-fast-zlib==0.3.0 from https://files.pythonhosted.org/packages/b7/11/ea9ecbcd6cf68c5de690fd39b66341405ab091aa0c3598277e687aa65901/aiohttp_fast_zlib-0.3.0-py3-none-any.whl.metadata
+  Downloading aiohttp_fast_zlib-0.3.0-py3-none-any.whl.metadata (5.7 kB)
+Collecting zlib-ng==1.0.0 (from ccxt>=4.0.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for zlib-ng==1.0.0 from https://files.pythonhosted.org/packages/15/cc/41d46a0ff72a423725713a4ddc508fdb2742ab183c9afbc1b96b00e02b17/zlib_ng-1.0.0-cp311-cp311-macosx_11_0_arm64.whl.metadata
+  Downloading zlib_ng-1.0.0-cp311-cp311-macosx_11_0_arm64.whl.metadata (6.8 kB)
+Collecting uvloop==0.22.1 (from ccxt>=4.0.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for uvloop==0.22.1 from https://files.pythonhosted.org/packages/c7/d5/69900f7883235562f1f50d8184bb7dd84a2fb61e9ec63f3782546fdbd057/uvloop-0.22.1-cp311-cp311-macosx_10_9_universal2.whl.metadata
+  Downloading uvloop-0.22.1-cp311-cp311-macosx_10_9_universal2.whl.metadata (4.9 kB)
+Collecting coincurve==21.0.0 (from ccxt>=4.0.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for coincurve==21.0.0 from https://files.pythonhosted.org/packages/8a/e4/37dd30ed171432e32c075a03237915c0e69a5a524a807f380d910b276a2a/coincurve-21.0.0-cp311-cp311-macosx_11_0_arm64.whl.metadata
+  Downloading coincurve-21.0.0-cp311-cp311-macosx_11_0_arm64.whl.metadata (4.0 kB)
+Collecting aiohappyeyeballs==2.7.1 (from ccxt>=4.0.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for aiohappyeyeballs==2.7.1 from https://files.pythonhosted.org/packages/71/43/1947f06babed6b3f1d7f38b0c767f52df66bfb2bc10b468c4a7de9eceff2/aiohappyeyeballs-2.7.1-py3-none-any.whl.metadata
+  Downloading aiohappyeyeballs-2.7.1-py3-none-any.whl.metadata (5.9 kB)
+Collecting aiosignal==1.4.0 (from ccxt>=4.0.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for aiosignal==1.4.0 from https://files.pythonhosted.org/packages/fb/76/641ae371508676492379f16e2fa48f4e2c11741bd63c48be4b12a6b09cba/aiosignal-1.4.0-py3-none-any.whl.metadata
+  Downloading aiosignal-1.4.0-py3-none-any.whl.metadata (3.7 kB)
+Collecting attrs==26.1.0 (from ccxt>=4.0.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for attrs==26.1.0 from https://files.pythonhosted.org/packages/64/b4/17d4b0b2a2dc85a6df63d1157e028ed19f90d4cd97c36717afef2bc2f395/attrs-26.1.0-py3-none-any.whl.metadata
+  Downloading attrs-26.1.0-py3-none-any.whl.metadata (8.8 kB)
+Collecting frozenlist==1.8.0 (from ccxt>=4.0.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for frozenlist==1.8.0 from https://files.pythonhosted.org/packages/6e/ef/0e8f1fe32f8a53dd26bdd1f9347efe0778b0fddf62789ea683f4cc7d787d/frozenlist-1.8.0-cp311-cp311-macosx_11_0_arm64.whl.metadata
+  Downloading frozenlist-1.8.0-cp311-cp311-macosx_11_0_arm64.whl.metadata (20 kB)
+Collecting multidict==6.7.1 (from ccxt>=4.0.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for multidict==6.7.1 from https://files.pythonhosted.org/packages/dd/a4/d45caf2b97b035c57267791ecfaafbd59c68212004b3842830954bb4b02e/multidict-6.7.1-cp311-cp311-macosx_11_0_arm64.whl.metadata
+  Downloading multidict-6.7.1-cp311-cp311-macosx_11_0_arm64.whl.metadata (5.3 kB)
+Collecting propcache==0.5.2 (from ccxt>=4.0.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for propcache==0.5.2 from https://files.pythonhosted.org/packages/15/a8/8ede85d6aa1f79fc7dc2f8fd2c8d65920b8272c3892903c8a1affde48cfb/propcache-0.5.2-cp311-cp311-macosx_11_0_arm64.whl.metadata
+  Downloading propcache-0.5.2-cp311-cp311-macosx_11_0_arm64.whl.metadata (16 kB)
+Collecting cffi==2.0.0 (from ccxt>=4.0.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for cffi==2.0.0 from https://files.pythonhosted.org/packages/4f/8b/f0e4c441227ba756aafbe78f117485b25bb26b1c059d01f137fa6d14896b/cffi-2.0.0-cp311-cp311-macosx_11_0_arm64.whl.metadata
+  Downloading cffi-2.0.0-cp311-cp311-macosx_11_0_arm64.whl.metadata (2.6 kB)
+Collecting pycparser==3.0 (from ccxt>=4.0.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for pycparser==3.0 from https://files.pythonhosted.org/packages/0c/c3/44f3fbbfa403ea2a7c779186dc20772604442dde72947e7d01069cbe98e3/pycparser-3.0-py3-none-any.whl.metadata
+  Downloading pycparser-3.0-py3-none-any.whl.metadata (8.2 kB)
+Collecting charset_normalizer==3.4.7 (from ccxt>=4.0.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for charset_normalizer==3.4.7 from https://files.pythonhosted.org/packages/c2/d7/b5b7020a0565c2e9fa8c09f4b5fa6232feb326b8c20081ccded47ea368fd/charset_normalizer-3.4.7-cp311-cp311-macosx_10_9_universal2.whl.metadata
+  Downloading charset_normalizer-3.4.7-cp311-cp311-macosx_10_9_universal2.whl.metadata (40 kB)
+Collecting primp>=1.2.3 (from ddgs>=6.0.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for primp>=1.2.3 from https://files.pythonhosted.org/packages/58/c1/c965cc23f96a364803d44b4331f33e4465bb6f269add37e39d0ad77ffe33/primp-1.3.1-cp310-abi3-macosx_11_0_arm64.whl.metadata
+  Downloading primp-1.3.1-cp310-abi3-macosx_11_0_arm64.whl.metadata (3.7 kB)
+Collecting fake-useragent>=2.2.0 (from ddgs>=6.0.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for fake-useragent>=2.2.0 from https://files.pythonhosted.org/packages/51/37/b3ea9cd5558ff4cb51957caca2193981c6b0ff30bd0d2630ac62505d99d0/fake_useragent-2.2.0-py3-none-any.whl.metadata
+  Downloading fake_useragent-2.2.0-py3-none-any.whl.metadata (17 kB)
+Collecting starlette>=0.46.0 (from fastapi>=0.104.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for starlette>=0.46.0 from https://files.pythonhosted.org/packages/ec/bb/2799cc2ede3ed41131f8975621e7213dfc7ef4acbbaadfa440f32500c370/starlette-1.3.1-py3-none-any.whl.metadata
+  Downloading starlette-1.3.1-py3-none-any.whl.metadata (6.4 kB)
+Collecting annotated-doc>=0.0.2 (from fastapi>=0.104.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for annotated-doc>=0.0.2 from https://files.pythonhosted.org/packages/3e/30/e900b21425a860e195f32e37657aa1f7c7f2b1bfb26f03ca209b90933c06/annotated_doc-0.0.5-py3-none-any.whl.metadata
+  Downloading annotated_doc-0.0.5-py3-none-any.whl.metadata (6.5 kB)
+Collecting fastmcp-slim==3.4.5 (from fastmcp-slim[client,server]==3.4.5->fastmcp>=2.14.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for fastmcp-slim==3.4.5 from https://files.pythonhosted.org/packages/43/3b/16d8aa8224094519f30b078138e725b8a731bf0a13f1f850e58b5f9b3cc4/fastmcp_slim-3.4.5-py3-none-any.whl.metadata
+  Downloading fastmcp_slim-3.4.5-py3-none-any.whl.metadata (10 kB)
+Collecting pydantic-settings>=2.0.0 (from fastmcp-slim==3.4.5->fastmcp-slim[client,server]==3.4.5->fastmcp>=2.14.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for pydantic-settings>=2.0.0 from https://files.pythonhosted.org/packages/77/c1/6e422f34e569cf8e18df68d1939c81c099d2b61e4f7d9621c8a77560799c/pydantic_settings-2.14.2-py3-none-any.whl.metadata
+  Downloading pydantic_settings-2.14.2-py3-none-any.whl.metadata (3.4 kB)
+Collecting authlib>=1.6.11 (from fastmcp-slim[client,server]==3.4.5->fastmcp>=2.14.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for authlib>=1.6.11 from https://files.pythonhosted.org/packages/fb/95/adcb68e20c34162e9135f370d6e31737719c2b6f94bc953fe7ed1f10fe21/authlib-1.7.2-py2.py3-none-any.whl.metadata
+  Downloading authlib-1.7.2-py2.py3-none-any.whl.metadata (10 kB)
+Collecting exceptiongroup>=1.2.2 (from fastmcp-slim[client,server]==3.4.5->fastmcp>=2.14.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for exceptiongroup>=1.2.2 from https://files.pythonhosted.org/packages/8a/0e/97c33bf5009bdbac74fd2beace167cab3f978feb69cc36f1ef79360d6c4e/exceptiongroup-1.3.1-py3-none-any.whl.metadata
+  Downloading exceptiongroup-1.3.1-py3-none-any.whl.metadata (6.7 kB)
+Collecting mcp<2.0,>=1.24.0 (from fastmcp-slim[client,server]==3.4.5->fastmcp>=2.14.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for mcp<2.0,>=1.24.0 from https://files.pythonhosted.org/packages/01/c8/248b201f6d753d69fd5d6506011abbb35a946d9142b2ae311a948fd0be3d/mcp-1.29.0-py3-none-any.whl.metadata
+  Downloading mcp-1.29.0-py3-none-any.whl.metadata (9.3 kB)
+Collecting opentelemetry-api>=1.20.0 (from fastmcp-slim[client,server]==3.4.5->fastmcp>=2.14.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for opentelemetry-api>=1.20.0 from https://files.pythonhosted.org/packages/ca/6f/a04e900f465ff3221ccc395522503e2d10e79fa21f2723c8e177aae1e0d1/opentelemetry_api-1.44.0-py3-none-any.whl.metadata
+  Downloading opentelemetry_api-1.44.0-py3-none-any.whl.metadata (1.4 kB)
+Collecting py-key-value-aio<0.5.0,>=0.4.4 (from py-key-value-aio[filetree,keyring,memory]<0.5.0,>=0.4.4; extra == "client"->fastmcp-slim[client,server]==3.4.5->fastmcp>=2.14.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for py-key-value-aio<0.5.0,>=0.4.4 from https://files.pythonhosted.org/packages/f6/95/b8ba862968712caa12a19666175334fa979e1f198b896a430adb3bacfe87/py_key_value_aio-0.4.5-py3-none-any.whl.metadata
+  Downloading py_key_value_aio-0.4.5-py3-none-any.whl.metadata (16 kB)
+Collecting cyclopts>=4.0.0 (from fastmcp-slim[client,server]==3.4.5->fastmcp>=2.14.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for cyclopts>=4.0.0 from https://files.pythonhosted.org/packages/e4/75/2013521356f5e85a4b03ddbf5c14425be288512d431a4fa0e1e9b51c78ad/cyclopts-4.22.3-py3-none-any.whl.metadata
+  Downloading cyclopts-4.22.3-py3-none-any.whl.metadata (12 kB)
+Collecting griffelib>=2.0.0 (from fastmcp-slim[client,server]==3.4.5->fastmcp>=2.14.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for griffelib>=2.0.0 from https://files.pythonhosted.org/packages/e4/d3/5268aeabf2ad82658c4e2ff3a060648d0f02f3926cb53247c0e4d0dab49e/griffelib-2.1.0-py3-none-any.whl.metadata
+  Downloading griffelib-2.1.0-py3-none-any.whl.metadata (1.3 kB)
+Collecting joserfc>=1.1.0 (from fastmcp-slim[client,server]==3.4.5->fastmcp>=2.14.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for joserfc>=1.1.0 from https://files.pythonhosted.org/packages/f9/bf/249dcd99b3376375910b7fa922383b57792975c8758f50d44612e749226c/joserfc-1.7.4-py3-none-any.whl.metadata
+  Downloading joserfc-1.7.4-py3-none-any.whl.metadata (3.1 kB)
+Collecting jsonref>=1.1.0 (from fastmcp-slim[client,server]==3.4.5->fastmcp>=2.14.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for jsonref>=1.1.0 from https://files.pythonhosted.org/packages/0c/ec/e1db9922bceb168197a558a2b8c03a7963f1afe93517ddd3cf99f202f996/jsonref-1.1.0-py3-none-any.whl.metadata
+  Downloading jsonref-1.1.0-py3-none-any.whl.metadata (2.7 kB)
+Collecting jsonschema-path>=0.3.4 (from fastmcp-slim[client,server]==3.4.5->fastmcp>=2.14.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for jsonschema-path>=0.3.4 from https://files.pythonhosted.org/packages/04/2c/9e69d73c4297508be9e3b64a970ea3971b3eb8db64ffc5802d40bd25981f/jsonschema_path-0.5.0-py3-none-any.whl.metadata
+  Downloading jsonschema_path-0.5.0-py3-none-any.whl.metadata (8.1 kB)
+Collecting openapi-pydantic>=0.5.1 (from fastmcp-slim[client,server]==3.4.5->fastmcp>=2.14.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for openapi-pydantic>=0.5.1 from https://files.pythonhosted.org/packages/12/cf/03675d8bd8ecbf4445504d8071adab19f5f993676795708e36402ab38263/openapi_pydantic-0.5.1-py3-none-any.whl.metadata
+  Downloading openapi_pydantic-0.5.1-py3-none-any.whl.metadata (10 kB)
+Collecting pyperclip>=1.9.0 (from fastmcp-slim[client,server]==3.4.5->fastmcp>=2.14.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for pyperclip>=1.9.0 from https://files.pythonhosted.org/packages/df/80/fc9d01d5ed37ba4c42ca2b55b4339ae6e200b456be3a1aaddf4a9fa99b8c/pyperclip-1.11.0-py3-none-any.whl.metadata
+  Downloading pyperclip-1.11.0-py3-none-any.whl.metadata (2.4 kB)
+Collecting uncalled-for>=0.2.0 (from fastmcp-slim[client,server]==3.4.5->fastmcp>=2.14.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for uncalled-for>=0.2.0 from https://files.pythonhosted.org/packages/3b/25/2c87754f3a9e692315f7b811244090e68f362979fc8886b3fbd2985a1d8c/uncalled_for-0.3.2-py3-none-any.whl.metadata
+  Downloading uncalled_for-0.3.2-py3-none-any.whl.metadata (2.9 kB)
+Collecting watchfiles>=1.0.0 (from fastmcp-slim[client,server]==3.4.5->fastmcp>=2.14.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for watchfiles>=1.0.0 from https://files.pythonhosted.org/packages/87/5b/f4dfd45323e949984a3a7f9dc31d1cbb049921e7d98253488dda72ccdaa9/watchfiles-1.2.0-cp311-cp311-macosx_11_0_arm64.whl.metadata
+  Downloading watchfiles-1.2.0-cp311-cp311-macosx_11_0_arm64.whl.metadata (4.9 kB)
+Collecting httpx-sse>=0.4 (from mcp<2.0,>=1.24.0->fastmcp-slim[client,server]==3.4.5->fastmcp>=2.14.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for httpx-sse>=0.4 from https://files.pythonhosted.org/packages/d2/fd/6668e5aec43ab844de6fc74927e155a3b37bf40d7c3790e49fc0406b6578/httpx_sse-0.4.3-py3-none-any.whl.metadata
+  Downloading httpx_sse-0.4.3-py3-none-any.whl.metadata (9.7 kB)
+Collecting jsonschema>=4.20.0 (from mcp<2.0,>=1.24.0->fastmcp-slim[client,server]==3.4.5->fastmcp>=2.14.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for jsonschema>=4.20.0 from https://files.pythonhosted.org/packages/69/90/f63fb5873511e014207a475e2bb4e8b2e570d655b00ac19a9a0ca0a385ee/jsonschema-4.26.0-py3-none-any.whl.metadata
+  Downloading jsonschema-4.26.0-py3-none-any.whl.metadata (7.6 kB)
+Collecting pyjwt>=2.10.1 (from pyjwt[crypto]>=2.10.1->mcp<2.0,>=1.24.0->fastmcp-slim[client,server]==3.4.5->fastmcp>=2.14.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for pyjwt>=2.10.1 from https://files.pythonhosted.org/packages/a3/5e/ecf12fdb62546d64385c158514e9b2b671f7832108ef2ecd2020ce0af2d1/pyjwt-2.13.0-py3-none-any.whl.metadata
+  Downloading pyjwt-2.13.0-py3-none-any.whl.metadata (3.4 kB)
+Collecting beartype>=0.20.0 (from py-key-value-aio<0.5.0,>=0.4.4->py-key-value-aio[filetree,keyring,memory]<0.5.0,>=0.4.4; extra == "client"->fastmcp-slim[client,server]==3.4.5->fastmcp>=2.14.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for beartype>=0.20.0 from https://files.pythonhosted.org/packages/71/cc/18245721fa7747065ab478316c7fea7c74777d07f37ae60db2e84f8172e8/beartype-0.22.9-py3-none-any.whl.metadata
+  Downloading beartype-0.22.9-py3-none-any.whl.metadata (37 kB)
+Collecting aiofile>=3.5.0 (from py-key-value-aio[filetree,keyring,memory]<0.5.0,>=0.4.4; extra == "client"->fastmcp-slim[client,server]==3.4.5->fastmcp>=2.14.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for aiofile>=3.5.0 from https://files.pythonhosted.org/packages/67/cd/0d76dfc5de72bde52f55f53e925c7d152d9c7906634ec1e0cbc7e8d4ad93/aiofile-3.11.1-py3-none-any.whl.metadata
+  Downloading aiofile-3.11.1-py3-none-any.whl.metadata (14 kB)
+Collecting keyring>=25.6.0 (from py-key-value-aio[filetree,keyring,memory]<0.5.0,>=0.4.4; extra == "client"->fastmcp-slim[client,server]==3.4.5->fastmcp>=2.14.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for keyring>=25.6.0 from https://files.pythonhosted.org/packages/81/db/e655086b7f3a705df045bf0933bdd9c2f79bb3c97bfef1384598bb79a217/keyring-25.7.0-py3-none-any.whl.metadata
+  Downloading keyring-25.7.0-py3-none-any.whl.metadata (21 kB)
+Collecting cachetools>=5.0.0 (from py-key-value-aio[filetree,keyring,memory]<0.5.0,>=0.4.4; extra == "client"->fastmcp-slim[client,server]==3.4.5->fastmcp>=2.14.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for cachetools>=5.0.0 from https://files.pythonhosted.org/packages/9f/f2/2086ba18a925a73586c4d4e61d25f4a6058e56fd00d77ce8f1d361ab4c9b/cachetools-7.1.6-py3-none-any.whl.metadata
+  Downloading cachetools-7.1.6-py3-none-any.whl.metadata (5.5 kB)
+Collecting caio~=0.9.0 (from aiofile>=3.5.0->py-key-value-aio[filetree,keyring,memory]<0.5.0,>=0.4.4; extra == "client"->fastmcp-slim[client,server]==3.4.5->fastmcp>=2.14.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for caio~=0.9.0 from https://files.pythonhosted.org/packages/ec/90/543f556fcfcfa270713eef906b6352ab048e1e557afec12925c991dc93c2/caio-0.9.25-cp311-cp311-macosx_10_9_universal2.whl.metadata
+  Downloading caio-0.9.25-cp311-cp311-macosx_10_9_universal2.whl.metadata (3.3 kB)
+Collecting docstring-parser<4.0,>=0.15 (from cyclopts>=4.0.0->fastmcp-slim[client,server]==3.4.5->fastmcp>=2.14.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for docstring-parser<4.0,>=0.15 from https://files.pythonhosted.org/packages/a7/5f/ed01f9a3cdffbd5a008556fc7b2a08ddb1cc6ace7effa7340604b1d16699/docstring_parser-0.18.0-py3-none-any.whl.metadata
+  Downloading docstring_parser-0.18.0-py3-none-any.whl.metadata (3.5 kB)
+Collecting rich-rst<3.0.0,>=1.3.1 (from cyclopts>=4.0.0->fastmcp-slim[client,server]==3.4.5->fastmcp>=2.14.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for rich-rst<3.0.0,>=1.3.1 from https://files.pythonhosted.org/packages/2a/68/1fc93dd759605b5d00fc98b50200739e41ed32bd22d6ba35ca6c3932371b/rich_rst-2.1.0-py3-none-any.whl.metadata
+  Downloading rich_rst-2.1.0-py3-none-any.whl.metadata (4.7 kB)
+Collecting pygments>=2.0.0 (from rich-rst<3.0.0,>=1.3.1->cyclopts>=4.0.0->fastmcp-slim[client,server]==3.4.5->fastmcp>=2.14.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for pygments>=2.0.0 from https://files.pythonhosted.org/packages/f4/7e/a72dd26f3b0f4f2bf1dd8923c85f7ceb43172af56d63c7383eb62b332364/pygments-2.20.0-py3-none-any.whl.metadata
+  Downloading pygments-2.20.0-py3-none-any.whl.metadata (2.5 kB)
+Collecting six>=1.9 (from html5lib>=1.0.1->akshare>=1.12.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for six>=1.9 from https://files.pythonhosted.org/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2cc5e/six-1.17.0-py2.py3-none-any.whl.metadata
+  Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Collecting webencodings (from html5lib>=1.0.1->akshare>=1.12.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for webencodings from https://files.pythonhosted.org/packages/f4/24/2a3e3df732393fed8b3ebf2ec078f05546de641fe1b667ee316ec1dcf3b7/webencodings-0.5.1-py2.py3-none-any.whl.metadata
+  Downloading webencodings-0.5.1-py2.py3-none-any.whl.metadata (2.1 kB)
+Collecting brotli (from httpx[brotli,http2,socks]>=0.28.1->ddgs>=6.0.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for brotli from https://files.pythonhosted.org/packages/7a/ef/f285668811a9e1ddb47a18cb0b437d5fc2760d537a2fe8a57875ad6f8448/brotli-1.2.0-cp311-cp311-macosx_10_9_universal2.whl.metadata
+  Downloading brotli-1.2.0-cp311-cp311-macosx_10_9_universal2.whl.metadata (6.1 kB)
+Collecting h2<5,>=3 (from httpx[brotli,http2,socks]>=0.28.1->ddgs>=6.0.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for h2<5,>=3 from https://files.pythonhosted.org/packages/f6/df/5b14a118322d6097cb9bb30ec6bacad268e546a8ecfcb1f6d0de618dac2f/h2-4.4.0-py3-none-any.whl.metadata
+  Downloading h2-4.4.0-py3-none-any.whl.metadata (3.8 kB)
+Collecting socksio==1.* (from httpx[brotli,http2,socks]>=0.28.1->ddgs>=6.0.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for socksio==1.* from https://files.pythonhosted.org/packages/37/c3/6eeb6034408dac0fa653d126c9204ade96b819c936e136c5e8a6897eee9c/socksio-1.0.0-py3-none-any.whl.metadata
+  Downloading socksio-1.0.0-py3-none-any.whl.metadata (6.1 kB)
+Collecting hyperframe<7,>=6.1 (from h2<5,>=3->httpx[brotli,http2,socks]>=0.28.1->ddgs>=6.0.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for hyperframe<7,>=6.1 from https://files.pythonhosted.org/packages/48/30/47d0bf6072f7252e6521f3447ccfa40b421b6824517f82854703d0f5a98b/hyperframe-6.1.0-py3-none-any.whl.metadata
+  Downloading hyperframe-6.1.0-py3-none-any.whl.metadata (4.3 kB)
+Collecting hpack<5,>=4.2 (from h2<5,>=3->httpx[brotli,http2,socks]>=0.28.1->ddgs>=6.0.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for hpack<5,>=4.2 from https://files.pythonhosted.org/packages/71/b4/4a9fcfb2aef6ba44d9073ecd301443aa00b3dac95de5619f2a7de7ec8a91/hpack-4.2.0-py3-none-any.whl.metadata
+  Downloading hpack-4.2.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting MarkupSafe>=2.0 (from jinja2>=3.1.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for MarkupSafe>=2.0 from https://files.pythonhosted.org/packages/e1/2e/5898933336b61975ce9dc04decbc0a7f2fee78c30353c5efba7f2d6ff27a/markupsafe-3.0.3-cp311-cp311-macosx_11_0_arm64.whl.metadata
+  Downloading markupsafe-3.0.3-cp311-cp311-macosx_11_0_arm64.whl.metadata (2.7 kB)
+Collecting jsonschema-specifications>=2023.03.6 (from jsonschema>=4.20.0->mcp<2.0,>=1.24.0->fastmcp-slim[client,server]==3.4.5->fastmcp>=2.14.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for jsonschema-specifications>=2023.03.6 from https://files.pythonhosted.org/packages/41/45/1a4ed80516f02155c51f51e8cedb3c1902296743db0bbc66608a0db2814f/jsonschema_specifications-2025.9.1-py3-none-any.whl.metadata
+  Downloading jsonschema_specifications-2025.9.1-py3-none-any.whl.metadata (2.9 kB)
+Collecting referencing>=0.28.4 (from jsonschema>=4.20.0->mcp<2.0,>=1.24.0->fastmcp-slim[client,server]==3.4.5->fastmcp>=2.14.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for referencing>=0.28.4 from https://files.pythonhosted.org/packages/2c/58/ca301544e1fa93ed4f80d724bf5b194f6e4b945841c5bfd555878eea9fcb/referencing-0.37.0-py3-none-any.whl.metadata
+  Downloading referencing-0.37.0-py3-none-any.whl.metadata (2.8 kB)
+Collecting rpds-py>=0.25.0 (from jsonschema>=4.20.0->mcp<2.0,>=1.24.0->fastmcp-slim[client,server]==3.4.5->fastmcp>=2.14.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for rpds-py>=0.25.0 from https://files.pythonhosted.org/packages/4d/dc/323d08583c0832911768663d1944f0107fcd4088704858d84b5e06d105a0/rpds_py-2026.6.3-cp311-cp311-macosx_11_0_arm64.whl.metadata
+  Downloading rpds_py-2026.6.3-cp311-cp311-macosx_11_0_arm64.whl.metadata (4.1 kB)
+Collecting pathable<0.7.0,>=0.6.0 (from jsonschema-path>=0.3.4->fastmcp-slim[client,server]==3.4.5->fastmcp>=2.14.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for pathable<0.7.0,>=0.6.0 from https://files.pythonhosted.org/packages/a2/e8/6d75ffd9784bce2e93d1ae4415649427e39a53bb172d4672b2b59c6f0a7b/pathable-0.6.0-py3-none-any.whl.metadata
+  Downloading pathable-0.6.0-py3-none-any.whl.metadata (7.2 kB)
+Collecting importlib_metadata>=4.11.4 (from keyring>=25.6.0->py-key-value-aio[filetree,keyring,memory]<0.5.0,>=0.4.4; extra == "client"->fastmcp-slim[client,server]==3.4.5->fastmcp>=2.14.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for importlib_metadata>=4.11.4 from https://files.pythonhosted.org/packages/38/3d/2d244233ac4f76e38533cfcb2991c9eb4c7bf688ae0a036d30725b8faafe/importlib_metadata-9.0.0-py3-none-any.whl.metadata
+  Downloading importlib_metadata-9.0.0-py3-none-any.whl.metadata (4.5 kB)
+Collecting jaraco.classes (from keyring>=25.6.0->py-key-value-aio[filetree,keyring,memory]<0.5.0,>=0.4.4; extra == "client"->fastmcp-slim[client,server]==3.4.5->fastmcp>=2.14.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for jaraco.classes from https://files.pythonhosted.org/packages/7f/66/b15ce62552d84bbfcec9a4873ab79d993a1dd4edb922cbfccae192bd5b5f/jaraco.classes-3.4.0-py3-none-any.whl.metadata
+  Downloading jaraco.classes-3.4.0-py3-none-any.whl.metadata (2.6 kB)
+Collecting jaraco.functools (from keyring>=25.6.0->py-key-value-aio[filetree,keyring,memory]<0.5.0,>=0.4.4; extra == "client"->fastmcp-slim[client,server]==3.4.5->fastmcp>=2.14.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for jaraco.functools from https://files.pythonhosted.org/packages/02/36/ecc85bc96c273dc8a11273ed4782272975e6338d4a3e9228621175edf0e3/jaraco_functools-4.6.0-py3-none-any.whl.metadata
+  Downloading jaraco_functools-4.6.0-py3-none-any.whl.metadata (2.9 kB)
+Collecting jaraco.context (from keyring>=25.6.0->py-key-value-aio[filetree,keyring,memory]<0.5.0,>=0.4.4; extra == "client"->fastmcp-slim[client,server]==3.4.5->fastmcp>=2.14.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for jaraco.context from https://files.pythonhosted.org/packages/f2/58/bc8954bda5fcda97bd7c19be11b85f91973d67a706ed4a3aec33e7de22db/jaraco_context-6.1.2-py3-none-any.whl.metadata
+  Downloading jaraco_context-6.1.2-py3-none-any.whl.metadata (4.2 kB)
+Collecting zipp>=3.20 (from importlib_metadata>=4.11.4->keyring>=25.6.0->py-key-value-aio[filetree,keyring,memory]<0.5.0,>=0.4.4; extra == "client"->fastmcp-slim[client,server]==3.4.5->fastmcp>=2.14.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for zipp>=3.20 from https://files.pythonhosted.org/packages/3a/13/547360d81e6d88d58492968ffda9f9542854f11310ee556fef14260cc886/zipp-4.1.0-py3-none-any.whl.metadata
+  Downloading zipp-4.1.0-py3-none-any.whl.metadata (3.6 kB)
+Collecting contourpy>=1.0.1 (from matplotlib>=3.7.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for contourpy>=1.0.1 from https://files.pythonhosted.org/packages/0d/44/c4b0b6095fef4dc9c420e041799591e3b63e9619e3044f7f4f6c21c0ab24/contourpy-1.3.3-cp311-cp311-macosx_11_0_arm64.whl.metadata
+  Downloading contourpy-1.3.3-cp311-cp311-macosx_11_0_arm64.whl.metadata (5.5 kB)
+Collecting cycler>=0.10 (from matplotlib>=3.7.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for cycler>=0.10 from https://files.pythonhosted.org/packages/e7/05/c19819d5e3d95294a6f5947fb9b9629efb316b96de511b418c53d245aae6/cycler-0.12.1-py3-none-any.whl.metadata
+  Downloading cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+Collecting fonttools>=4.28.2 (from matplotlib>=3.7.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for fonttools>=4.28.2 from https://files.pythonhosted.org/packages/75/2b/a7f1545bdf5da69c4bda0cea2a5781f0ad2a6623e0277267672db43c5fe6/fonttools-4.63.0-cp311-cp311-macosx_10_9_universal2.whl.metadata
+  Downloading fonttools-4.63.0-cp311-cp311-macosx_10_9_universal2.whl.metadata (118 kB)
+Collecting kiwisolver>=1.3.1 (from matplotlib>=3.7.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for kiwisolver>=1.3.1 from https://files.pythonhosted.org/packages/0a/aa/510dc933d87767584abfe03efa445889996c70c2990f6f87c3ebaa0a18c5/kiwisolver-1.5.0-cp311-cp311-macosx_11_0_arm64.whl.metadata
+  Downloading kiwisolver-1.5.0-cp311-cp311-macosx_11_0_arm64.whl.metadata (5.1 kB)
+Collecting pyparsing>=3 (from matplotlib>=3.7.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for pyparsing>=3 from https://files.pythonhosted.org/packages/10/bd/c038d7cc38edc1aa5bf91ab8068b63d4308c66c4c8bb3cbba7dfbc049f9c/pyparsing-3.3.2-py3-none-any.whl.metadata
+  Downloading pyparsing-3.3.2-py3-none-any.whl.metadata (5.8 kB)
+Collecting et-xmlfile (from openpyxl>=3.1.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for et-xmlfile from https://files.pythonhosted.org/packages/c1/8b/5fe2cc11fee489817272089c4203e679c63b570a5aaeb18d852ae3cbba6a/et_xmlfile-2.0.0-py3-none-any.whl.metadata
+  Downloading et_xmlfile-2.0.0-py3-none-any.whl.metadata (2.7 kB)
+Collecting wcwidth>=0.1.4 (from prompt_toolkit>=3.0.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for wcwidth>=0.1.4 from https://files.pythonhosted.org/packages/96/42/3e5985a0a7e57de470b320c6d6a1a67c844f6737a587f3d44dd13d1819e7/wcwidth-0.8.2-py3-none-any.whl.metadata
+  Downloading wcwidth-0.8.2-py3-none-any.whl.metadata (43 kB)
+Collecting email-validator>=2.0.0 (from pydantic[email]>=2.11.7->fastmcp-slim==3.4.5->fastmcp-slim[client,server]==3.4.5->fastmcp>=2.14.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for email-validator>=2.0.0 from https://files.pythonhosted.org/packages/de/15/545e2b6cf2e3be84bc1ed85613edd75b8aea69807a71c26f4ca6a9258e82/email_validator-2.3.0-py3-none-any.whl.metadata
+  Downloading email_validator-2.3.0-py3-none-any.whl.metadata (26 kB)
+Collecting dnspython>=2.0.0 (from email-validator>=2.0.0->pydantic[email]>=2.11.7->fastmcp-slim==3.4.5->fastmcp-slim[client,server]==3.4.5->fastmcp>=2.14.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for dnspython>=2.0.0 from https://files.pythonhosted.org/packages/ba/5a/18ad964b0086c6e62e2e7500f7edc89e3faa45033c71c1893d34eed2b2de/dnspython-2.8.0-py3-none-any.whl.metadata
+  Downloading dnspython-2.8.0-py3-none-any.whl.metadata (5.7 kB)
+Collecting iniconfig>=1.0.1 (from pytest>=7.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for iniconfig>=1.0.1 from https://files.pythonhosted.org/packages/cb/b1/3846dd7f199d53cb17f49cba7e651e9ce294d8497c8c150530ed11865bb8/iniconfig-2.3.0-py3-none-any.whl.metadata
+  Downloading iniconfig-2.3.0-py3-none-any.whl.metadata (2.5 kB)
+Collecting pluggy<2,>=1.5 (from pytest>=7.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for pluggy<2,>=1.5 from https://files.pythonhosted.org/packages/54/20/4d324d65cc6d9205fabedc306948156824eb9f0ee1633355a8f7ec5c66bf/pluggy-1.6.0-py3-none-any.whl.metadata
+  Downloading pluggy-1.6.0-py3-none-any.whl.metadata (4.8 kB)
+Collecting coverage>=7.10.6 (from coverage[toml]>=7.10.6->pytest-cov>=4.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for coverage>=7.10.6 from https://files.pythonhosted.org/packages/b6/d9/8ba925d29743e3577b21e4d8c11a702b76bc93c41e7fdfd1177af63d4b8d/coverage-7.15.2-cp311-cp311-macosx_11_0_arm64.whl.metadata
+  Downloading coverage-7.15.2-cp311-cp311-macosx_11_0_arm64.whl.metadata (8.6 kB)
+Collecting XlsxWriter>=0.5.7 (from python-pptx>=0.6.23->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for XlsxWriter>=0.5.7 from https://files.pythonhosted.org/packages/3a/0c/3662f4a66880196a590b202f0db82d919dd2f89e99a27fadef91c4a33d41/xlsxwriter-3.2.9-py3-none-any.whl.metadata
+  Downloading xlsxwriter-3.2.9-py3-none-any.whl.metadata (2.7 kB)
+Collecting markdown-it-py>=2.2.0 (from rich>=13.0.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for markdown-it-py>=2.2.0 from https://files.pythonhosted.org/packages/b3/81/4da04ced5a082363ecfa159c010d200ecbd959ae410c10c0264a38cac0f5/markdown_it_py-4.2.0-py3-none-any.whl.metadata
+  Downloading markdown_it_py-4.2.0-py3-none-any.whl.metadata (7.4 kB)
+Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=13.0.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for mdurl~=0.1 from https://files.pythonhosted.org/packages/b3/38/89ba8ad64ae25be8de66a6d463314cf1eb366222074cfda9ee839c56a4b4/mdurl-0.1.2-py3-none-any.whl.metadata
+  Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+Collecting narwhals>=2.0.1 (from scikit-learn>=1.3.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for narwhals>=2.0.1 from https://files.pythonhosted.org/packages/7e/85/a5bfaebfd305ac18b57b0854d74e37e586809061a91fda62f0bd50c8518e/narwhals-2.24.0-py3-none-any.whl.metadata
+  Downloading narwhals-2.24.0-py3-none-any.whl.metadata (15 kB)
+Collecting threadpoolctl>=3.5.0 (from scikit-learn>=1.3.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for threadpoolctl>=3.5.0 from https://files.pythonhosted.org/packages/32/d5/f9a850d79b0851d1d4ef6456097579a9005b31fea68726a4ae5f2d82ddd9/threadpoolctl-3.6.0-py3-none-any.whl.metadata
+  Downloading threadpoolctl-3.6.0-py3-none-any.whl.metadata (13 kB)
+  Link requires a different Python (3.11.15 not in: '>=3.6,<3.9'): https://files.pythonhosted.org/packages/d1/68/d872f91bcb57c00c54835beb950a9d9ceb99e497f167fa333e8eba968ecc/numba-0.52.0rc3.tar.gz (from https://pypi.org/simple/numba/) (requires-python:>=3.6,<3.9)
+  Link requires a different Python (3.11.15 not in: '>=3.6,<3.9'): https://files.pythonhosted.org/packages/46/e1/cbbc7c7967d9b10e54c852bf5bece0222a63bfb809d3354014c957ef1bda/numba-0.52.0.tar.gz (from https://pypi.org/simple/numba/) (requires-python:>=3.6,<3.9)
+  Link requires a different Python (3.11.15 not in: '>=3.6,<3.10'): https://files.pythonhosted.org/packages/c8/e6/681c43623f362d6c504eb29944184c0df6357be10ed2fad6071fd1b7e143/numba-0.53.0rc1.post1.tar.gz (from https://pypi.org/simple/numba/) (requires-python:>=3.6,<3.10)
+  Link requires a different Python (3.11.15 not in: '>=3.6,<3.10'): https://files.pythonhosted.org/packages/d4/b2/d6e507259f4630b319811b57c2bb3364d2737ae297a972a055cf40df36a5/numba-0.53.0rc2.tar.gz (from https://pypi.org/simple/numba/) (requires-python:>=3.6,<3.10)
+  Link requires a different Python (3.11.15 not in: '>=3.6,<3.10'): https://files.pythonhosted.org/packages/5e/ef/d761365ea63f28b85574069e953664e9fe218d50b85b3f84849ebecf953c/numba-0.53.0rc3.tar.gz (from https://pypi.org/simple/numba/) (requires-python:>=3.6,<3.10)
+  Link requires a different Python (3.11.15 not in: '>=3.6,<3.10'): https://files.pythonhosted.org/packages/b0/6d/bb1204879726d6db6dc92de995bdbd64792369f0be3f8a36710cc2d93f78/numba-0.53.0.tar.gz (from https://pypi.org/simple/numba/) (requires-python:>=3.6,<3.10)
+  Link requires a different Python (3.11.15 not in: '>=3.6,<3.10'): https://files.pythonhosted.org/packages/e3/7d/3d61160836e49f40913741c464f119551c15ed371c1d91ea50308495b93b/numba-0.53.1.tar.gz (from https://pypi.org/simple/numba/) (requires-python:>=3.6,<3.10)
+  Link requires a different Python (3.11.15 not in: '>=3.7,<3.10'): https://files.pythonhosted.org/packages/f2/76/00e4f3443c093f6064044357b8f07abde5ed7a15d6c43988a68c184b62a5/numba-0.54.0rc2.tar.gz (from https://pypi.org/simple/numba/) (requires-python:>=3.7,<3.10)
+  Link requires a different Python (3.11.15 not in: '>=3.7,<3.10'): https://files.pythonhosted.org/packages/ec/74/f6ff055664ac01adac37ad8f5ab5c94d75badfd264fdab209e0f5f1fafef/numba-0.54.0rc3.tar.gz (from https://pypi.org/simple/numba/) (requires-python:>=3.7,<3.10)
+  Link requires a different Python (3.11.15 not in: '>=3.7,<3.10'): https://files.pythonhosted.org/packages/24/66/4720b6f70b42c74f10296a9803f8ba28c284f55cee6839f457bc67588277/numba-0.54.0.tar.gz (from https://pypi.org/simple/numba/) (requires-python:>=3.7,<3.10)
+  Link requires a different Python (3.11.15 not in: '>=3.7,<3.10'): https://files.pythonhosted.org/packages/d3/93/05c88fc9f17655a93428f49646d1086c8b2b98e8531033f13f3fe464fae5/numba-0.54.1.tar.gz (from https://pypi.org/simple/numba/) (requires-python:>=3.7,<3.10)
+  Link requires a different Python (3.11.15 not in: '>=3.7,<3.11'): https://files.pythonhosted.org/packages/05/d9/5a3bc6549fe7ea8336f06cd72dac0ad69b18c8089930e560467cf9de359d/numba-0.55.0rc1.tar.gz (from https://pypi.org/simple/numba/) (requires-python:>=3.7,<3.11)
+  Link requires a different Python (3.11.15 not in: '>=3.7,<3.11'): https://files.pythonhosted.org/packages/cf/e2/8213c08fc9392c99b37de9823119a83576469354154eb08ad653b6ab5213/numba-0.55.0.tar.gz (from https://pypi.org/simple/numba/) (requires-python:>=3.7,<3.11)
+  Link requires a different Python (3.11.15 not in: '>=3.7,<3.11'): https://files.pythonhosted.org/packages/69/df/bd36068b2c1d0d34794f8ac0c222f9c4ad88dc710b400e65dbb3b59ea57e/numba-0.55.1.tar.gz (from https://pypi.org/simple/numba/) (requires-python:>=3.7,<3.11)
+  Link requires a different Python (3.11.15 not in: '>=3.7,<3.11'): https://files.pythonhosted.org/packages/39/dd/7109030bb584e8f0c4c8796bfd39fc5811cb77368a8c5db335f99c1fec9e/numba-0.55.2.tar.gz (from https://pypi.org/simple/numba/) (requires-python:>=3.7,<3.11)
+Collecting numba>=0.58.1 (from smartmoneyconcepts>=0.0.27->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for numba>=0.58.1 from https://files.pythonhosted.org/packages/9e/02/970796b4daa709604cde22e87a7cda9bde473c278ea4a75f59fe38cee47f/numba-0.66.0-cp311-cp311-macosx_12_0_arm64.whl.metadata
+  Downloading numba-0.66.0-cp311-cp311-macosx_12_0_arm64.whl.metadata (2.7 kB)
+  Link requires a different Python (3.11.15 not in: '>=3.6,<3.10'): https://files.pythonhosted.org/packages/19/66/6b2c49c7c68da48d17059882fdb9ad9ac9e5ac3f22b00874d7996e3c44a8/llvmlite-0.36.0.tar.gz (from https://pypi.org/simple/llvmlite/) (requires-python:>=3.6,<3.10)
+  Link requires a different Python (3.11.15 not in: '>=3.7,<3.10'): https://files.pythonhosted.org/packages/55/21/f7df5d35f3f5d0637d64a89f6b0461f2adf78e22916d6372486f8fc2193d/llvmlite-0.37.0.tar.gz (from https://pypi.org/simple/llvmlite/) (requires-python:>=3.7,<3.10)
+  Link requires a different Python (3.11.15 not in: '>=3.7,<3.11'): https://files.pythonhosted.org/packages/d8/e3/bd329a96549809598acd5daaccd35fd9d0883185cfe7f681a9e3e54beaa0/llvmlite-0.38.0.tar.gz (from https://pypi.org/simple/llvmlite/) (requires-python:>=3.7,<3.11)
+  Link requires a different Python (3.11.15 not in: '>=3.7,<3.11'): https://files.pythonhosted.org/packages/90/fc/313c916fb49495ac7c1f9ab213cd3d3285342691b860a2810a51c6c1a10e/llvmlite-0.38.1.tar.gz (from https://pypi.org/simple/llvmlite/) (requires-python:>=3.7,<3.11)
+Collecting llvmlite<0.49,>=0.48.0dev0 (from numba>=0.58.1->smartmoneyconcepts>=0.0.27->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for llvmlite<0.49,>=0.48.0dev0 from https://files.pythonhosted.org/packages/9a/55/595981f14fbae9ba966feb12af552b1fe69889e44e64ac883a731ed335e0/llvmlite-0.48.0-cp311-cp311-macosx_12_0_arm64.whl.metadata
+  Downloading llvmlite-0.48.0-cp311-cp311-macosx_12_0_arm64.whl.metadata (5.0 kB)
+Collecting simplejson (from tushare>=1.2.89->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for simplejson from https://files.pythonhosted.org/packages/4e/a2/6eebfb99dedc139f549200f61ade6d1890ac5707c5d427bdfa6fe39c9313/simplejson-4.1.1-cp311-cp311-macosx_11_0_arm64.whl.metadata
+  Downloading simplejson-4.1.1-cp311-cp311-macosx_11_0_arm64.whl.metadata (3.8 kB)
+Collecting bs4 (from tushare>=1.2.89->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for bs4 from https://files.pythonhosted.org/packages/51/bb/bf7aab772a159614954d84aa832c129624ba6c32faa559dfb200a534e50b/bs4-0.0.2-py2.py3-none-any.whl.metadata
+  Downloading bs4-0.0.2-py2.py3-none-any.whl.metadata (411 bytes)
+Collecting websocket-client>=0.57.0 (from tushare>=1.2.89->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for websocket-client>=0.57.0 from https://files.pythonhosted.org/packages/34/db/b10e48aa8fff7407e67470363eac595018441cf32d5e1001567a7aeba5d2/websocket_client-1.9.0-py3-none-any.whl.metadata
+  Downloading websocket_client-1.9.0-py3-none-any.whl.metadata (8.3 kB)
+Collecting httptools>=0.8.0 (from uvicorn[standard]>=0.24.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for httptools>=0.8.0 from https://files.pythonhosted.org/packages/f1/94/dfe435d90d0ef61ec0f2cc3d480eef78c59727c6c2ce039f433882f6131a/httptools-0.8.0-cp311-cp311-macosx_11_0_arm64.whl.metadata
+  Downloading httptools-0.8.0-cp311-cp311-macosx_11_0_arm64.whl.metadata (3.5 kB)
+Collecting pydyf>=0.11.0 (from weasyprint>=60.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for pydyf>=0.11.0 from https://files.pythonhosted.org/packages/22/11/47efe2f66ba848a107adfd490b508f5c0cedc82127950553dca44d29e6c4/pydyf-0.12.1-py3-none-any.whl.metadata
+  Downloading pydyf-0.12.1-py3-none-any.whl.metadata (2.5 kB)
+Collecting tinyhtml5>=2.0.0b1 (from weasyprint>=60.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for tinyhtml5>=2.0.0b1 from https://files.pythonhosted.org/packages/52/48/01695a036b695f83fea7aef6955d735db0f517b1c8e25ddb399ac0bdbcbf/tinyhtml5-2.1.0-py3-none-any.whl.metadata
+  Downloading tinyhtml5-2.1.0-py3-none-any.whl.metadata (2.9 kB)
+Collecting tinycss2>=1.5.0 (from weasyprint>=60.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for tinycss2>=1.5.0 from https://files.pythonhosted.org/packages/60/45/c7b5c3168458db837e8ceab06dc77824e18202679d0463f0e8f002143a97/tinycss2-1.5.1-py3-none-any.whl.metadata
+  Downloading tinycss2-1.5.1-py3-none-any.whl.metadata (3.0 kB)
+Collecting cssselect2>=0.8.0 (from weasyprint>=60.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for cssselect2>=0.8.0 from https://files.pythonhosted.org/packages/21/0e/8459ca4413e1a21a06c97d134bfaf18adfd27cea068813dc0faae06cbf00/cssselect2-0.9.0-py3-none-any.whl.metadata
+  Downloading cssselect2-0.9.0-py3-none-any.whl.metadata (2.9 kB)
+Collecting Pyphen>=0.9.1 (from weasyprint>=60.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for Pyphen>=0.9.1 from https://files.pythonhosted.org/packages/7b/1f/c2142d2edf833a90728e5cdeb10bdbdc094dde8dbac078cee0cf33f5e11b/pyphen-0.17.2-py3-none-any.whl.metadata
+  Downloading pyphen-0.17.2-py3-none-any.whl.metadata (3.2 kB)
+Collecting zopfli>=0.1.4 (from fonttools[woff]>=4.59.2->weasyprint>=60.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for zopfli>=0.1.4 from https://files.pythonhosted.org/packages/a5/5f/b7d81b670daf990e15a0f7551da96c3c0700f69ae6d96b0245d6a19f51f3/zopfli-0.4.3-cp310-abi3-macosx_10_9_universal2.whl.metadata
+  Downloading zopfli-0.4.3-cp310-abi3-macosx_10_9_universal2.whl.metadata (3.5 kB)
+Collecting multitasking>=0.0.7 (from yfinance>=0.2.30->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for multitasking>=0.0.7 from https://files.pythonhosted.org/packages/d3/1c/24dbf69b247f287401c904a396233a43c89fd4fb9b7cd2e50e430e9cd57c/multitasking-0.0.13-py3-none-any.whl.metadata
+  Downloading multitasking-0.0.13-py3-none-any.whl.metadata (16 kB)
+Collecting peewee>=3.16.2 (from yfinance>=0.2.30->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for peewee>=3.16.2 from https://files.pythonhosted.org/packages/c0/63/26ec789e68e994d64ed957dd6ee5a08bb78c2f401c40e46fc142669cd8b0/peewee-4.2.6-py3-none-any.whl.metadata
+  Downloading peewee-4.2.6-py3-none-any.whl.metadata (10 kB)
+Collecting protobuf>=3.19.0 (from yfinance>=0.2.30->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for protobuf>=3.19.0 from https://files.pythonhosted.org/packages/10/03/8aeeb7458d22546bf64b5250ca1daeb5ff757d900e8e4a7476c6f0db843e/protobuf-7.35.1-cp310-abi3-macosx_10_9_universal2.whl.metadata
+  Downloading protobuf-7.35.1-cp310-abi3-macosx_10_9_universal2.whl.metadata (595 bytes)
+Collecting more-itertools (from jaraco.classes->keyring>=25.6.0->py-key-value-aio[filetree,keyring,memory]<0.5.0,>=0.4.4; extra == "client"->fastmcp-slim[client,server]==3.4.5->fastmcp>=2.14.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for more-itertools from https://files.pythonhosted.org/packages/e8/3d/1087453384dbde46a8c7f9356eead2c58be8a7bf156bca40243377c85715/more_itertools-11.1.0-py3-none-any.whl.metadata
+  Downloading more_itertools-11.1.0-py3-none-any.whl.metadata (41 kB)
+Collecting backports.tarfile (from jaraco.context->keyring>=25.6.0->py-key-value-aio[filetree,keyring,memory]<0.5.0,>=0.4.4; extra == "client"->fastmcp-slim[client,server]==3.4.5->fastmcp>=2.14.0->vibe-trading-ai==0.1.12)
+  Obtaining dependency information for backports.tarfile from https://files.pythonhosted.org/packages/b9/fa/123043af240e49752f1c4bd24da5053b6bd00cad78c2be53c0d1e8b975bc/backports.tarfile-1.2.0-py3-none-any.whl.metadata
+  Downloading backports.tarfile-1.2.0-py3-none-any.whl.metadata (2.0 kB)
+Downloading black-26.5.1-cp311-cp311-macosx_11_0_arm64.whl (1.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 7.5 MB/s  0:00:00
+Downloading langchain-1.3.14-py3-none-any.whl (139 kB)
+Downloading langchain_core-1.5.3-py3-none-any.whl (561 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 561.7/561.7 kB 7.0 MB/s  0:00:00
+Downloading jsonpatch-1.33-py2.py3-none-any.whl (12 kB)
+Downloading langchain_openai-1.4.1-py3-none-any.whl (122 kB)
+Downloading langgraph-1.2.10-py3-none-any.whl (247 kB)
+Downloading langgraph_checkpoint-4.1.1-py3-none-any.whl (56 kB)
+Downloading langgraph_prebuilt-1.1.0-py3-none-any.whl (41 kB)
+Downloading langgraph_sdk-0.4.2-py3-none-any.whl (160 kB)
+Downloading langsmith-0.10.13-py3-none-any.whl (719 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 719.8/719.8 kB 10.2 MB/s  0:00:00
+Downloading httpx-0.28.1-py3-none-any.whl (73 kB)
+Downloading httpcore-1.0.9-py3-none-any.whl (78 kB)
+Downloading openai-2.51.0-py3-none-any.whl (1.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.7/1.7 MB 8.5 MB/s  0:00:00
+Downloading anyio-4.14.2-py3-none-any.whl (125 kB)
+Downloading distro-1.9.0-py3-none-any.whl (20 kB)
+Downloading jiter-0.16.0-cp311-cp311-macosx_11_0_arm64.whl (315 kB)
+Downloading pandas-2.3.3-cp311-cp311-macosx_11_0_arm64.whl (10.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.8/10.8 MB 12.4 MB/s  0:00:00
+Downloading pydantic-2.13.4-py3-none-any.whl (472 kB)
+Downloading pydantic_core-2.46.4-cp311-cp311-macosx_11_0_arm64.whl (1.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.9/1.9 MB 14.9 MB/s  0:00:00
+Downloading pytokens-0.4.1-cp311-cp311-macosx_11_0_arm64.whl (160 kB)
+Downloading pyyaml-6.0.3-cp311-cp311-macosx_11_0_arm64.whl (175 kB)
+Downloading ruff-0.16.1-py3-none-macosx_11_0_arm64.whl (10.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.6/10.6 MB 13.1 MB/s  0:00:00
+Downloading tenacity-9.1.4-py3-none-any.whl (28 kB)
+Downloading tiktoken-0.13.0-cp311-cp311-macosx_11_0_arm64.whl (984 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 984.6/984.6 kB 11.0 MB/s  0:00:00
+Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+Downloading uuid_utils-0.17.0-cp311-cp311-macosx_10_12_x86_64.macosx_11_0_arm64.macosx_10_12_universal2.whl (563 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 563.9/563.9 kB 11.5 MB/s  0:00:00
+Downloading websockets-15.0.1-cp311-cp311-macosx_11_0_arm64.whl (173 kB)
+Downloading akshare-1.18.81-py3-none-any.whl (1.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.1/1.1 MB 15.4 MB/s  0:00:00
+Downloading annotated_types-0.8.0-py3-none-any.whl (13 kB)
+Downloading beautifulsoup4-4.15.0-py3-none-any.whl (109 kB)
+Downloading bottleneck-1.6.0-cp311-cp311-macosx_11_0_arm64.whl (100 kB)
+Downloading ccxt-4.5.70-py3-none-any.whl (6.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.5/6.5 MB 12.7 MB/s  0:00:00
+Downloading aiohappyeyeballs-2.7.1-py3-none-any.whl (15 kB)
+Downloading aiohttp-3.14.1-cp311-cp311-macosx_11_0_arm64.whl (514 kB)
+Downloading multidict-6.7.1-cp311-cp311-macosx_11_0_arm64.whl (44 kB)
+Downloading yarl-1.24.2-cp311-cp311-macosx_11_0_arm64.whl (91 kB)
+Downloading aiohttp_fast_zlib-0.3.0-py3-none-any.whl (8.6 kB)
+Downloading aiosignal-1.4.0-py3-none-any.whl (7.5 kB)
+Downloading attrs-26.1.0-py3-none-any.whl (67 kB)
+Downloading certifi-2026.6.17-py3-none-any.whl (133 kB)
+Downloading cffi-2.0.0-cp311-cp311-macosx_11_0_arm64.whl (180 kB)
+Downloading charset_normalizer-3.4.7-cp311-cp311-macosx_10_9_universal2.whl (309 kB)
+Downloading coincurve-21.0.0-cp311-cp311-macosx_11_0_arm64.whl (1.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 9.6 MB/s  0:00:00
+Downloading cryptography-49.0.0-cp311-abi3-macosx_11_0_arm64.whl (4.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.0/4.0 MB 10.4 MB/s  0:00:00
+Downloading frozenlist-1.8.0-cp311-cp311-macosx_11_0_arm64.whl (50 kB)
+Downloading idna-3.18-py3-none-any.whl (65 kB)
+Downloading orjson-3.11.9-cp311-cp311-macosx_15_0_arm64.whl (128 kB)
+Downloading propcache-0.5.2-cp311-cp311-macosx_11_0_arm64.whl (52 kB)
+Downloading pycparser-3.0-py3-none-any.whl (48 kB)
+Downloading requests-2.34.2-py3-none-any.whl (73 kB)
+Downloading urllib3-2.7.0-py3-none-any.whl (131 kB)
+Downloading uvloop-0.22.1-cp311-cp311-macosx_10_9_universal2.whl (1.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 10.2 MB/s  0:00:00
+Downloading zlib_ng-1.0.0-cp311-cp311-macosx_11_0_arm64.whl (91 kB)
+Downloading click-8.4.2-py3-none-any.whl (119 kB)
+Downloading curl_cffi-0.15.0-cp310-abi3-macosx_11_0_arm64.whl (2.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.6/2.6 MB 9.5 MB/s  0:00:00
+Downloading ddgs-9.14.4-py3-none-any.whl (70 kB)
+Downloading decorator-5.3.1-py3-none-any.whl (10 kB)
+Downloading defusedxml-0.7.1-py2.py3-none-any.whl (25 kB)
+Downloading duckdb-1.5.5-cp311-cp311-macosx_11_0_arm64.whl (15.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.5/15.5 MB 9.3 MB/s  0:00:01
+Downloading fake_useragent-2.2.0-py3-none-any.whl (161 kB)
+Downloading fastapi-0.141.1-py3-none-any.whl (131 kB)
+Downloading annotated_doc-0.0.5-py3-none-any.whl (5.3 kB)
+Downloading fastmcp-3.4.5-py3-none-any.whl (8.0 kB)
+Downloading fastmcp_slim-3.4.5-py3-none-any.whl (766 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 766.5/766.5 kB 6.2 MB/s  0:00:00
+Downloading mcp-1.29.0-py3-none-any.whl (223 kB)
+Downloading py_key_value_aio-0.4.5-py3-none-any.whl (170 kB)
+Downloading aiofile-3.11.1-py3-none-any.whl (20 kB)
+Downloading caio-0.9.25-cp311-cp311-macosx_10_9_universal2.whl (36 kB)
+Downloading authlib-1.7.2-py2.py3-none-any.whl (259 kB)
+Downloading beartype-0.22.9-py3-none-any.whl (1.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 12.3 MB/s  0:00:00
+Downloading cachetools-7.1.6-py3-none-any.whl (16 kB)
+Downloading cyclopts-4.22.3-py3-none-any.whl (234 kB)
+Downloading docstring_parser-0.18.0-py3-none-any.whl (22 kB)
+Downloading rich_rst-2.1.0-py3-none-any.whl (272 kB)
+Downloading exceptiongroup-1.3.1-py3-none-any.whl (16 kB)
+Downloading griffelib-2.1.0-py3-none-any.whl (142 kB)
+Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+Downloading html5lib-1.1-py2.py3-none-any.whl (112 kB)
+Downloading httpx_sse-0.4.3-py3-none-any.whl (9.0 kB)
+Downloading h2-4.4.0-py3-none-any.whl (62 kB)
+Downloading hpack-4.2.0-py3-none-any.whl (34 kB)
+Downloading hyperframe-6.1.0-py3-none-any.whl (13 kB)
+Downloading socksio-1.0.0-py3-none-any.whl (12 kB)
+Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+Downloading joblib-1.5.3-py3-none-any.whl (309 kB)
+Downloading joserfc-1.7.4-py3-none-any.whl (71 kB)
+Downloading jsonpointer-3.1.1-py3-none-any.whl (7.7 kB)
+Downloading jsonref-1.1.0-py3-none-any.whl (9.4 kB)
+Downloading jsonschema-4.26.0-py3-none-any.whl (90 kB)
+Downloading jsonschema_path-0.5.0-py3-none-any.whl (24 kB)
+Downloading pathable-0.6.0-py3-none-any.whl (18 kB)
+Downloading referencing-0.37.0-py3-none-any.whl (26 kB)
+Downloading jsonschema_specifications-2025.9.1-py3-none-any.whl (18 kB)
+Downloading keyring-25.7.0-py3-none-any.whl (39 kB)
+Downloading importlib_metadata-9.0.0-py3-none-any.whl (27 kB)
+Downloading langchain_protocol-0.0.18-py3-none-any.whl (7.2 kB)
+Downloading lxml-6.1.1-cp311-cp311-macosx_10_9_universal2.whl (8.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.5/8.5 MB 9.4 MB/s  0:00:00
+Downloading markupsafe-3.0.3-cp311-cp311-macosx_11_0_arm64.whl (12 kB)
+Downloading matplotlib-3.11.1-cp311-cp311-macosx_11_0_arm64.whl (9.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.3/9.3 MB 13.0 MB/s  0:00:00
+Downloading contourpy-1.3.3-cp311-cp311-macosx_11_0_arm64.whl (270 kB)
+Downloading cycler-0.12.1-py3-none-any.whl (8.3 kB)
+Downloading fonttools-4.63.0-cp311-cp311-macosx_10_9_universal2.whl (2.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.9/2.9 MB 14.2 MB/s  0:00:00
+Downloading kiwisolver-1.5.0-cp311-cp311-macosx_11_0_arm64.whl (63 kB)
+Downloading mini_racer-0.14.1-py3-none-macosx_11_0_arm64.whl (18.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 18.5/18.5 MB 9.5 MB/s  0:00:01
+Downloading mypy_extensions-1.1.0-py3-none-any.whl (5.0 kB)
+Downloading numpy-2.4.6-cp311-cp311-macosx_14_0_arm64.whl (5.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.5/5.5 MB 8.2 MB/s  0:00:00
+Downloading oauth_cli_kit-0.1.6-py3-none-any.whl (11 kB)
+Downloading openapi_pydantic-0.5.1-py3-none-any.whl (96 kB)
+Downloading openpyxl-3.1.5-py2.py3-none-any.whl (250 kB)
+Downloading opentelemetry_api-1.44.0-py3-none-any.whl (60 kB)
+Downloading ormsgpack-1.12.2-cp311-cp311-macosx_10_12_x86_64.macosx_11_0_arm64.macosx_10_12_universal2.whl (378 kB)
+Downloading pathspec-1.1.1-py3-none-any.whl (57 kB)
+Downloading pillow-12.3.0-cp311-cp311-macosx_11_0_arm64.whl (4.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.8/4.8 MB 13.7 MB/s  0:00:00
+Downloading platformdirs-4.11.0-py3-none-any.whl (23 kB)
+Downloading primp-1.3.1-cp310-abi3-macosx_11_0_arm64.whl (4.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.7/4.7 MB 8.5 MB/s  0:00:00
+Downloading prompt_toolkit-3.0.53-py3-none-any.whl (392 kB)
+Downloading pydantic_settings-2.14.2-py3-none-any.whl (61 kB)
+Downloading email_validator-2.3.0-py3-none-any.whl (35 kB)
+Downloading dnspython-2.8.0-py3-none-any.whl (331 kB)
+Downloading pygments-2.20.0-py3-none-any.whl (1.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 10.8 MB/s  0:00:00
+Downloading pyjwt-2.13.0-py3-none-any.whl (31 kB)
+Downloading pyparsing-3.3.2-py3-none-any.whl (122 kB)
+Downloading pypdfium2-5.12.1-py3-none-macosx_13_0_arm64.whl (3.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.5/3.5 MB 8.1 MB/s  0:00:00
+Downloading pyperclip-1.11.0-py3-none-any.whl (11 kB)
+Downloading pytest-9.1.1-py3-none-any.whl (386 kB)
+Downloading pluggy-1.6.0-py3-none-any.whl (20 kB)
+Downloading iniconfig-2.3.0-py3-none-any.whl (7.5 kB)
+Downloading pytest_cov-7.1.0-py3-none-any.whl (22 kB)
+Downloading coverage-7.15.2-cp311-cp311-macosx_11_0_arm64.whl (221 kB)
+Downloading pytest_socket-0.8.0-py3-none-any.whl (8.4 kB)
+Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Downloading python_docx-1.2.0-py3-none-any.whl (252 kB)
+Downloading python_dotenv-1.2.2-py3-none-any.whl (22 kB)
+Downloading python_multipart-0.0.32-py3-none-any.whl (30 kB)
+Downloading python_pptx-1.0.2-py3-none-any.whl (472 kB)
+Downloading pytz-2026.3.post1-py2.py3-none-any.whl (508 kB)
+Downloading requests_toolbelt-1.0.0-py2.py3-none-any.whl (54 kB)
+Downloading rich-15.0.0-py3-none-any.whl (310 kB)
+Downloading markdown_it_py-4.2.0-py3-none-any.whl (91 kB)
+Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+Downloading rpds_py-2026.6.3-cp311-cp311-macosx_11_0_arm64.whl (345 kB)
+Downloading scikit_learn-1.9.0-cp311-cp311-macosx_12_0_arm64.whl (8.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.3/8.3 MB 13.4 MB/s  0:00:00
+Downloading narwhals-2.24.0-py3-none-any.whl (461 kB)
+Downloading scipy-1.17.1-cp311-cp311-macosx_14_0_arm64.whl (20.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 20.3/20.3 MB 11.3 MB/s  0:00:01
+Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+Downloading smartmoneyconcepts-0.0.27-py3-none-any.whl (13 kB)
+Downloading numba-0.66.0-cp311-cp311-macosx_12_0_arm64.whl (2.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.7/2.7 MB 13.0 MB/s  0:00:00
+Downloading llvmlite-0.48.0-cp311-cp311-macosx_12_0_arm64.whl (40.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 40.5/40.5 MB 9.7 MB/s  0:00:04
+Downloading sniffio-1.3.1-py3-none-any.whl (10 kB)
+Downloading soupsieve-2.9.1-py3-none-any.whl (37 kB)
+Downloading sse_starlette-3.4.6-py3-none-any.whl (16 kB)
+Downloading starlette-1.3.1-py3-none-any.whl (73 kB)
+Downloading tabulate-0.10.0-py3-none-any.whl (39 kB)
+Downloading threadpoolctl-3.6.0-py3-none-any.whl (18 kB)
+Downloading tqdm-4.70.0-py3-none-any.whl (80 kB)
+Downloading tushare-1.4.29-py3-none-any.whl (142 kB)
+Downloading typing_inspection-0.4.2-py3-none-any.whl (14 kB)
+Downloading tzdata-2026.3-py2.py3-none-any.whl (348 kB)
+Downloading uncalled_for-0.3.2-py3-none-any.whl (11 kB)
+Downloading uvicorn-0.52.0-py3-none-any.whl (79 kB)
+Downloading httptools-0.8.0-cp311-cp311-macosx_11_0_arm64.whl (113 kB)
+Downloading watchfiles-1.2.0-cp311-cp311-macosx_11_0_arm64.whl (394 kB)
+Downloading wcwidth-0.8.2-py3-none-any.whl (323 kB)
+Downloading weasyprint-69.0-py3-none-any.whl (322 kB)
+Downloading cssselect2-0.9.0-py3-none-any.whl (15 kB)
+Downloading brotli-1.2.0-cp311-cp311-macosx_10_9_universal2.whl (863 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 863.1/863.1 kB 8.3 MB/s  0:00:00
+Downloading pydyf-0.12.1-py3-none-any.whl (8.0 kB)
+Downloading pyphen-0.17.2-py3-none-any.whl (2.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 9.3 MB/s  0:00:00
+Downloading tinycss2-1.5.1-py3-none-any.whl (28 kB)
+Downloading tinyhtml5-2.1.0-py3-none-any.whl (39 kB)
+Downloading webencodings-0.5.1-py2.py3-none-any.whl (11 kB)
+Downloading websocket_client-1.9.0-py3-none-any.whl (82 kB)
+Downloading xlrd-2.0.2-py2.py3-none-any.whl (96 kB)
+Downloading xlsxwriter-3.2.9-py3-none-any.whl (175 kB)
+Downloading xxhash-3.8.1-cp311-cp311-macosx_11_0_arm64.whl (32 kB)
+Downloading yfinance-1.5.2-py2.py3-none-any.whl (144 kB)
+Downloading multitasking-0.0.13-py3-none-any.whl (16 kB)
+Downloading peewee-4.2.6-py3-none-any.whl (173 kB)
+Downloading protobuf-7.35.1-cp310-abi3-macosx_10_9_universal2.whl (433 kB)
+Downloading zipp-4.1.0-py3-none-any.whl (10 kB)
+Downloading zopfli-0.4.3-cp310-abi3-macosx_10_9_universal2.whl (291 kB)
+Downloading zstandard-0.25.0-cp311-cp311-macosx_11_0_arm64.whl (640 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 640.6/640.6 kB 12.3 MB/s  0:00:00
+Downloading bs4-0.0.2-py2.py3-none-any.whl (1.2 kB)
+Downloading et_xmlfile-2.0.0-py3-none-any.whl (18 kB)
+Downloading jaraco.classes-3.4.0-py3-none-any.whl (6.8 kB)
+Downloading jaraco_context-6.1.2-py3-none-any.whl (7.9 kB)
+Downloading backports.tarfile-1.2.0-py3-none-any.whl (30 kB)
+Downloading jaraco_functools-4.6.0-py3-none-any.whl (11 kB)
+Downloading more_itertools-11.1.0-py3-none-any.whl (72 kB)
+Downloading regex-2026.7.19-cp311-cp311-macosx_11_0_arm64.whl (290 kB)
+Downloading simplejson-4.1.1-cp311-cp311-macosx_11_0_arm64.whl (90 kB)
+Building wheels for collected packages: vibe-trading-ai, jsonpath
+  Building editable for vibe-trading-ai (pyproject.toml): started
+  Running command Building editable for vibe-trading-ai (pyproject.toml)
+  running editable_wheel
+  creating /Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon/.tmp/pip-ephem-wheel-cache-t_2arnmc/wheels/44/43/7f/d89e09b3b595ddc1ee767fb6cc7ebe12e22892f135368ebee3/tmpqypn_e0u/.tmp-hd0g0jzo/vibe_trading_ai.egg-info
+  writing /Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon/.tmp/pip-ephem-wheel-cache-t_2arnmc/wheels/44/43/7f/d89e09b3b595ddc1ee767fb6cc7ebe12e22892f135368ebee3/tmpqypn_e0u/.tmp-hd0g0jzo/vibe_trading_ai.egg-info/PKG-INFO
+  writing dependency_links to /Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon/.tmp/pip-ephem-wheel-cache-t_2arnmc/wheels/44/43/7f/d89e09b3b595ddc1ee767fb6cc7ebe12e22892f135368ebee3/tmpqypn_e0u/.tmp-hd0g0jzo/vibe_trading_ai.egg-info/dependency_links.txt
+  writing entry points to /Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon/.tmp/pip-ephem-wheel-cache-t_2arnmc/wheels/44/43/7f/d89e09b3b595ddc1ee767fb6cc7ebe12e22892f135368ebee3/tmpqypn_e0u/.tmp-hd0g0jzo/vibe_trading_ai.egg-info/entry_points.txt
+  writing requirements to /Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon/.tmp/pip-ephem-wheel-cache-t_2arnmc/wheels/44/43/7f/d89e09b3b595ddc1ee767fb6cc7ebe12e22892f135368ebee3/tmpqypn_e0u/.tmp-hd0g0jzo/vibe_trading_ai.egg-info/requires.txt
+  writing top-level names to /Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon/.tmp/pip-ephem-wheel-cache-t_2arnmc/wheels/44/43/7f/d89e09b3b595ddc1ee767fb6cc7ebe12e22892f135368ebee3/tmpqypn_e0u/.tmp-hd0g0jzo/vibe_trading_ai.egg-info/top_level.txt
+  writing manifest file '/Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon/.tmp/pip-ephem-wheel-cache-t_2arnmc/wheels/44/43/7f/d89e09b3b595ddc1ee767fb6cc7ebe12e22892f135368ebee3/tmpqypn_e0u/.tmp-hd0g0jzo/vibe_trading_ai.egg-info/SOURCES.txt'
+  reading manifest file '/Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon/.tmp/pip-ephem-wheel-cache-t_2arnmc/wheels/44/43/7f/d89e09b3b595ddc1ee767fb6cc7ebe12e22892f135368ebee3/tmpqypn_e0u/.tmp-hd0g0jzo/vibe_trading_ai.egg-info/SOURCES.txt'
+  reading manifest template 'MANIFEST.in'
+  warning: no files found matching '*.yaml' under directory 'agent/src/factors'
+  warning: no previously-included files matching '__pycache__' found anywhere in distribution
+  warning: no previously-included files matching '*.py[cod]' found anywhere in distribution
+  warning: no previously-included files matching '*.so' found anywhere in distribution
+  warning: no previously-included files matching '.DS_Store' found anywhere in distribution
+  warning: no previously-included files matching '.pytest_cache' found anywhere in distribution
+  warning: no previously-included files matching '*.egg-info' found anywhere in distribution
+  adding license file 'LICENSE'
+  adding license file 'NOTICE'
+  writing manifest file '/Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon/.tmp/pip-ephem-wheel-cache-t_2arnmc/wheels/44/43/7f/d89e09b3b595ddc1ee767fb6cc7ebe12e22892f135368ebee3/tmpqypn_e0u/.tmp-hd0g0jzo/vibe_trading_ai.egg-info/SOURCES.txt'
+  creating '/Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon/.tmp/pip-ephem-wheel-cache-t_2arnmc/wheels/44/43/7f/d89e09b3b595ddc1ee767fb6cc7ebe12e22892f135368ebee3/tmpqypn_e0u/.tmp-hd0g0jzo/vibe_trading_ai-0.1.12.dist-info'
+  creating /Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon/.tmp/pip-ephem-wheel-cache-t_2arnmc/wheels/44/43/7f/d89e09b3b595ddc1ee767fb6cc7ebe12e22892f135368ebee3/tmpqypn_e0u/.tmp-hd0g0jzo/vibe_trading_ai-0.1.12.dist-info/WHEEL
+  running build_py
+  running egg_info
+  creating /Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon/.tmp/tmpa0up0121.build-temp/vibe_trading_ai.egg-info
+  writing /Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon/.tmp/tmpa0up0121.build-temp/vibe_trading_ai.egg-info/PKG-INFO
+  writing dependency_links to /Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon/.tmp/tmpa0up0121.build-temp/vibe_trading_ai.egg-info/dependency_links.txt
+  writing entry points to /Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon/.tmp/tmpa0up0121.build-temp/vibe_trading_ai.egg-info/entry_points.txt
+  writing requirements to /Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon/.tmp/tmpa0up0121.build-temp/vibe_trading_ai.egg-info/requires.txt
+  writing top-level names to /Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon/.tmp/tmpa0up0121.build-temp/vibe_trading_ai.egg-info/top_level.txt
+  writing manifest file '/Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon/.tmp/tmpa0up0121.build-temp/vibe_trading_ai.egg-info/SOURCES.txt'
+  reading manifest file '/Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon/.tmp/tmpa0up0121.build-temp/vibe_trading_ai.egg-info/SOURCES.txt'
+  reading manifest template 'MANIFEST.in'
+  warning: no files found matching '*.yaml' under directory 'agent/src/factors'
+  warning: no previously-included files matching '__pycache__' found anywhere in distribution
+  warning: no previously-included files matching '*.py[cod]' found anywhere in distribution
+  warning: no previously-included files matching '*.so' found anywhere in distribution
+  warning: no previously-included files matching '.DS_Store' found anywhere in distribution
+  warning: no previously-included files matching '.pytest_cache' found anywhere in distribution
+  warning: no previously-included files matching '*.egg-info' found anywhere in distribution
+  adding license file 'LICENSE'
+  adding license file 'NOTICE'
+  writing manifest file '/Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon/.tmp/tmpa0up0121.build-temp/vibe_trading_ai.egg-info/SOURCES.txt'
+
+          Editable install will be performed using .pth file to extend `sys.path` with:
+          ['agent']
+
+  Options like `package-data`, `include/exclude-package-data` or
+  `packages.find.exclude/include` may have no effect.
+
+  adding '__editable__.vibe_trading_ai-0.1.12.pth'
+  creating '/Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon/.tmp/pip-ephem-wheel-cache-t_2arnmc/wheels/44/43/7f/d89e09b3b595ddc1ee767fb6cc7ebe12e22892f135368ebee3/tmpqypn_e0u/.tmp-hd0g0jzo/vibe_trading_ai-0.1.12-0.editable-py3-none-any.whl' and adding '/Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon/.tmp/tmp5ba4_093vibe_trading_ai-0.1.12-0.editable-py3-none-any.whl' to it
+  adding 'vibe_trading_ai-0.1.12.dist-info/licenses/LICENSE'
+  adding 'vibe_trading_ai-0.1.12.dist-info/licenses/NOTICE'
+  adding 'vibe_trading_ai-0.1.12.dist-info/METADATA'
+  adding 'vibe_trading_ai-0.1.12.dist-info/WHEEL'
+  adding 'vibe_trading_ai-0.1.12.dist-info/entry_points.txt'
+  adding 'vibe_trading_ai-0.1.12.dist-info/top_level.txt'
+  adding 'vibe_trading_ai-0.1.12.dist-info/RECORD'
+  Building editable for vibe-trading-ai (pyproject.toml): finished with status 'done'
+  Created wheel for vibe-trading-ai: filename=vibe_trading_ai-0.1.12-0.editable-py3-none-any.whl size=66159 sha256=4a75191768714844c91dc3260ca6d1c120d322546dce73f68caf4211dc8061c4
+  Stored in directory: /Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon/.tmp/pip-ephem-wheel-cache-t_2arnmc/wheels/44/43/7f/d89e09b3b595ddc1ee767fb6cc7ebe12e22892f135368ebee3
+  Building wheel for jsonpath (pyproject.toml): started
+  Running command Building wheel for jsonpath (pyproject.toml)
+  /Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon/.tmp/pip-build-env-o6odaw6t/overlay/lib/python3.11/site-packages/setuptools/dist.py:765: SetuptoolsDeprecationWarning: License classifiers are deprecated.
+  !!
+
+          ********************************************************************************
+          Please consider removing the following classifiers in favor of a SPDX license expression:
+
+          License :: OSI Approved :: MIT License
+
+          See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+          ********************************************************************************
+
+  !!
+    self._finalize_license_expression()
+  Building wheel for jsonpath (pyproject.toml): finished with status 'done'
+  Created wheel for jsonpath: filename=jsonpath-0.82.2-py3-none-any.whl size=5667 sha256=153d6bcecea241fa36c6df2965c62ae558638635bd924acdd78d901dac26bfc9
+  Stored in directory: /Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon/.pip_cache/wheels/7d/b8/16/48bbd715040679311fa68cb564ad24a97d9a67fea5d4c848c8
+Successfully built vibe-trading-ai jsonpath
+Installing collected packages: webencodings, pytz, pyperclip, peewee, multitasking, jsonpath, brotli, zstandard, zopfli, zlib-ng, zipp, xxhash, XlsxWriter, xlrd, websockets, websocket-client, wcwidth, uvloop, uuid-utils, urllib3, uncalled-for, tzdata, typing-extensions, tqdm, tinyhtml5, tinycss2, threadpoolctl, tenacity, tabulate, soupsieve, socksio, sniffio, six, simplejson, ruff, rpds-py, regex, pyyaml, pytokens, python-multipart, python-dotenv, Pyphen, pypdfium2, pyparsing, pyjwt, pygments, pydyf, pycparser, protobuf, propcache, primp, pluggy, platformdirs, Pillow, pathspec, pathable, ormsgpack, orjson, numpy, narwhals, mypy-extensions, multidict, more-itertools, mini-racer, mdurl, MarkupSafe, lxml, llvmlite, kiwisolver, jsonref, jsonpointer, joblib, jiter, iniconfig, idna, hyperframe, httpx-sse, httptools, hpack, h11, griffelib, frozenlist, fonttools, fake-useragent, et-xmlfile, duckdb, docstring-parser, dnspython, distro, defusedxml, decorator, cycler, coverage, coincurve, click, charset_normalizer, certifi, caio, cachetools, beartype, backports.tarfile, attrs, annotated-types, annotated-doc, aiohappyeyeballs, yarl, uvicorn, typing-inspection, scipy, requests, referencing, python-pptx, python-docx, python-dateutil, pytest, pydantic-core, py-key-value-aio, prompt_toolkit, opentelemetry-api, openpyxl, numba, markdown-it-py, langchain-protocol, jsonpatch, jinja2, jaraco.functools, jaraco.context, jaraco.classes, importlib_metadata, httpcore, html5lib, h2, exceptiongroup, email-validator, cssselect2, contourpy, cffi, bottleneck, black, beautifulsoup4, anyio, aiosignal, aiofile, weasyprint, watchfiles, tiktoken, starlette, scikit-learn, rich, requests-toolbelt, pytest-socket, pytest-cov, pydantic, pandas, matplotlib, keyring, jsonschema-specifications, jsonschema-path, httpx, cryptography, bs4, aiohttp, tushare, sse-starlette, smartmoneyconcepts, rich-rst, pydantic-settings, openapi-pydantic, openai, oauth-cli-kit, langsmith, jsonschema, joserfc, fastapi, curl_cffi, aiohttp-fast-zlib, yfinance, mcp, langchain-core, fastmcp-slim, ddgs, cyclopts, ccxt, authlib, akshare, langgraph-sdk, langgraph-checkpoint, langchain-openai, langgraph-prebuilt, fastmcp, langgraph, langchain, vibe-trading-ai
+  changing mode of /Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon/.venv-py311/bin/pwiz to 755
+  changing mode of /Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon/.venv-py311/bin/websockets to 755
+  changing mode of /Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon/.venv-py311/bin/wsdump to 755
+  changing mode of /Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon/.venv-py311/bin/tqdm to 755
+  changing mode of /Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon/.venv-py311/bin/tabulate to 755
+  changing mode of /Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon/.venv-py311/bin/dotenv to 755
+  changing mode of /Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon/.venv-py311/bin/pypdfium2 to 755
+  changing mode of /Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon/.venv-py311/bin/pygmentize to 755
+  changing mode of /Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon/.venv-py311/bin/f2py to 755
+  changing mode of /Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon/.venv-py311/bin/numpy-config to 755
+  changing mode of /Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon/.venv-py311/bin/idna to 755
+  changing mode of /Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon/.venv-py311/bin/fonttools to 755
+  changing mode of /Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon/.venv-py311/bin/pyftmerge to 755
+  changing mode of /Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon/.venv-py311/bin/pyftsubset to 755
+  changing mode of /Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon/.venv-py311/bin/ttx to 755
+  changing mode of /Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon/.venv-py311/bin/distro to 755
+  changing mode of /Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon/.venv-py311/bin/coverage to 755
+  changing mode of /Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon/.venv-py311/bin/coverage-3.11 to 755
+  changing mode of /Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon/.venv-py311/bin/coverage3 to 755
+  changing mode of /Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon/.venv-py311/bin/normalizer to 755
+  changing mode of /Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon/.venv-py311/bin/uvicorn to 755
+ERROR: Could not install packages due to an OSError.
+Traceback (most recent call last):
+  File "/Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon/.venv-py311/lib/python3.11/site-packages/pip/_internal/commands/install.py", line 556, in run
+    installed = install_given_reqs(
+                ^^^^^^^^^^^^^^^^^^^
+  File "/Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon/.venv-py311/lib/python3.11/site-packages/pip/_internal/req/__init__.py", line 85, in install_given_reqs
+    requirement.install(
+  File "/Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon/.venv-py311/lib/python3.11/site-packages/pip/_internal/req/req_install.py", line 794, in install
+    install_wheel(
+  File "/Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon/.venv-py311/lib/python3.11/site-packages/pip/_internal/operations/install/wheel.py", line 754, in install_wheel
+    _install_wheel(
+  File "/Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon/.venv-py311/lib/python3.11/site-packages/pip/_internal/operations/install/wheel.py", line 605, in _install_wheel
+    file.save()
+  File "/Users/abdul/Projects/copilot-worktrees/Vibe-Trading/abdul037-effective-bassoon/.venv-py311/lib/python3.11/site-packages/pip/_internal/operations/install/wheel.py", line 369, in save
+    shutil.copyfileobj(f, dest, blocksize)
+  File "/opt/homebrew/Cellar/python@3.11/3.11.15_4/Frameworks/Python.framework/Versions/3.11/lib/python3.11/shutil.py", line 200, in copyfileobj
+    fdst_write(buf)
+OSError: [Errno 28] No space left on device
+

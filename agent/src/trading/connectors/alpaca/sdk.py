@@ -213,12 +213,22 @@ def _read_via_tap(target: str) -> Any:
     TAP injects the secret from ``<CREDENTIAL:alpaca.*>`` placeholders server-side.
     Fails closed: raises on any TAP/upstream error, mirroring the direct-SDK path
     (which also raises on an API error), so read callers handle failure uniformly.
+
+    Some TAP proxies or local mocks wrap the upstream response in an envelope
+    like {"ok": true, "body": <upstream>, "status_code": 200}. Detect and
+    unwrap that shape so callers receive the upstream JSON (list/dict) directly.
     """
     result = tap_forward.forward(target, "GET", None, _tap_cred_headers())
     if not result.get("ok"):
         reason = result.get("error") or result.get("decision") or "read not forwarded by TAP"
         raise RuntimeError(f"TAP read failed: {reason}")
     payload = result.get("body")
+
+    # Some TAP implementations wrap the upstream response in an envelope
+    # {ok:..., body: <upstream>, status_code: ...}. If so, unwrap once.
+    if isinstance(payload, dict) and "body" in payload and ("status_code" in payload or "ok" in payload):
+        payload = payload.get("body")
+
     if isinstance(payload, str):
         try:
             payload = json.loads(payload)

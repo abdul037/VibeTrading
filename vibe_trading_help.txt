@@ -1,0 +1,65 @@
+usage: vibe-trading [-h] [--version] [-p PROMPT] [-f PROMPT_FILE] [--json]
+                    [--no-rich] [--chat] [--continue RUN_ID PROMPT] [--list]
+                    [--show RUN_ID] [--code RUN_ID] [--pine RUN_ID]
+                    [--trace RUN_ID] [--skills] [--max-iter MAX_ITER]
+                    [--swarm-presets] [--swarm-inspect PRESET]
+                    [--swarm-run PRESET [VARS ...]] [--swarm-list]
+                    [--swarm-show RUN_ID] [--swarm-cancel RUN_ID] [--sessions]
+                    [--session-chat SESSION_ID] [--upload FILE_PATH]
+                    {run,serve,provider,data,channels,list,show,chat,init,setup,dev,memory,connector,alpha,hypothesis}
+                    ...
+
+Vibe-Trading CLI
+
+positional arguments:
+  {run,serve,provider,data,channels,list,show,chat,init,setup,dev,memory,connector,alpha,hypothesis}
+    run                 Run a prompt
+    serve               Start the API server
+    provider            Manage OAuth providers
+    data                Manage data routing mode
+    channels            Manage IM channel adapters
+    list                List runs
+    show                Show run details
+    chat                Interactive chat mode
+    init                Interactive setup: create ~/.vibe-trading/.env
+    setup               Install frontend dependencies and build the production
+                        bundle
+    dev                 Start backend + frontend dev servers in one process
+    memory              Inspect persistent memory
+    connector           Manage trading connector profiles
+    alpha               Alpha Zoo: list / show / bench / compare / export-
+                        manifest
+    hypothesis          Hypothesis Registry: list / show / invalidate
+
+options:
+  -h, --help            show this help message and exit
+  --version             show program's version number and exit
+  -p PROMPT, --prompt PROMPT
+                        Prompt text
+  -f PROMPT_FILE, --prompt-file PROMPT_FILE
+                        Read prompt text from a file
+  --json                Print machine-readable JSON output
+  --no-rich             Disable Rich formatting
+  --chat                Interactive chat mode
+  --continue RUN_ID PROMPT
+                        Continue a run
+  --list                List runs
+  --show RUN_ID         Show run details
+  --code RUN_ID         Show generated code
+  --pine RUN_ID         Show Pine Script for TradingView
+  --trace RUN_ID        Replay a run trace
+  --skills              List skills
+  --max-iter MAX_ITER   Maximum agent iterations
+  --swarm-presets       List swarm presets
+  --swarm-inspect PRESET
+                        Inspect a swarm preset without running it
+  --swarm-run PRESET [VARS ...]
+                        Run a swarm preset
+  --swarm-list          List swarm runs
+  --swarm-show RUN_ID   Show a swarm run
+  --swarm-cancel RUN_ID
+                        Cancel a swarm run
+  --sessions            List sessions
+  --session-chat SESSION_ID
+                        Continue a session chat
+  --upload FILE_PATH    Upload a file

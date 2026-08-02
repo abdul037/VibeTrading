@@ -1,0 +1,12 @@
+npm warn EBADENGINE Unsupported engine {
+npm warn EBADENGINE   package: 'jsdom@30.0.0',
+npm warn EBADENGINE   required: { node: '^22.22.2 || ^24.15.0 || >=26.0.0' },
+npm warn EBADENGINE   current: { node: 'v22.22.0', npm: '10.9.4' }
+npm warn EBADENGINE }
+
+added 378 packages, and audited 379 packages in 16s
+
+156 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities

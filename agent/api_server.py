@@ -236,6 +236,10 @@ from src.api.channels_routes import (  # noqa: F401, E402
     ChannelPairingCommandRequest,
 )
 
+# --- Scanner ---
+from src.api.scanner_routes import register_scanner_routes  # noqa: E402
+register_scanner_routes(app)
+
 # --- Swarm ---
 from src.api.swarm_routes import register_swarm_routes  # noqa: E402
 register_swarm_routes(app)

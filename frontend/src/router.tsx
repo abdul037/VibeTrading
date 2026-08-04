@@ -26,6 +26,10 @@ const Approvals = lazy(() =>
   import("@/pages/Approvals").then((m) => ({ default: m.Approvals })),
 );
 
+const Scanner = lazy(() =>
+  import("@/pages/Scanner").then((m) => ({ default: m.Scanner })),
+);
+
 const AlphaZoo = lazy(() =>
   import("@/pages/AlphaZoo").then((m) => ({ default: m.AlphaZoo })),
 );
@@ -64,6 +68,7 @@ export const router = createBrowserRouter([
       { path: "/alpha-zoo/compare", element: wrap(AlphaZoo) },
       { path: "/alpha-zoo/:alphaId", element: wrap(AlphaZoo) },
       { path: "/approvals", element: wrap(Approvals) },
+      { path: "/scanner", element: wrap(Scanner) },
     ],
   },
 ]);

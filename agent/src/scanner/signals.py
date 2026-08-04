@@ -144,7 +144,7 @@ def compute_levels(price: float, atr: float | None) -> dict[str, float]:
 
 def analyze_symbol(symbol: str) -> dict[str, Any]:
     """Return technical signals + entry/exit levels for one symbol."""
-    bars = fetch_bars(symbol, days=35)
+    bars = fetch_bars(symbol, days=250)  # 250 days needed for EMA-200 in AlgoTrader strategies
     if len(bars) < 15:
         return {"symbol": symbol, "ok": False, "reason": "insufficient_data"}
 
@@ -192,7 +192,38 @@ def analyze_symbol(symbol: str) -> dict[str, Any]:
         score += 0.5
         signals.append(f"near support=${support:.2f}")
 
+    # Run AlgoTrader's 28 strategies — adds score from consensus signals
+    strategy_result: dict[str, Any] = {}
+    try:
+        from src.scanner.strategy_bridge import run_all_strategies, aggregate_strategy_signals
+        raw_signals = run_all_strategies(symbol, bars)
+        strategy_result = aggregate_strategy_signals(raw_signals)
+        # Add strategy consensus score on top of RSI/momentum score
+        score += strategy_result.get("net_score", 0.0)
+        if strategy_result.get("triggered_count", 0) > 0:
+            signals.append(
+                f"{strategy_result['triggered_count']} strategies: "
+                f"{strategy_result['triggered_count'] - len(strategy_result.get('sell_signals', []))} buy / "
+                f"{len(strategy_result.get('sell_signals', []))} sell"
+            )
+        # Use best signal's SL/TP if ATR-based levels are overridden by a strategy
+        best = strategy_result.get("best_signal")
+        if best and best.get("action") == "buy" and best.get("stop_loss") and best.get("take_profit"):
+            levels = {
+                "entry": best["price"],
+                "stop_loss": best["stop_loss"],
+                "take_profit": best["take_profit"],
+                "risk_pct": round(abs(best["price"] - best["stop_loss"]) / best["price"] * 100, 2),
+                "reward_pct": round(abs(best["take_profit"] - best["price"]) / best["price"] * 100, 2),
+                "rr_ratio": best.get("rr_ratio") or levels.get("rr_ratio"),
+            }
+    except Exception:
+        pass
+
     timeframe = classify_timeframe(rsi, momentum_5d, momentum_10d, atr, current_price, vol_ratio)
+    # Override timeframe with strategy consensus if available
+    if strategy_result.get("recommended_timeframe"):
+        timeframe["recommended"] = strategy_result["recommended_timeframe"]
 
     return {
         "symbol": symbol,
@@ -207,6 +238,7 @@ def analyze_symbol(symbol: str) -> dict[str, Any]:
         "resistance": resistance,
         "levels": levels,
         "timeframe": timeframe,
+        "strategy_signals": strategy_result,
         "score": round(score, 2),
         "signals": signals,
     }

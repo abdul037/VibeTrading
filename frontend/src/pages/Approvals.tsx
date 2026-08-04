@@ -1,5 +1,5 @@
 import { useEffect, useState, useCallback } from "react";
-import { CheckCircle, XCircle, Clock, RefreshCw, ShieldCheck, Edit3 } from "lucide-react";
+import { CheckCircle, XCircle, Clock, RefreshCw, ShieldCheck, Edit3, Trash2 } from "lucide-react";
 import { useTapPending } from "@/hooks/useTapPending";
 
 const TAP_BASE = "http://localhost:8081";
@@ -176,6 +176,21 @@ export function Approvals() {
     }
   };
 
+  const clearDone = async () => {
+    await fetch(`${TAP_BASE}/admin/clear?admin_key=${ADMIN_KEY}&scope=done`, { method: "POST" });
+    await fetchTransactions();
+  };
+
+  const clearAll = async () => {
+    await fetch(`${TAP_BASE}/admin/clear?admin_key=${ADMIN_KEY}&scope=all`, { method: "POST" });
+    await fetchTransactions();
+  };
+
+  const denyAllPending = async () => {
+    await fetch(`${TAP_BASE}/admin/deny/all?admin_key=${ADMIN_KEY}`, { method: "POST" });
+    await fetchTransactions();
+  };
+
   const pendingCount = transactions.filter(t => t.status === "pending").length;
   const filtered = transactions.filter(t => {
     if (filter === "pending") return t.status === "pending";
@@ -222,17 +237,41 @@ export function Approvals() {
         ))}
       </div>
 
-      {/* Filter tabs */}
-      <div className="flex gap-2 text-sm">
-        {(["pending", "all", "done"] as const).map(f => (
+      {/* Filter tabs + bulk actions */}
+      <div className="flex items-center justify-between flex-wrap gap-2">
+        <div className="flex gap-2 text-sm">
+          {(["pending", "all", "done"] as const).map(f => (
+            <button
+              key={f}
+              onClick={() => setFilter(f)}
+              className={`px-3 py-1 rounded-full border transition-colors capitalize ${filter === f ? "bg-primary text-primary-foreground border-primary" : "border-border hover:bg-muted"}`}
+            >
+              {f === "pending" && pendingCount > 0 ? `Pending (${pendingCount})` : f.charAt(0).toUpperCase() + f.slice(1)}
+            </button>
+          ))}
+        </div>
+        <div className="flex gap-2 text-xs">
+          {pendingCount > 0 && (
+            <button
+              onClick={denyAllPending}
+              className="flex items-center gap-1 px-3 py-1.5 rounded-lg border border-red-300 text-red-600 hover:bg-red-50 dark:hover:bg-red-900/20 transition-colors"
+            >
+              <XCircle size={12} /> Deny All Pending
+            </button>
+          )}
           <button
-            key={f}
-            onClick={() => setFilter(f)}
-            className={`px-3 py-1 rounded-full border transition-colors capitalize ${filter === f ? "bg-primary text-primary-foreground border-primary" : "border-border hover:bg-muted"}`}
+            onClick={clearDone}
+            className="flex items-center gap-1 px-3 py-1.5 rounded-lg border border-border hover:bg-muted transition-colors text-muted-foreground"
           >
-            {f === "pending" && pendingCount > 0 ? `Pending (${pendingCount})` : f.charAt(0).toUpperCase() + f.slice(1)}
+            <Trash2 size={12} /> Clear Done
           </button>
-        ))}
+          <button
+            onClick={clearAll}
+            className="flex items-center gap-1 px-3 py-1.5 rounded-lg border border-border hover:bg-muted transition-colors text-muted-foreground"
+          >
+            <Trash2 size={12} /> Clear All
+          </button>
+        </div>
       </div>
 
       {error && (

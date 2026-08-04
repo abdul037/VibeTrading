@@ -293,6 +293,53 @@ def admin_deny(pid):
 
 
 
+@APP.route('/admin/clear', methods=['POST', 'OPTIONS'])
+def admin_clear():
+    """Clear all completed (forwarded/denied/error) transactions. Pending ones stay."""
+    if request.method == 'OPTIONS':
+        resp = jsonify({'ok': True})
+        resp.headers['Access-Control-Allow-Origin'] = '*'
+        resp.headers['Access-Control-Allow-Methods'] = 'POST, OPTIONS'
+        resp.headers['Access-Control-Allow-Headers'] = 'Content-Type, X-Admin-Key'
+        return resp, 200
+    key = request.args.get("admin_key") or request.headers.get("X-Admin-Key")
+    if key != ADMIN_KEY:
+        return jsonify({"ok": False, "error": "unauthorized"}), 401
+    scope = request.args.get("scope", "done")  # done | all
+    pending = _get_pending()
+    removed = 0
+    for pid in list(pending.keys()):
+        item = pending[pid]
+        if scope == "all" or item["status"] in ("forwarded", "approved", "denied", "error"):
+            del pending[pid]
+            removed += 1
+    resp = jsonify({"ok": True, "removed": removed, "remaining": len(pending)})
+    resp.headers["Access-Control-Allow-Origin"] = "*"
+    return resp, 200
+
+
+@APP.route('/admin/deny/all', methods=['POST', 'OPTIONS'])
+def admin_deny_all_pending():
+    """Deny all currently pending transactions at once."""
+    if request.method == 'OPTIONS':
+        resp = jsonify({'ok': True})
+        resp.headers['Access-Control-Allow-Origin'] = '*'
+        resp.headers['Access-Control-Allow-Methods'] = 'POST, OPTIONS'
+        return resp, 200
+    key = request.args.get("admin_key") or request.headers.get("X-Admin-Key")
+    if key != ADMIN_KEY:
+        return jsonify({"ok": False, "error": "unauthorized"}), 401
+    pending = _get_pending()
+    denied = 0
+    for pid in list(pending.keys()):
+        if pending[pid]["status"] == "pending":
+            pending[pid]["status"] = "denied"
+            denied += 1
+    resp = jsonify({"ok": True, "denied": denied})
+    resp.headers["Access-Control-Allow-Origin"] = "*"
+    return resp, 200
+
+
 @APP.route('/admin/transactions', methods=['GET'])
 def admin_transactions():
     """Return all transactions as JSON for the frontend approval UI."""

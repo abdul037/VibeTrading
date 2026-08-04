@@ -8,6 +8,7 @@ import { api, type SessionItem } from "@/lib/api";
 import { safeGet, safeSet } from "@/lib/storage";
 import { useAgentStore } from "@/stores/agent";
 import { BrandMark } from "@/components/common/BrandMark";
+import { useTapPending } from "@/hooks/useTapPending";
 import { ConnectionBanner } from "@/components/layout/ConnectionBanner";
 import { SUPPORTED_LANGUAGES } from "@/i18n";
 
@@ -34,6 +35,7 @@ export function Layout() {
   const [sessions, setSessions] = useState<SessionItem[]>([]);
   const [sessionsLoading, setSessionsLoading] = useState(true);
   const sseStatus = useAgentStore(s => s.sseStatus);
+  const { pendingCount } = useTapPending();
   const sseRetryAttempt = useAgentStore(s => s.sseRetryAttempt);
   const [collapsed, setCollapsed] = useState(() => safeGet("qa-sidebar") === "collapsed");
 
@@ -145,8 +147,24 @@ export function Layout() {
                 )}
                 title={collapsed ? text : undefined}
               >
-                <Icon className="h-4 w-4 shrink-0" aria-hidden="true" />
-                {!collapsed && <span className="max-md:hidden">{text}</span>}
+                <span className="relative">
+                  <Icon className="h-4 w-4 shrink-0" aria-hidden="true" />
+                  {to === "/approvals" && pendingCount > 0 && (
+                    <span className="absolute -top-1.5 -right-1.5 flex h-3.5 w-3.5 items-center justify-center rounded-full bg-red-500 text-[9px] font-bold text-white leading-none">
+                      {pendingCount > 9 ? "9+" : pendingCount}
+                    </span>
+                  )}
+                </span>
+                {!collapsed && (
+                  <span className="max-md:hidden flex items-center gap-1.5">
+                    {text}
+                    {to === "/approvals" && pendingCount > 0 && (
+                      <span className="ml-auto inline-flex items-center justify-center rounded-full bg-red-500 px-1.5 py-0.5 text-[9px] font-bold text-white leading-none">
+                        {pendingCount}
+                      </span>
+                    )}
+                  </span>
+                )}
               </Link>
             );
           })}

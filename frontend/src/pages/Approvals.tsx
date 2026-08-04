@@ -1,5 +1,6 @@
 import { useEffect, useState, useCallback } from "react";
 import { CheckCircle, XCircle, Clock, RefreshCw, ShieldCheck } from "lucide-react";
+import { useTapPending } from "@/hooks/useTapPending";
 
 const TAP_BASE = "http://localhost:8081";
 const ADMIN_KEY = "admin-dev-key";
@@ -59,6 +60,7 @@ export function Approvals() {
   const [error, setError] = useState<string | null>(null);
   const [actioning, setActioning] = useState<string | null>(null);
   const [filter, setFilter] = useState<"all" | "pending" | "done">("pending");
+  const { connected } = useTapPending();
 
   const fetchTransactions = useCallback(async () => {
     try {
@@ -122,12 +124,18 @@ export function Approvals() {
             <p className="text-sm text-muted-foreground">Review and approve pending broker orders</p>
           </div>
         </div>
-        <button
-          onClick={fetchTransactions}
-          className="flex items-center gap-1.5 px-3 py-1.5 text-sm rounded-lg border border-border hover:bg-muted transition-colors"
-        >
-          <RefreshCw size={13} /> Refresh
-        </button>
+        <div className="flex items-center gap-2">
+          <span className={`flex items-center gap-1 text-xs ${connected ? "text-green-500" : "text-red-400"}`}>
+            <span className={`inline-block h-2 w-2 rounded-full ${connected ? "bg-green-500 animate-pulse" : "bg-red-400"}`} />
+            {connected ? "TAP live" : "TAP offline"}
+          </span>
+          <button
+            onClick={fetchTransactions}
+            className="flex items-center gap-1.5 px-3 py-1.5 text-sm rounded-lg border border-border hover:bg-muted transition-colors"
+          >
+            <RefreshCw size={13} /> Refresh
+          </button>
+        </div>
       </div>
 
       {/* Stats bar */}

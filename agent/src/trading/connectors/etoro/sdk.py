@@ -97,11 +97,14 @@ def save_config(config: EToroConfig) -> Path:
 # ---------------------------------------------------------------------------
 
 def _tap_cred_headers() -> dict[str, str]:
-    """Placeholder headers that TAP resolves server-side."""
+    """Credential + required headers passed through TAP to eToro."""
     name = os.environ.get(TAP_ETORO_CREDENTIAL_ENV, DEFAULT_TAP_ETORO_CREDENTIAL)
     return {
         "x-api-key": f"<CREDENTIAL:{name}.key_id>",
         "x-user-key": f"<CREDENTIAL:{name}.secret_key>",
+        "User-Agent": "Mozilla/5.0 (compatible; VibeTradingBot/1.0)",
+        "Accept": "application/json",
+        "x-request-id": str(uuid.uuid4()),
     }
 
 

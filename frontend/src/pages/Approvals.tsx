@@ -177,17 +177,29 @@ export function Approvals() {
   };
 
   const clearDone = async () => {
-    await fetch(`${TAP_BASE}/admin/clear?admin_key=${ADMIN_KEY}&scope=done`, { method: "POST" });
+    try {
+      const r = await fetch(`${TAP_BASE}/admin/clear?admin_key=${ADMIN_KEY}&scope=done`, { method: "POST" });
+      const d = await r.json();
+      alert(`Cleared ${d.removed ?? 0} done item(s).`);
+    } catch (e) { alert("Error: " + e); }
     await fetchTransactions();
   };
 
   const clearAll = async () => {
-    await fetch(`${TAP_BASE}/admin/clear?admin_key=${ADMIN_KEY}&scope=all`, { method: "POST" });
+    try {
+      const r = await fetch(`${TAP_BASE}/admin/clear?admin_key=${ADMIN_KEY}&scope=all`, { method: "POST" });
+      const d = await r.json();
+      alert(`Cleared all — removed ${d.removed ?? 0} item(s).`);
+    } catch (e) { alert("Error: " + e); }
     await fetchTransactions();
   };
 
   const denyAllPending = async () => {
-    await fetch(`${TAP_BASE}/admin/deny/all?admin_key=${ADMIN_KEY}`, { method: "POST" });
+    try {
+      const r = await fetch(`${TAP_BASE}/admin/deny/all?admin_key=${ADMIN_KEY}`, { method: "POST" });
+      const d = await r.json();
+      alert(`Denied ${d.denied ?? 0} pending item(s).`);
+    } catch (e) { alert("Error: " + e); }
     await fetchTransactions();
   };
 

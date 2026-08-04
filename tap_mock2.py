@@ -31,6 +31,14 @@ from typing import Any, Dict
 
 APP = Flask(__name__)
 
+@APP.after_request
+def add_cors(response):
+    response.headers["Access-Control-Allow-Origin"] = "*"
+    response.headers["Access-Control-Allow-Methods"] = "GET,POST,DELETE,OPTIONS"
+    response.headers["Access-Control-Allow-Headers"] = "Content-Type,Authorization,X-Admin-Key,X-TAP-Key"
+    return response
+
+
 STORAGE_DIR = Path.home() / ".tap_mock"
 STORAGE_DIR.mkdir(parents=True, exist_ok=True)
 CRED_PATH = STORAGE_DIR / "credentials.json"
@@ -255,7 +263,7 @@ def admin_approve(pid):
             resp_body = resp.json()
         except Exception:
             resp_body = resp.text
-        item['status'] = 'approved'
+        item['status'] = 'forwarded'
         item['result'] = {'ok': True, 'status_code': resp.status_code, 'body': resp_body}
         pending[pid] = item
         _save_pending(pending)
@@ -282,6 +290,54 @@ def admin_deny(pid):
     pending[pid] = item
     _save_pending(pending)
     return redirect(url_for('admin_ui', admin_key=ADMIN_KEY))
+
+
+
+@APP.route('/admin/transactions', methods=['GET'])
+def admin_transactions():
+    """Return all transactions as JSON for the frontend approval UI."""
+    key = request.args.get("admin_key") or request.headers.get("X-Admin-Key")
+    if key != ADMIN_KEY:
+        return jsonify({"ok": False, "error": "unauthorized"}), 401
+    pending = _get_pending()
+    # Add CORS header so the React frontend on port 5899 can call this
+    resp = jsonify(pending)
+    resp.headers["Access-Control-Allow-Origin"] = "*"
+    return resp, 200
+
+@APP.route('/agent/approvals/<pid>', methods=['GET'])
+def agent_approval_status(pid):
+    """Poll the status of a pending approval. Returns JSON with status and result if terminal."""
+    # Authorization: X-TAP-Key header
+    tap_key = request.headers.get("X-TAP-Key")
+    if not tap_key or tap_key != AGENT_KEY:
+        return jsonify({"ok": False, "error": "unauthorized"}), 401
+    
+    pending = _get_pending()
+    item = pending.get(pid)
+    if not item:
+        return jsonify({"ok": False, "error": "not found"}), 404
+    
+    resp = {
+        "id": item['id'],
+        "status": item['status'],
+        "created_at": item['created_at'],
+    }
+    
+    # If terminal state, include result/response
+    if item['status'] in ('approved', 'denied', 'error'):
+        if item['result']:
+            resp['response'] = item['result'].get('body') or None
+            resp['status_code'] = item['result'].get('status_code')
+            if not item['result'].get('ok'):
+                resp['error'] = item['result'].get('error')
+    elif item['status'] == 'forwarded':
+        # Special case: already forwarded upstream
+        if item['result']:
+            resp['response'] = item['result'].get('body') or None
+            resp['status_code'] = item['result'].get('status_code')
+    
+    return jsonify(resp), 200
 
 
 @APP.route('/status', methods=['GET'])

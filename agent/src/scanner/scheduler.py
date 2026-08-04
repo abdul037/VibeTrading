@@ -26,6 +26,22 @@ PROPOSALS_DIR = Path.home() / ".vibe-trading" / "proposals"
 PROPOSALS_DIR.mkdir(parents=True, exist_ok=True)
 
 ET = ZoneInfo("America/New_York")
+
+
+def _load_alpaca_env() -> None:
+    """Auto-load Alpaca credentials from ~/.vibe-trading/alpaca.json if env vars not set."""
+    if os.environ.get("ALPACA_API_KEY"):
+        return  # already set
+    creds_path = Path.home() / ".vibe-trading" / "alpaca.json"
+    if not creds_path.exists():
+        return
+    try:
+        creds = json.loads(creds_path.read_text())
+        os.environ["ALPACA_API_KEY"] = creds.get("api_key", "")
+        os.environ["ALPACA_SECRET_KEY"] = creds.get("secret_key", "")
+        print(f"🔑 Loaded Alpaca credentials from {creds_path}")
+    except Exception as e:
+        print(f"⚠️  Could not load Alpaca credentials: {e}")
 MARKET_OPEN_HOUR = 9
 MARKET_OPEN_MINUTE = 30
 
@@ -136,6 +152,7 @@ def _queue_proposals_in_tap(proposals: list[dict]) -> list[str]:
 
 def run_once(queue: bool = True) -> dict:
     """Run one scan cycle."""
+    _load_alpaca_env()
     from src.scanner.proposals import run_scan
 
     print(f"\n{'='*50}")

@@ -30,30 +30,41 @@ def _llm_propose(top_candidates: list[dict], portfolio_summary: str = "") -> lis
     llm = ChatOpenAI(model=model_name, api_key=api_key, temperature=0.2)
 
     candidates_text = json.dumps(top_candidates, indent=2)
-    system = """You are a quantitative trading analyst. Given technical signals for a list of stocks,
-propose up to 3 specific trades. For each trade output ONLY valid JSON in this exact format:
+    system = """You are a quantitative trading analyst. Given technical signals (including ATR-based levels) for a list of stocks,
+propose up to 3 specific trades with precise entry, stop-loss and take-profit levels.
+
+Output ONLY valid JSON in this exact format:
 [
   {
     "symbol": "AAPL",
     "action": "buy",
     "amount_usd": 200,
-    "rationale": "RSI oversold at 28, strong volume spike, good entry point",
-    "confidence": "high"
+    "entry": 172.50,
+    "stop_loss": 169.80,
+    "take_profit": 178.30,
+    "risk_pct": 1.56,
+    "reward_pct": 3.36,
+    "rr_ratio": 2.15,
+    "rationale": "RSI oversold at 28, strong volume spike, price near 10d support",
+    "confidence": "high",
+    "brokers": ["etoro", "alpaca"]
   }
 ]
 Rules:
 - Only propose BUY trades (no shorting for now)
 - Amount per trade: $100-$500 USD
+- Use the pre-computed entry/stop_loss/take_profit from the levels field — adjust slightly if near support/resistance
 - Only pick stocks with clear signals (RSI < 45 or strong momentum)
 - confidence: "high" (RSI<30 + volume), "medium" (RSI<40), "low" (momentum only)
+- brokers: always include both ["etoro", "alpaca"] unless a signal is broker-specific
 - Return pure JSON array only, no markdown or explanation"""
 
-    user = f"""Current market signals for top candidates:
+    user = f"""Current market signals for top candidates (each includes ATR-derived entry/stop/target levels):
 {candidates_text}
 
 {f"Current portfolio context: {portfolio_summary}" if portfolio_summary else ""}
 
-Propose up to 3 trades based on these signals."""
+Propose up to 3 trades. Use the pre-computed 'levels' for entry/stop_loss/take_profit — refine if needed based on support/resistance."""
 
     try:
         resp = llm.invoke([SystemMessage(content=system), HumanMessage(content=user)])
@@ -64,6 +75,10 @@ Propose up to 3 trades based on these signals."""
             if text.startswith("json"):
                 text = text[4:]
         proposals = json.loads(text)
+        # Ensure brokers field is always present
+        for p in proposals:
+            if "brokers" not in p:
+                p["brokers"] = ["etoro", "alpaca"]
         return proposals if isinstance(proposals, list) else []
     except Exception as e:
         print(f"LLM proposal error: {e}")
@@ -75,12 +90,20 @@ def _fallback_proposals(candidates: list[dict]) -> list[dict]:
     proposals = []
     for c in candidates[:3]:
         if c.get("score", 0) >= 2.0:
+            levels = c.get("levels", {})
             proposals.append({
                 "symbol": c["symbol"],
                 "action": "buy",
                 "amount_usd": 150,
+                "entry": levels.get("entry", c.get("price", 0)),
+                "stop_loss": levels.get("stop_loss"),
+                "take_profit": levels.get("take_profit"),
+                "risk_pct": levels.get("risk_pct"),
+                "reward_pct": levels.get("reward_pct"),
+                "rr_ratio": levels.get("rr_ratio"),
                 "rationale": " | ".join(c.get("signals", ["technical signal"])),
                 "confidence": "medium",
+                "brokers": ["etoro", "alpaca"],
             })
     return proposals
 

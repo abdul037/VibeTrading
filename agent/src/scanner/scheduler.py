@@ -42,12 +42,11 @@ def _seconds_until_market_open() -> float:
 
 
 def _queue_proposals_in_tap(proposals: list[dict]) -> list[str]:
-    """Submit each proposal as a TAP pending transaction (routes to selected broker)."""
+    """Submit each proposal as TAP pending transactions — one per broker listed."""
     import urllib.request
 
     tap_base = os.environ.get("TAP_PROXY_URL", "http://localhost:8081").rstrip("/")
     agent_key = os.environ.get("TAP_AGENT_KEY", "agent-dev-key")
-    broker = os.environ.get("SCANNER_BROKER", "etoro")
 
     queued = []
     for p in proposals:
@@ -55,66 +54,82 @@ def _queue_proposals_in_tap(proposals: list[dict]) -> list[str]:
         amount = p.get("amount_usd", 100)
         rationale = p.get("rationale", "")
         confidence = p.get("confidence", "medium")
+        entry = p.get("entry")
+        stop_loss = p.get("stop_loss")
+        take_profit = p.get("take_profit")
+        rr_ratio = p.get("rr_ratio")
+        brokers = p.get("brokers", ["etoro", "alpaca"])
 
-        if broker == "etoro":
-            target = "https://public-api.etoro.com/api/v2/trading/execution/demo/orders"
-            body = {
-                "action": "open",
-                "transaction": "buy",
-                "orderType": "mkt",
-                "leverage": 1,
-                "settlementType": "cfd",
-                "symbol": symbol,
-                "amount": amount,
-                "orderCurrency": "usd",
-                "_scanner_rationale": rationale,
-                "_scanner_confidence": confidence,
-            }
-            cred_headers = {
-                "x-api-key": "<CREDENTIAL:etoro.key_id>",
-                "x-user-key": "<CREDENTIAL:etoro.secret_key>",
-                "User-Agent": "Mozilla/5.0 (compatible; VibeTradingBot/1.0)",
-                "Accept": "application/json",
-                "x-request-id": str(uuid.uuid4()),
-                "Content-Type": "application/json",
-            }
-        else:  # alpaca
-            target = "https://paper-api.alpaca.markets/v2/orders"
-            body = {
-                "symbol": symbol,
-                "side": "buy",
-                "type": "market",
-                "time_in_force": "day",
-                "notional": str(float(amount)),
-                "client_order_id": f"scan-{uuid.uuid4().hex[:12]}",
-                "_scanner_rationale": rationale,
-            }
-            cred_headers = {
-                "APCA-API-KEY-ID": "<CREDENTIAL:alpaca.key_id>",
-                "APCA-API-SECRET-KEY": "<CREDENTIAL:alpaca.secret_key>",
+        for broker in brokers:
+            if broker == "etoro":
+                target = "https://public-api.etoro.com/api/v2/trading/execution/demo/orders"
+                body = {
+                    "action": "open",
+                    "transaction": "buy",
+                    "orderType": "mkt",
+                    "leverage": 1,
+                    "settlementType": "cfd",
+                    "symbol": symbol,
+                    "amount": amount,
+                    "orderCurrency": "usd",
+                    "_scanner_entry": entry,
+                    "_scanner_stop_loss": stop_loss,
+                    "_scanner_take_profit": take_profit,
+                    "_scanner_rr_ratio": rr_ratio,
+                    "_scanner_rationale": rationale,
+                    "_scanner_confidence": confidence,
+                }
+                cred_headers = {
+                    "x-api-key": "<CREDENTIAL:etoro.key_id>",
+                    "x-user-key": "<CREDENTIAL:etoro.secret_key>",
+                    "User-Agent": "Mozilla/5.0 (compatible; VibeTradingBot/1.0)",
+                    "Accept": "application/json",
+                    "x-request-id": str(uuid.uuid4()),
+                    "Content-Type": "application/json",
+                }
+            else:  # alpaca
+                target = "https://paper-api.alpaca.markets/v2/orders"
+                body = {
+                    "symbol": symbol,
+                    "side": "buy",
+                    "type": "limit" if entry else "market",
+                    "time_in_force": "day",
+                    "limit_price": str(round(entry, 2)) if entry else None,
+                    "notional": str(float(amount)),
+                    "order_class": "bracket" if stop_loss and take_profit else "simple",
+                    "stop_loss": {"stop_price": str(round(stop_loss, 2))} if stop_loss else None,
+                    "take_profit": {"limit_price": str(round(take_profit, 2))} if take_profit else None,
+                    "client_order_id": f"scan-{uuid.uuid4().hex[:12]}",
+                    "_scanner_rationale": rationale,
+                    "_scanner_rr_ratio": rr_ratio,
+                }
+                body = {k: v for k, v in body.items() if v is not None}
+                cred_headers = {
+                    "APCA-API-KEY-ID": "<CREDENTIAL:alpaca.key_id>",
+                    "APCA-API-SECRET-KEY": "<CREDENTIAL:alpaca.secret_key>",
+                }
+
+            payload = {
+                "target": target,
+                "method": "POST",
+                "headers": cred_headers,
+                "body": body,
             }
 
-        payload = {
-            "target": target,
-            "method": "POST",
-            "headers": cred_headers,
-            "body": body,
-        }
-
-        try:
-            req = urllib.request.Request(
-                tap_base + "/forward",
-                data=json.dumps(payload).encode(),
-                headers={"Authorization": f"Bearer {agent_key}", "Content-Type": "application/json"},
-                method="POST",
-            )
-            with urllib.request.urlopen(req, timeout=15) as r:
-                resp = json.loads(r.read())
-            txn_id = resp.get("txn_id")
-            print(f"  ✅ Queued {symbol} ${amount} → TAP txn {txn_id}")
-            queued.append(txn_id)
-        except Exception as e:
-            print(f"  ❌ Failed to queue {symbol}: {e}")
+            try:
+                req = urllib.request.Request(
+                    tap_base + "/forward",
+                    data=json.dumps(payload).encode(),
+                    headers={"Authorization": f"Bearer {agent_key}", "Content-Type": "application/json"},
+                    method="POST",
+                )
+                with urllib.request.urlopen(req, timeout=15) as r:
+                    resp = json.loads(r.read())
+                txn_id = resp.get("txn_id")
+                print(f"  ✅ Queued {symbol} ${amount} [{broker}] entry={entry} SL={stop_loss} TP={take_profit} rr={rr_ratio} → TAP txn {txn_id}")
+                queued.append(txn_id)
+            except Exception as e:
+                print(f"  ❌ Failed to queue {symbol} [{broker}]: {e}")
 
     return queued
 

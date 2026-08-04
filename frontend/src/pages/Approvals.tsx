@@ -204,10 +204,65 @@ export function Approvals() {
                 </div>
               </div>
 
-              {/* Order details */}
-              {txn.body && (
-                <div className="rounded-lg bg-muted/50 p-3 text-xs font-mono overflow-x-auto">
-                  {JSON.stringify(txn.body, null, 2)}
+              {/* Entry / Stop / Target levels */}
+              {txn.body && (txn.body._scanner_entry || txn.body.limit_price || txn.body._scanner_stop_loss) && (
+                <div className="grid grid-cols-3 gap-2">
+                  <div className="rounded-lg bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 p-3 text-center">
+                    <div className="text-[10px] text-blue-500 font-semibold uppercase tracking-wide mb-0.5">Entry</div>
+                    <div className="text-sm font-bold text-blue-700 dark:text-blue-300">
+                      ${txn.body._scanner_entry ?? txn.body.limit_price ?? "Market"}
+                    </div>
+                  </div>
+                  <div className="rounded-lg bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 p-3 text-center">
+                    <div className="text-[10px] text-red-500 font-semibold uppercase tracking-wide mb-0.5">Stop Loss</div>
+                    <div className="text-sm font-bold text-red-700 dark:text-red-300">
+                      {txn.body._scanner_stop_loss
+                        ? `$${txn.body._scanner_stop_loss}`
+                        : txn.body.stop_loss
+                          ? `$${(txn.body.stop_loss as Record<string,unknown>).stop_price}`
+                          : "—"}
+                    </div>
+                  </div>
+                  <div className="rounded-lg bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 p-3 text-center">
+                    <div className="text-[10px] text-green-600 font-semibold uppercase tracking-wide mb-0.5">Take Profit</div>
+                    <div className="text-sm font-bold text-green-700 dark:text-green-300">
+                      {txn.body._scanner_take_profit
+                        ? `$${txn.body._scanner_take_profit}`
+                        : txn.body.take_profit
+                          ? `$${(txn.body.take_profit as Record<string,unknown>).limit_price}`
+                          : "—"}
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              {/* R/R ratio + rationale */}
+              {txn.body && (txn.body._scanner_rationale || txn.body._scanner_rr_ratio) && (
+                <div className="rounded-lg bg-muted/40 border border-border p-3 space-y-1">
+                  {txn.body._scanner_rr_ratio && (
+                    <div className="flex items-center gap-2 text-xs">
+                      <span className="text-muted-foreground font-medium">R/R Ratio:</span>
+                      <span className={`font-bold ${Number(txn.body._scanner_rr_ratio) >= 2 ? "text-green-600" : "text-yellow-600"}`}>
+                        1 : {txn.body._scanner_rr_ratio}
+                      </span>
+                      <span className="text-muted-foreground">{Number(txn.body._scanner_rr_ratio) >= 2 ? "✅ Good" : "⚠️ Marginal"}</span>
+                    </div>
+                  )}
+                  {txn.body._scanner_rationale && (
+                    <div className="text-xs text-muted-foreground">
+                      <span className="font-medium text-foreground">Rationale: </span>
+                      {String(txn.body._scanner_rationale)}
+                    </div>
+                  )}
+                  {txn.body._scanner_confidence && (
+                    <div className="text-xs">
+                      <span className="text-muted-foreground font-medium">Confidence: </span>
+                      <span className={`font-semibold capitalize ${
+                        txn.body._scanner_confidence === "high" ? "text-green-600" :
+                        txn.body._scanner_confidence === "medium" ? "text-yellow-600" : "text-gray-500"
+                      }`}>{String(txn.body._scanner_confidence)}</span>
+                    </div>
+                  )}
                 </div>
               )}
 

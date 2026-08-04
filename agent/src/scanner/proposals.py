@@ -30,8 +30,8 @@ def _llm_propose(top_candidates: list[dict], portfolio_summary: str = "") -> lis
     llm = ChatOpenAI(model=model_name, api_key=api_key, temperature=0.2)
 
     candidates_text = json.dumps(top_candidates, indent=2)
-    system = """You are a quantitative trading analyst. Given technical signals (including ATR-based levels) for a list of stocks,
-propose up to 3 specific trades with precise entry, stop-loss and take-profit levels.
+    system = """You are a quantitative trading analyst. Given technical signals (including ATR-based levels and timeframe classification) for a list of stocks,
+propose up to 3 specific trades with precise entry, stop-loss, take-profit and timeframe.
 
 Output ONLY valid JSON in this exact format:
 [
@@ -45,6 +45,8 @@ Output ONLY valid JSON in this exact format:
     "risk_pct": 1.56,
     "reward_pct": 3.36,
     "rr_ratio": 2.15,
+    "timeframe": "2hr",
+    "timeframe_rationale": "RSI deeply oversold, bounce expected over 1-3 sessions",
     "rationale": "RSI oversold at 28, strong volume spike, price near 10d support",
     "confidence": "high",
     "brokers": ["etoro", "alpaca"]
@@ -56,15 +58,16 @@ Rules:
 - Use the pre-computed entry/stop_loss/take_profit from the levels field — adjust slightly if near support/resistance
 - Only pick stocks with clear signals (RSI < 45 or strong momentum)
 - confidence: "high" (RSI<30 + volume), "medium" (RSI<40), "low" (momentum only)
-- brokers: always include both ["etoro", "alpaca"] unless a signal is broker-specific
+- timeframe: pick ONE of [1min, 5min, 30min, 2hr, 5hr, multi-day] — use the recommended field from the timeframe object
+- brokers: always include both ["etoro", "alpaca"]
 - Return pure JSON array only, no markdown or explanation"""
 
-    user = f"""Current market signals for top candidates (each includes ATR-derived entry/stop/target levels):
+    user = f"""Current market signals (each includes ATR-derived levels + timeframe classification):
 {candidates_text}
 
 {f"Current portfolio context: {portfolio_summary}" if portfolio_summary else ""}
 
-Propose up to 3 trades. Use the pre-computed 'levels' for entry/stop_loss/take_profit — refine if needed based on support/resistance."""
+Propose up to 3 trades. Use the pre-computed 'levels' for entry/stop_loss/take_profit and 'timeframe.recommended' for the timeframe."""
 
     try:
         resp = llm.invoke([SystemMessage(content=system), HumanMessage(content=user)])
@@ -91,6 +94,7 @@ def _fallback_proposals(candidates: list[dict]) -> list[dict]:
     for c in candidates[:3]:
         if c.get("score", 0) >= 2.0:
             levels = c.get("levels", {})
+            tf = c.get("timeframe", {})
             proposals.append({
                 "symbol": c["symbol"],
                 "action": "buy",
@@ -101,6 +105,8 @@ def _fallback_proposals(candidates: list[dict]) -> list[dict]:
                 "risk_pct": levels.get("risk_pct"),
                 "reward_pct": levels.get("reward_pct"),
                 "rr_ratio": levels.get("rr_ratio"),
+                "timeframe": tf.get("recommended", "multi-day"),
+                "timeframe_rationale": tf.get("rationale", ""),
                 "rationale": " | ".join(c.get("signals", ["technical signal"])),
                 "confidence": "medium",
                 "brokers": ["etoro", "alpaca"],

@@ -192,6 +192,8 @@ def analyze_symbol(symbol: str) -> dict[str, Any]:
         score += 0.5
         signals.append(f"near support=${support:.2f}")
 
+    timeframe = classify_timeframe(rsi, momentum_5d, momentum_10d, atr, current_price, vol_ratio)
+
     return {
         "symbol": symbol,
         "ok": True,
@@ -204,6 +206,92 @@ def analyze_symbol(symbol: str) -> dict[str, Any]:
         "support": support,
         "resistance": resistance,
         "levels": levels,
+        "timeframe": timeframe,
         "score": round(score, 2),
         "signals": signals,
+    }
+
+
+def classify_timeframe(
+    rsi: float | None,
+    momentum_5d: float | None,
+    momentum_10d: float | None,
+    atr: float | None,
+    price: float,
+    vol_ratio: float | None,
+) -> dict[str, str]:
+    """Classify the most suitable trading timeframe(s) based on signal characteristics.
+
+    Returns a dict with:
+      recommended  — single best timeframe label
+      rationale    — why this timeframe
+      all_suitable — list of all suitable timeframes
+
+    Timeframe labels: 1min | 5min | 30min | 2hr | 5hr | multi-day
+    """
+    atr_pct = (atr / price * 100) if atr and price else 0
+    mom5 = abs(momentum_5d or 0)
+    mom10 = abs(momentum_10d or 0)
+    vol_spike = (vol_ratio or 1.0) > 2.0
+
+    suitable = []
+    rationale_parts = []
+
+    # Very high intraday volatility → short timeframes
+    if atr_pct > 3.0 and vol_spike:
+        suitable += ["1min", "5min"]
+        rationale_parts.append(f"high ATR {atr_pct:.1f}% + volume spike")
+
+    if atr_pct > 2.0:
+        suitable += ["5min", "30min"]
+        rationale_parts.append(f"elevated volatility ATR={atr_pct:.1f}%")
+
+    # Moderate volatility → intraday swing
+    if 1.0 < atr_pct <= 2.0:
+        suitable += ["30min", "2hr"]
+        rationale_parts.append("moderate ATR — good for intraday swings")
+
+    # RSI oversold: bounce usually plays over hours to days
+    if rsi is not None and rsi < 30:
+        suitable += ["2hr", "5hr", "multi-day"]
+        rationale_parts.append(f"RSI={rsi} deep oversold — bounce likely over hours/days")
+    elif rsi is not None and rsi < 40:
+        suitable += ["5hr", "multi-day"]
+        rationale_parts.append(f"RSI={rsi} approaching oversold — multi-session setup")
+
+    # Strong multi-day momentum → swing/position trade
+    if mom10 > 8:
+        suitable += ["multi-day"]
+        rationale_parts.append(f"strong 10d momentum {momentum_10d:.1f}%")
+
+    # Mild momentum, low volatility → longer hold
+    if atr_pct < 1.0 and mom10 < 3:
+        suitable += ["multi-day"]
+        rationale_parts.append("low volatility — best for multi-day position")
+
+    # Deduplicate while keeping order
+    _order = ["1min", "5min", "30min", "2hr", "5hr", "multi-day"]
+    seen: set[str] = set()
+    all_suitable = [t for t in _order if t in suitable and not seen.add(t)]  # type: ignore[func-returns-value]
+
+    if not all_suitable:
+        all_suitable = ["multi-day"]
+        rationale_parts.append("default multi-day swing")
+
+    # Recommended = most specific suitable timeframe given RSI + volatility
+    if rsi is not None and rsi < 30 and atr_pct > 2.0 and vol_spike:
+        recommended = "5min"
+    elif rsi is not None and rsi < 30:
+        recommended = "2hr"
+    elif atr_pct > 2.5:
+        recommended = "30min"
+    elif mom10 > 8:
+        recommended = "multi-day"
+    else:
+        recommended = all_suitable[-1]  # pick longest suitable
+
+    return {
+        "recommended": recommended,
+        "all_suitable": all_suitable,
+        "rationale": "; ".join(dict.fromkeys(rationale_parts)),
     }
